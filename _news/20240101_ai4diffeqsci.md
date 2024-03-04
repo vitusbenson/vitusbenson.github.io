@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:mega: Our [AI for Differential Equations in Science workshop](https://www.ai4diffeqtnsinsci.github.io) was accepted at [ICLR 2024](https://www.iclr.cc). See you in Vienna, Austria!
+:mega: Our [AI for Differential Equations in Science workshop](https://ai4diffeqtnsinsci.github.io/) was accepted at [ICLR 2024](https://www.iclr.cc). See you in Vienna, Austria!
