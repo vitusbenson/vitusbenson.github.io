@@ -13,7 +13,7 @@ I was lucky enough to spend a few wonderful years at a couple of inspiring place
 
 #### <i class="fas fa-graduation-cap" aria-hidden="true"></i> PhD Candidate, 2022-2025
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Max-Planck-Institute for Biogeochemistry & ETH Zürich_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Max Planck Institute for Biogeochemistry & ETH Zürich_
 
 #### <i class="fas fa-graduation-cap" aria-hidden="true"></i> MSc in Mathematical Physics, 2020-2022
 
