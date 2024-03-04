@@ -8,8 +8,7 @@ profile:
   align: left
   image: vitus_benson.png
   image_circular: true # crops the image to make it circular
-  more_info: >
-    <div class="contact-icons">{% include social.liquid %}</div>
+  # more_info: >
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
