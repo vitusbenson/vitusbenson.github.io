@@ -1,12 +1,7 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - vitusbenson
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - earthnet2021/earthnet-minicuber
+  - earthnet2021/earthnet-models-pytorch
+  - earthnet2021/earthnet-toolkit
