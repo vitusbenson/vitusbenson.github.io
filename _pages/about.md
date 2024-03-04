@@ -2,8 +2,8 @@
 layout: about
 title: welcome
 permalink: /
-nav: true
-nav_order: 0
+# nav: true
+# nav_order: 0
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
