@@ -102,6 +102,7 @@ wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.
 
 contact_note: >
   Looking forward hearing from you. If I do not reply within a week, just ping me again!
+  Photo: Jens Meyer/Universität Jena
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
