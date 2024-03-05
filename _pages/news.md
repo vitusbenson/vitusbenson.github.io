@@ -13,7 +13,7 @@ pagination:
   sort_reverse: true
   trail:
     before: 1 # The number of links before the current page
-    after: 3  # The number of links after the current page
+    after: 3 # The number of links after the current page
 ---
 
 {% include news.liquid %}
