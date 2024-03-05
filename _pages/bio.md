@@ -7,7 +7,7 @@ nav_order: 1
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 ---
 
-## education
+# education
 
 I was lucky enough to spend a few wonderful years at a couple of inspiring places!
 
