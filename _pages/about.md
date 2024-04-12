@@ -19,7 +19,7 @@ social: true # includes social icons at the bottom of the page
 
 Hi Friend, great to have you here! :sparkles:
 
-I am Vitus, currently an ELLIS PhD candidate at [Max Planck Institute for Biogeochemistry](https://www.bgc-jena.mpg.de/), [ELLIS Unit Jena](https://www.ellis-jena.ai/) and [ETH Zürich](https://sml.inf.ethz.ch/). I am conducting my research under the supervision of [Markus Reichstein](https://www.bgc-jena.mpg.de/bgi/index.php/People/MarkusReichstein) and [Fanny Yang](https://sml.inf.ethz.ch/group/fannyy/).
+I am Vitus, currently an ELLIS PhD candidate at [Max Planck Institute for Biogeochemistry](https://www.bgc-jena.mpg.de/), [ELLIS Unit Jena](https://www.ellis-jena.ai/) and [ETH Zürich](https://sml.inf.ethz.ch/). I am conducting my research under the supervision of [Markus Reichstein](https://www.bgc-jena.mpg.de/en/reichstein.html) and [Fanny Yang](https://sml.inf.ethz.ch/group/fannyy/).
 
 I train deep neural networks on data of the Earth system. More specifically, I am focusing on two applications. On the one hand, I am interested in the applicability of large-scale AI to Early Warning Systems. Within the [EarthNet initiative](https://www.earthnet.tech) we are leveraging high resolution satellite imagery to build data-driven impact early warning systems -- with applications to anticipatory action for droughts and heat waves. On the other hand, I study the carbon cycle with neural network emulators. In particular, I am assessing the use of AI for atmospheric transport and inverse modeling -- analogous to how recent works have revolutionized numerical weather prediction and other areas of scientific machine learning.
 
