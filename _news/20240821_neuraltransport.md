@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:green_heart: New preprint alert: [Atmospheric Transport Modeling of CO$_2$ with Neural Networks](https://arxiv.org/abs/2408.11032) is on ArXiv now!
+:green_heart: New preprint alert: [Atmospheric Transport Modeling of CO2 with Neural Networks](https://arxiv.org/abs/2408.11032) is on ArXiv now!

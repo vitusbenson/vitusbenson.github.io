@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-:microphone: We are discussing AI for resilience and early warning under climate change at this years [Leipziger Buchmesse](https://www.leipziger-buchmesse.de/pco/de/buchmesse/65b231f60b8b7047ce6658b8) (in German).
+:microphone: We are discussing AI for resilience and early warning under climate change at this years [Leipziger Buchmesse](https://web.archive.org/web/20240415175300/https://www.leipziger-buchmesse.de/pco/de/buchmesse/65b231f60b8b7047ce6658b8) (in German).

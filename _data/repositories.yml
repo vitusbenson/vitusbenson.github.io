@@ -3,6 +3,6 @@ github_users:
 
 github_repos:
   - vitusbenson/neural_transport
-  - earthnet2021/earthnet-minicuber
   - earthnet2021/earthnet-models-pytorch
+  - earthnet2021/earthnet-minicuber
   - earthnet2021/earthnet-toolkit
