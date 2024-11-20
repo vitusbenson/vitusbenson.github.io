@@ -64,6 +64,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
+bluesky_url: vitusbenson.bsky.social # your bluesky URL
 github_username: vitusbenson # your GitHub user name
 gitlab_username: # your GitLab user name
 x_username: vitusbenson # your X handle
