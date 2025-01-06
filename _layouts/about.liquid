@@ -62,6 +62,10 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="https://www.youtube.com/embed/Ez2JViGIv7s?si=VjLu_I_rORs8Uo4S&amp;start=20" class="img-fluid rounded z-depth-1" %}
+    </div>
+
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
@@ -69,6 +73,7 @@ layout: default
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
+
 
     <!-- Socials -->
     {% if page.social %}
