@@ -6,6 +6,3 @@ related_posts: false
 ---
 
 :movie_camera: New video online: [Why AI could improve early warning of climate risks - Vitus Benson - TEDxBattipaglia](https://www.youtube.com/watch?v=Ez2JViGIv7s).
-
-
-

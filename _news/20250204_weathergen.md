@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 :cloud: Kick-Off for [WeatherGenerator](https://weathergenerator.eu/) - as part of the Horizon Europe project we develop a foundation model for the land surface.
-
