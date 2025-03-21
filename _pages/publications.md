@@ -9,7 +9,7 @@ nav_order: 4
 
 <!-- _pages/publications.md -->
 <div class="publications">
-
+<p>*indicates joint first authorship</p>
 {% bibliography %}
 
 </div>
