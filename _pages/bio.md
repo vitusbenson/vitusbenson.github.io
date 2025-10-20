@@ -11,7 +11,7 @@ nav_order: 1
 
 I was lucky enough to spend a few wonderful years at a couple of inspiring places!
 
-#### <i class="fas fa-graduation-cap" aria-hidden="true"></i> PhD Candidate, 2022-2025
+#### <i class="fas fa-graduation-cap" aria-hidden="true"></i> PhD Candidate, 2022-2026
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Max Planck Institute for Biogeochemistry & ETH Zürich_
 
