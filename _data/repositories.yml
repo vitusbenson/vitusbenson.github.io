@@ -1,8 +1,46 @@
 github_users:
   - vitusbenson
 
+github_overview:
+  username: vitusbenson
+  name: Vitus Benson
+  role: Machine learning researcher on Earth & Climate Science
+  bio: Building open source tools for Earth and climate AI, scientific ML, and reproducible geoscience workflows.
+  location: Jena, Germany
+  website: https://vitusbenson.github.io
+  stack:
+    - Python
+    - PyTorch
+    - CUDA
+    - JAX
+    - xarray
+    - Dask
+    - Shell
+    - Latex
+
 github_repos:
-  - vitusbenson/neural_transport
-  - earthnet2021/earthnet-models-pytorch
-  - earthnet2021/earthnet-minicuber
-  - earthnet2021/earthnet-toolkit
+  - name: vitusbenson/neural_transport
+    description: Hybrid neural-physical transport modeling for atmospheric and Earth system applications.
+    tags:
+      - carbon monitoring
+      - atmospheric transport
+      - scientific-ml
+      - pytorch
+  - name: earthnet2021/earthnet-models-pytorch
+    description: EarthNet Models PyTorch - Deep Neural Networks for geospatial vegetation forecasting.
+    tags:
+      - earth-observation
+      - benchmarks
+      - pytorch
+  - name: earthnet2021/earthnet-minicuber
+    description: Lightweight tooling to cube, harmonize, and prepare Earth observation datasets.
+    tags:
+      - geospatial
+      - data-engineering
+      - remote-sensing
+  - name: earthnet2021/earthnet-toolkit
+    description: Utility toolkit for evaluating, visualizing, and comparing EarthNet model outputs.
+    tags:
+      - evaluation
+      - visualization
+      - reproducibility

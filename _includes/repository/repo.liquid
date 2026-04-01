@@ -1,21 +1,55 @@
-{% assign repo_url = include.repository | split: '/' %}
-{% if site.data.repositories.github_users contains repo_url.first %}
-  {% assign show_owner = false %}
+{% if include.repository.name %}
+  {% assign full_name = include.repository.name %}
+  {% assign description = include.repository.description %}
+  {% assign tags = include.repository.tags %}
 {% else %}
-  {% assign show_owner = true %}
+  {% assign full_name = include.repository %}
 {% endif %}
 
-<div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.repository }}">
-    <img
-      class="repo-img-light w-100"
-      alt="{{ include.repository }}"
-      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&show_owner={{ show_owner }}"
+{% assign repo_url = full_name | split: '/' %}
+{% assign owner = repo_url.first %}
+{% assign repo_name = repo_url.last %}
+
+<article class="repo-card">
+  <a class="repo-card-link" href="https://github.com/{{ full_name }}" aria-label="Open {{ full_name }} repository on GitHub">
+    <div class="repo-card-header">
+      <span class="repo-card-icon"><i class="fa-brands fa-github"></i></span>
+      <h3 class="repo-card-title">{{ repo_name }}</h3>
+      <p class="repo-card-owner">{{ owner }}</p>
+    </div>
+
+    <p
+      class="repo-card-description"
+      data-repo="{{ full_name }}"
+      data-fallback="{{ description | default: 'Open-source project in climate, weather, and scientific machine learning.' | escape }}"
     >
-    <img
-      class="repo-img-dark w-100"
-      alt="{{ include.repository }}"
-      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&show_owner={{ show_owner }}"
-    >
+      {{ description | default: 'Loading repository description...' }}
+    </p>
+
+    {% if tags %}
+      <div class="repo-card-tags">
+        {% for tag in tags %}
+          <span class="repo-card-tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <div class="repo-card-badges">
+      <img
+        alt="GitHub stars for {{ full_name }}"
+        src="https://img.shields.io/github/stars/{{ full_name }}?style=flat-square&logo=github"
+        loading="lazy"
+      >
+      <img
+        alt="GitHub forks for {{ full_name }}"
+        src="https://img.shields.io/github/forks/{{ full_name }}?style=flat-square&logo=github"
+        loading="lazy"
+      >
+      <img
+        alt="GitHub license for {{ full_name }}"
+        src="https://img.shields.io/github/license/{{ full_name }}?style=flat-square"
+        loading="lazy"
+      >
+    </div>
   </a>
-</div>
+</article>

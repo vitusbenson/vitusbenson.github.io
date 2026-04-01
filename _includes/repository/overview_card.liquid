@@ -1,0 +1,67 @@
+{% assign profile = include.profile %}
+{% assign username = profile.username | default: site.github_username %}
+
+<div class="repo-overview-card">
+  <div class="repo-overview-top">
+    <div class="repo-overview-identity">
+      <a class="repo-overview-avatar-link" href="https://github.com/{{ username }}" aria-label="{{ username }} on GitHub">
+        <img
+          class="repo-overview-avatar"
+          src="https://github.com/{{ username }}.png?size=220"
+          alt="{{ profile.name | default: username }} avatar"
+          loading="lazy"
+        >
+      </a>
+      <div>
+        <h3 class="repo-overview-name">{{ profile.name | default: username }}</h3>
+        <p class="repo-overview-role">{{ profile.role }}</p>
+        <p class="repo-overview-bio">{{ profile.bio }}</p>
+        <div class="repo-overview-meta">
+          {% if profile.location %}
+            <span><i class="fa-solid fa-location-dot"></i> {{ profile.location }}</span>
+          {% endif %}
+          <span><i class="fa-brands fa-github"></i> @{{ username }}</span>
+          {% if profile.website %}
+            <span><i class="fa-solid fa-link"></i> <a href="{{ profile.website }}">Website</a></span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <div class="repo-overview-stats">
+      <a class="repo-overview-stats-link" href="https://github.com/{{ username }}">
+        <img
+          class="repo-overview-stats-img"
+          alt="{{ username }} profile stats"
+          src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username={{ username }}&theme=github"
+          loading="lazy"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        >
+        <span class="repo-overview-stats-fallback">
+          <span>GitHub stats are temporarily unavailable.</span>
+          <span>Open profile: @{{ username }}</span>
+        </span>
+      </a>
+    </div>
+  </div>
+
+  {% if profile.stack %}
+    <div class="repo-overview-stack-row">
+      {% for item in profile.stack %}
+        <span class="repo-stack-tag">{{ item }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <div class="repo-overview-graph-wrap">
+    <p class="repo-overview-section-title">Contribution Graph</p>
+    <a href="https://github.com/{{ username }}">
+      <img
+        class="repo-overview-graph"
+        alt="{{ username }} contribution graph"
+        src="https://ghchart.rshah.org/{{ username }}"
+        loading="lazy"
+      >
+    </a>
+  </div>
+</div>
