@@ -105,7 +105,9 @@ nav_order: 5
 
       for (const item of pending) {
         try {
-          const response = await fetch('https://api.github.com/repos/' + item.repo, {
+          const apiBase = 'https://api.github.com';
+          const endpoint = '/repos/' + item.repo;
+          const response = await fetch(apiBase + endpoint, {
             headers: { Accept: 'application/vnd.github+json' },
           });
 
