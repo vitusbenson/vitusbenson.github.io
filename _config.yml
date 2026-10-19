@@ -254,7 +254,7 @@ sass:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  exclude: ["robots.txt"]
+  exclude: ["robots.txt", "fictional-eap-nepal/**/*"]
   uglifier_args:
     harmony: true
 

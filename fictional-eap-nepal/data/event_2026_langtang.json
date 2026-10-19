@@ -1,0 +1,365 @@
+{
+ "event": "2026-08-26 Langtang Lirung ice-rock avalanche and Lhende Khola-Bhote Koshi-Trishuli debris flow",
+ "times": "Nepal Standard Time (UTC+05:45) unless stated; compiled 2026-10-19",
+ "caveat": "Many sources are secondary (Wikipedia, aggregators, news, NESRA). Primary NDRRMA/DHM/IFRC documents were mostly not accessible. Clock times for Dhunche, Trishuli Bazaar and hydropower sites could not be found.",
+ "timeline": [
+  {
+   "time_npt": "2026-07-07 to 2026-08-24",
+   "place": "Langtang Lirung north face (source slope)",
+   "what": "Sentinel-1 InSAR records up to 40 cm line-of-sight deformation over 48 days; per ICIMOD not predictive of timing. Planet imagery of 12 and 25 Aug shows only minor change (Eos).",
+   "source_url": "https://www.icimod.org/press-releases/second-major-himalayan-flood-in-seven-weeks-raises-new-questions-about-mountain-risk; https://eos.org/thelandslideblog/langtang-lirung-1"
+  },
+  {
+   "time_npt": "2026-08-25 21:10",
+   "place": "Phalakhu Khola at Betrawati",
+   "what": "Tributary reaches 2.67 m vs 2.6 m threshold (rain-driven, unrelated to the later flood).",
+   "source_url": "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/"
+  },
+  {
+   "time_npt": "2026-08-26 06:04, 06:50, 08:15-08:19",
+   "place": "Langtang Lirung",
+   "what": "Seismic signals classified by ITP-CAS (preliminary, via Onlinekhabar); possibly early failure phases; not treated as precursors by the authors.",
+   "source_url": "https://english.onlinekhabar.com/langtang-lirung-glacier-moving.html"
+  },
+  {
+   "time_npt": "2026-08-26 08:00",
+   "place": "DHM Flood Forecasting Division",
+   "what": "Daily bulletin flags significant Trishuli rise at Betrawati within two days and high flash-flood risk in small rivers of Rasuwa, Nuwakot, Dhading, Gorkha etc. (rain-based; no evidence it changed actions).",
+   "source_url": "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/"
+  },
+  {
+   "time_npt": "2026-08-26 08:20",
+   "place": "Rasuwagadhi border area",
+   "what": "M2.6 tremor recorded.",
+   "source_url": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "time_npt": "2026-08-26 08:35",
+   "place": "Gyirong Port",
+   "what": "Final border crossing logged on Nepal's e-immigration system.",
+   "source_url": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "time_npt": "2026-08-26 08:37",
+   "place": "Langtang Lirung north face (about 5,200 m)",
+   "what": "Rock-ice slab collapses (seismic origin time 02:52 UTC); first reported as M4.4 earthquake, later USGS Ms 5.2 / GFZ Mw 5.7 landslide signal. Falls >1,200 m into Lhende Khola; 20-22 km in ~7 minutes.",
+   "source_url": "https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods; https://www.icimod.org/kyirong-rasuwa-flood-2026-nepal-china-border/"
+  },
+  {
+   "time_npt": "2026-08-26 08:40",
+   "place": "Rasuwagadhi gauge, 1 km below border",
+   "what": "Last reading 1.62 m (warning 6 m, danger 7 m).",
+   "source_url": "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/"
+  },
+  {
+   "time_npt": "2026-08-26 08:44",
+   "place": "Gyirong Port (Tibet)",
+   "what": "CCTV captures start of destruction of the port (Wikipedia timeline); ICIMOD portal gives 08:40 for Rasuwagadhi arrival. Reconciled as 08:40-08:45.",
+   "source_url": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods; https://www.icimod.org/kyirong-rasuwa-flood-2026-nepal-china-border/"
+  },
+  {
+   "time_npt": "2026-08-26 08:50",
+   "place": "Syabrubesi gauge",
+   "what": "Goes silent at 3.80 m (warning 5.5 m) per Spotlight Nepal; Wikipedia attributes the 1.62 m last reading to Syabrubesi instead (conflict; Spotlight chosen as more detailed).",
+   "source_url": "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/; https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "time_npt": "2026-08-26 ~08:50-09:00",
+   "place": "Timure / Rasuwagadhi / Syabrubesi",
+   "what": "Customs complex, Friendship Bridge, three police posts swept away. 32 police and 15 customs staff at Timure out of contact. 60 people out of contact at Langtang Khola hydropower (35 inside a tunnel).",
+   "source_url": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods; https://kathmandupost.com/national/2026/08/26/update-rasuwa-flood-death-toll-climbs-to-22-as-dozens-remain-missing"
+  },
+  {
+   "time_npt": "2026-08-26 ~09:00",
+   "place": "DHM Flood Forecasting Division",
+   "what": "Division learns of the flood by telephone (Rasuwa DAO and a Betrawati gauge staff member); confirmed 09:05. ~28 min after seismic signal.",
+   "source_url": "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/; https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "time_npt": "2026-08-26 09:15-09:16",
+   "place": "Rasuwa, Nuwakot, Dhading, Gorkha, Chitwan",
+   "what": "SMS warnings via Nepal Telecom and Ncell to 679,295 recipients; ~38 min after collapse, ~25-30 min after Gyirong/Timure were hit. Evacuations start; a Nuwakot school moved ~900 children ~10 min before arrival.",
+   "source_url": "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/; https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods; https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "time_npt": "2026-08-26 09:20",
+   "place": "Betrawati gauge (~56 km from Rasuwagadhi)",
+   "what": "Last level 3.55 m (warning 4.1, danger 5.0) then silent: ~43 min travel from border (~23 m/s).",
+   "source_url": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods; https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/"
+  },
+  {
+   "time_npt": "2026-08-26 ~09:00-10:30",
+   "place": "Dhunche, Trishuli Bazaar, Nuwakot hydropower",
+   "what": "No source found with clock arrival times for Dhunche or Trishuli Bazaar; Trishuli 3A/3B, Upper Trishuli and Devighat affected. Trishuli 3A tunnel later found flooded.",
+   "source_url": "searched, not found; see https://nesraspace.org/floodwatch/rasuwa-2026/"
+  },
+  {
+   "time_npt": "2026-08-26 10:28",
+   "place": "Galchhi / Dhading",
+   "what": "Flood forecast to reach Galchhi; high alert for Prithvi Highway and Muglin-Narayanghat road. Galchhi rose ~9 m in 30 min (press).",
+   "source_url": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods; https://www.icimod.org/kyirong-rasuwa-flood-2026-nepal-china-border/"
+  },
+  {
+   "time_npt": "2026-08-26 11:20-11:43",
+   "place": "Furke / Malekhu (Dhading)",
+   "what": "Warning level 11:20, danger 11:40; station and Phurke bridge swept away 11:43; alert reaches Malekhu >2 h after SMS wave began.",
+   "source_url": "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/; https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "time_npt": "2026-08-26 13:00",
+   "place": "Muglin",
+   "what": "Flood passes Muglin; downstream appeals to Devghat.",
+   "source_url": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "time_npt": "2026-08-26 14:14",
+   "place": "Kalikhola",
+   "what": "Danger level crossed; peak 12.3-12.35 m (rating table ends at 10.9 m so no discharge).",
+   "source_url": "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/; https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "time_npt": "2026-08-26 16:00",
+   "place": "Devghat (Narayani)",
+   "what": "Peak 6.57 m (est. ~5,850 m3/s), below its 7.3 m warning level; ~168 km from source; additional volume ~20 Mm3.",
+   "source_url": "https://nesraspace.org/floodwatch/rasuwa-2026/; https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/"
+  },
+  {
+   "time_npt": "2026-08-26 18:13",
+   "place": "International Charter",
+   "what": "Activated at Nepal request (UNITAR); Sentinel Asia activated.",
+   "source_url": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods; https://nesraspace.org/floodwatch/rasuwa-2026/"
+  },
+  {
+   "time_npt": "2026-08-26 (day)",
+   "place": "Government / IFRC",
+   "what": "NDRRMA activated, 14 helicopters; IFRC releases ~CHF 1 million DREF; Nepal Red Cross deploys >200 staff/volunteers.",
+   "source_url": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "time_npt": "2026-08-27",
+   "place": "IFRC",
+   "what": "24-month Emergency Appeal for CHF 25 million announced (IFRC press release; appeal document dated 28 Aug; operation MDRNP022).",
+   "source_url": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods; https://ifrc.org/press-release/ifrc-launches-chf-25-million-emergency-appeal-response-devastating-nepal-flash-floods"
+  },
+  {
+   "time_npt": "2026-08-27 to 2026-08-28",
+   "place": "Barrier lakes (Chhochen Khola / Purepu Tsangpo confluence, TAR)",
+   "what": "China warns a ~2 Mm3 barrier lake may breach; slight overflow 28 Aug (rise ~0.6 m per Nepal, level fall ~10 m per China); rescue paused ~3 h.",
+   "source_url": "https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods; https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "time_npt": "2026-08-29",
+   "place": "Barrier lakes",
+   "what": "One lake draining, a second larger lake under assessment; Chinese statement 30-31 Aug that one lake near border fully drained.",
+   "source_url": "https://nesraspace.org/floodwatch/rasuwa-2026/"
+  },
+  {
+   "time_npt": "2026-08-29",
+   "place": "Trishuli 3A hydropower",
+   "what": "~350 rescued, >100 still trapped in tunnel; Rasuwagadhi (111 MW) tunnel searched to ~225 m, ~93 workers missing.",
+   "source_url": "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Nepal%E2%80%93Tibet_floods; https://nesraspace.org/floodwatch/rasuwa-2026/"
+  },
+  {
+   "time_npt": "2026-08-30",
+   "place": "Bhote Koshi / Galchhi",
+   "what": "Renewed rise (Galchhi ~+3 m); NDRRMA and DHM re-issue warnings.",
+   "source_url": "https://nesraspace.org/floodwatch/rasuwa-2026/; https://www.icimod.org/kyirong-rasuwa-flood-2026-nepal-china-border/"
+  },
+  {
+   "time_npt": "2026-10-11 ~04:22 / ~06:00",
+   "place": "Budhi Gandaki, Gorkha (Ungdilung Khola)",
+   "what": "Second event 7 weeks later: landslide, dam breach ~06:00, surge 20-25 m at Salleri; ~5 probable deaths; detected seismically; warnings reported effective.",
+   "source_url": "https://eos.org/?p=251642; https://thehimalayantimes.com/ampArticle/1040642"
+  },
+  {
+   "time_npt": "2026-10-13",
+   "place": "ICIMOD",
+   "what": "Preliminary synthesis report launched: 132 Mm3, InSAR deformation, not a GLOF, calls for integrated satellite+seismic+hydrological monitoring and cross-border sharing.",
+   "source_url": "https://www.icimod.org/press-releases/second-major-himalayan-flood-in-seven-weeks-raises-new-questions-about-mountain-risk"
+  }
+ ],
+ "summary_stats": [
+  {
+   "metric": "deaths_nepal",
+   "chosen": 1456,
+   "asof": "2026-10-12",
+   "alternatives": {
+    "Wikipedia, 4 Oct": 1454,
+    "ICIMOD report (13 Oct)": 1451,
+    "Wikipedia 18 Sep": 1410
+   },
+   "reason": "Latest dated Nepal Police bulletin (via nepaldisasterupdatelive aggregator, which cites Nepal Police); counts are bodies recovered, not a final toll",
+   "source_url": "https://nepaldisasterupdatelive.nxtimaginelabs.com/; https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "metric": "missing_nepal",
+   "chosen": 5285,
+   "asof": "2026-10-04",
+   "alternatives": {
+    "NDRRMA 9 Sep": 5132,
+    "ICIMOD report": 5745,
+    "Wikipedia totals table": 6664,
+    "NESRA 2 Sep": 4216,
+    "NDRRMA 28 Aug": 1924
+   },
+   "reason": "Most recent explicitly dated NDRRMA-sourced figure on Wikipedia; list under verification; includes ~900 hydropower workers; the Wikipedia 6,664 mixes Nepal and Tibet and old data",
+   "source_url": "https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods; https://www.icimod.org/press-releases/second-major-himalayan-flood-in-seven-weeks-raises-new-questions-about-mountain-risk"
+  },
+  {
+   "metric": "china_tibet",
+   "chosen": {
+    "dead": 43,
+    "missing": 519
+   },
+   "asof": "2026-09-16",
+   "alternatives": {
+    "early Xinhua": {
+     "dead": 3,
+     "missing": 546
+    }
+   },
+   "reason": "Chinese authorities as quoted by ICIMOD; independent verification limited (censorship noted)",
+   "source_url": "https://www.icimod.org/press-releases/second-major-himalayan-flood-in-seven-weeks-raises-new-questions-about-mountain-risk; https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "metric": "collapse_volume_Mm3",
+   "chosen": 132,
+   "alternatives": {
+    "early seismic estimate": "197-492"
+   },
+   "reason": "ICIMOD remote-sensing based synthesis; early seismic range is preliminary",
+   "source_url": "https://www.icimod.org/press-releases/second-major-himalayan-flood-in-seven-weeks-raises-new-questions-about-mountain-risk; https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "metric": "seismic_magnitude",
+   "chosen": "Ms 5.2 (USGS); Mw 5.7 (GFZ)",
+   "alternatives": {
+    "initial report": "M4.4"
+   },
+   "reason": "Recatalogued as landslide signal",
+   "source_url": "https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "metric": "sms_recipients",
+   "chosen": 679295,
+   "reason": "DHM figure repeated by NESRA, Spotlight Nepal, Wikipedia",
+   "source_url": "https://nesraspace.org/floodwatch/rasuwa-2026/"
+  },
+  {
+   "metric": "warning_delay_after_collapse_min",
+   "chosen": "~38 (SMS at 09:15 vs 08:37)",
+   "alternatives": {
+    "ICIMOD": "25-30 min after corridor hit"
+   },
+   "reason": "Computed from times",
+   "source_url": "https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "metric": "hydropower",
+   "chosen": "14 projects, ~748 MW (9 operating 354 MW, 5 under construction 394 MW), plus 220 kV substation; ~430.7 MW disrupted",
+   "alternatives": {
+    "early": "6 stations (KP 26 Aug)",
+    "Spotlight": "12 plants"
+   },
+   "reason": "NEA figure repeated by aggregator; supply loss 430.7 MW per Wikipedia",
+   "source_url": "https://nepaldisasterupdatelive.nxtimaginelabs.com/; https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "metric": "damage_npr_bn",
+   "chosen": {
+    "damage": 277.79,
+    "economic_losses": 136.27,
+    "reconstruction": 723.67
+   },
+   "alternatives": {
+    "roads and bridges only prelim 26 Aug": 200
+   },
+   "reason": "Wikipedia infobox summarising a government assessment (primary document not located); treat as provisional",
+   "source_url": "https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods"
+  },
+  {
+   "metric": "people_affected",
+   "chosen": "~1.6 million (NDRRMA, per Wikipedia); IFRC planning figure 93,000",
+   "reason": "Different definitions",
+   "source_url": "https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods; https://www.ifrc.org"
+  },
+  {
+   "metric": "ifrc",
+   "chosen": {
+    "dref_chf": 999934,
+    "appeal_chf_federation_wide": 25000000,
+    "secretariat_chf": 18000000,
+    "operation": "MDRNP022",
+    "appeal_end": "2028-08-31",
+    "dref_end": "2027-05-31"
+   },
+   "alternatives": {
+    "DREF in appeal doc": 997000,
+    "people targeted (DREF)": 20000,
+    "people targeted (Secretariat)": "28,000 or 50,000 (documents differ)"
+   },
+   "reason": "From IFRC GO documents as summarised by search tool (documents themselves not read); DREF operation number not located; Operations Update 1 (25 Sep) and 2 (12 Oct) not read",
+   "source_url": "https://www.ifrc.org/emergency/nepal-flash-floods-2026 (HTTP 403 for fetch); https://go-api.ifrc.org/api/DownloadFile/96511/MDRNP022EA"
+  },
+  {
+   "metric": "trigger_mechanism_dispute",
+   "chosen": "Bedrock failure with overlying glacier; debris flow, possible temporary damming",
+   "alternatives": {
+    "ICIMOD portal": "4-stage chain: avalanche, temporary dam on Lhende Khola, dam break, debris flow",
+    "DHM Division (via Spotlight)": "snow avalanche ~16 km upstream; gauge record rules out landslide dam",
+    "IRDR young scientists": "failure already present on 25 Aug (contested)"
+   },
+   "reason": "Not a GLOF per ICIMOD; dam question unresolved",
+   "source_url": "https://www.icimod.org/press-releases/second-major-himalayan-flood-in-seven-weeks-raises-new-questions-about-mountain-risk; https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/; https://www.icimod.org/kyirong-rasuwa-flood-2026-nepal-china-border/"
+  }
+ ],
+ "rasuwagadhi_2025": {
+  "summary": {
+   "date": "2025-07-08",
+   "type": "supraglacial lake GLOF, transboundary",
+   "deaths": 11,
+   "missing": 18,
+   "injured": 1,
+   "deaths_note": "DPNet sitrep #2 chosen; early counts 8-9 dead, 19-20 missing",
+   "lake_area_m2": {
+    "max": 638000,
+    "after": 435000
+   },
+   "distance_to_border_km": 35,
+   "warning": "none",
+   "source_url": "https://www.dpnet.org.np/resource-detail/2198; https://hirisk.org/wp-content/uploads/2025/07/RHA_CN1_PurepuGLOF.pdf"
+  },
+  "timeline": [
+   {
+    "time_npt": "2025-03 to 2025-07-07",
+    "place": "Purepu Glacier supraglacial lake (28.4026N, 85.6467E, 5,160 m)",
+    "what": "Supraglacial ponds grow from March; coalesce to single lake of 638,000 m2 on 7 July",
+    "source_url": "https://hirisk.org/wp-content/uploads/2025/07/RHA_CN1_PurepuGLOF.pdf"
+   },
+   {
+    "time_npt": "2025-07-08 03:15 (05:30 Beijing)",
+    "place": "Rasuwagadhi / Timure border",
+    "what": "First impact reported. Lake area falls to 435,000 m2. Flood travels ~35 km without intermediate ponding. Friendship Bridge destroyed, dry port severely damaged.",
+    "source_url": "https://hirisk.org/wp-content/uploads/2025/07/RHA_CN1_PurepuGLOF.pdf"
+   },
+   {
+    "time_npt": "2025-07-08/09",
+    "place": "Rasuwa",
+    "what": "Early counts: 8-9 dead, 19-20 missing in Nepal and 11 on Chinese side; 57 rescued; Chinese workers among missing",
+    "source_url": "https://www.sheppnews.com.au/?p=271474; https://kathmandupost.com/national/2025/07/09/search-continues-for-19-missing-after-rasuwa-flood-nine-confirmed-dead"
+   },
+   {
+    "time_npt": "2025-07 (later)",
+    "place": "Rasuwa",
+    "what": "DPNet situation report #2: 11 dead, 18 missing, 1 injured; ~1,950 security personnel deployed; damage to Friendship Bridge, Syabrubesi-Rasuwagadhi road, dry port, three hydropower plants, customs",
+    "source_url": "https://www.dpnet.org.np/resource-detail/2198"
+   },
+   {
+    "time_npt": "n/a",
+    "place": "Early warning",
+    "what": "None in place (RHA); cause confirmed later from satellite imagery; recurrence flagged as possible within 2025",
+    "source_url": "https://hirisk.org/wp-content/uploads/2025/07/RHA_CN1_PurepuGLOF.pdf"
+   }
+  ]
+ }
+}
