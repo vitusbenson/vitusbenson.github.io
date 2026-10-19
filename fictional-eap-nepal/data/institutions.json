@@ -1,0 +1,1267 @@
+{
+ "meta": {
+  "created": "2026-10-19",
+  "purpose": "Fictional, illustrative design study of an Early Action Protocol for flash floods and cryosphere cascades in Nepal. Not an NRCS or IFRC document. Fills institutional gaps raised by the local-practitioner review and the IFRC validation-committee review (criteria 10, 11, 16, 18).",
+  "verification_policy": "verify=true means the item was not confirmed from a primary source in this pass. verify=false means the item was read in the source cited.",
+  "key_limitations": [
+   "The DRRM Act 2074 and Rules 2076 were read in the unofficial English translation hosted by DPNet (MoHA, first amendment). The authoritative Nepali text at lawcommission.gov.np was not retrieved. Section numbers should be confirmed against it.",
+   "The word 'evacuation' does not appear in the Act's English text. No explicit power to order a pre-impact evacuation was found; s.33 orders apply only after a Gazette declaration (s.32).",
+   "Sphere 2018 standard numbers and titles, and IFRC PGI 2018 chapter and DAPS headings, were read from the PDFs. LEGS 3rd edition numbering and the IFRC CEA toolkit document names were not verified.",
+   "The SRSP and Relief Distribution Standard itself was not retrieved; its content is taken from the OCHA 2025 framework and the IFRC 2025 case study. The household-size cut-off between NPR 5,000 and 8,000 is unknown.",
+   "Cell broadcast, sirens, seismic detection and China data link: no primary government source found; status taken from press reports of 2026.",
+   "Language shares are second-hand from Wikipedia summaries of the 2021 census; Manang not retrieved.",
+   "The Tamang, Sherpa, Gurung, Yolmo, Thami and Newar texts are deliberately not written. Nepali and Chinese texts are drafts by a non-native author."
+  ],
+  "ea_ids_added": [
+   "EA26",
+   "EA27",
+   "EA28",
+   "EA29",
+   "EA30",
+   "EA31",
+   "EA32"
+  ]
+ },
+ "who_orders": [
+  {
+   "decision": "Order evacuation / relocation of a ward or settlement before impact (rung 3a-evacuate, rung 4)",
+   "legal_body": "District Disaster Management Committee (DDMC, chaired by the Chief District Officer) and Local Disaster Management Committee (LDMC, chaired by the mayor / rural municipality chair); ward-level preparedness and response committee under the LDMC",
+   "legal_basis": "DRRM Act 2074 s.16(2)(i),(o) (DDMC: manage shelters for people in disaster-threatening areas; relocate people from unsafe buildings and disaster-affected areas), s.17(2)(f),(h),(j) (LDMC: ward preparedness committees, rescue and relief, local early-warning system), s.11(l) (Authority: relocate riverbank / landslide-threatened communities). The English text contains NO explicit sentence authorising a pre-impact evacuation order (the word 'evacuation' does not occur); the clearest coercive powers (s.33(1)(j) restrict movement of people and vehicles; s.34 entry) apply only after the Government of Nepal declares a 'disaster threatening area' by Gazette notice (s.32).",
+   "nrcs_role": "Cannot order. Can request the DDMC / LDMC to decide, supply the trigger information, pre-position volunteers and evacuation centres, and carry out the evacuation once ordered (NRCS Chief of the district chapter sits on the DDMC, s.16(1)(h)).",
+   "pre_agreement": "Standing DDMC / LDMC resolution per corridor, signed before the season: 'on DHM rung-4 alarm or rung-3a-evacuate condition, ward chairs and operators evacuate the pre-mapped zone without waiting for a meeting'; plus legal opinion from MoHA / NDRRMA on whether such a standing delegation is valid before a Gazette declaration.",
+   "source_url": "https://dpnet.org.np/uploads/files/DRRM_Act_and_Regulation_english%202022-04-13%2007-11-33.pdf",
+   "verify": true,
+   "verify_note": "Sections read in the unofficial MoHA English translation hosted by DPNet (includes first amendment). Section numbers and wording must be confirmed against the authoritative Nepali text at lawcommission.gov.np; whether a standing pre-event delegation is legally sufficient is unverified."
+  },
+  {
+   "decision": "Close Pasang Lhamu Highway (Kathmandu-Trishuli-Dhunche-Syabrubesi) and hold traffic",
+   "legal_body": "DDMC (chaired by the CDO) with Nepal Police / Armed Police Force; Department of Roads for the road asset",
+   "legal_basis": "DRRM Act 2074 s.16(2)(f) (DDMC: control the movement of vehicles and people in disaster-affected areas as necessary); s.18(3),(4) (security agencies act under the direction of the DDMC Chairperson / CDO); s.33(1)(j) after a Gazette declaration (s.32). Whether s.16(2)(f) permits closure BEFORE impact on a forecast is not explicit.",
+   "nrcs_role": "Request only. Can provide volunteers at holding points, welfare and information for stranded travellers.",
+   "pre_agreement": "CDO / police standing order with named closure points, the officer who may close at 2 minutes' notice, and vehicle-clearance rules inside the gorge.",
+   "source_url": "https://dpnet.org.np/uploads/files/DRRM_Act_and_Regulation_english%202022-04-13%2007-11-33.pdf",
+   "verify": true,
+   "verify_note": "Pre-impact closure authority and Department of Roads / Police Act provisions not verified."
+  },
+  {
+   "decision": "Close or open the Rasuwagadhi / Kyirong border crossing",
+   "legal_body": "Government of Nepal (Ministry of Home Affairs, customs, Armed Police Force at the border post) in coordination with Chinese border authorities; DDMC for the Nepal-side movement control",
+   "legal_basis": "Not located. Border-point administration is outside the DRRM Act text read; MoFA / MoHA / Department of Customs rules not checked.",
+   "nrcs_role": "None. May be informed through the DDMC.",
+   "pre_agreement": "Bilateral protocol (MoFA / MoHA with Chinese authorities) or at least a local APF-customs standing instruction; NOT a condition for activating the EAP.",
+   "source_url": "https://kathmandupost.com/national/2026/09/02/nepal-sent-its-disaster-alert-38-minutes-after-the-glacier-collapse-it-wasn-t-enough",
+   "verify": true,
+   "verify_note": "Kathmandu Post (2 Sep 2026): cooperation with China runs through the Ministry of Foreign Affairs and 'there is no protocol'."
+  },
+  {
+   "decision": "Issue a public flood / flash-flood warning (rung 2, 3a-prepare, 4)",
+   "legal_body": "Department of Hydrology and Meteorology (technical warning); NDRRMA and its National Emergency Operations Centre (dissemination); security agencies, DDMC and LDMC (local dissemination)",
+   "legal_basis": "DRRM Act 2074 s.8(o) (Executive Committee: ensure national early-warning system is developed and operated), s.11(q) (Authority: operate the National Emergency Operations Centre to give early information), s.16(2)(u) (DDMC disseminate disaster information), s.17(2)(j) (LDMC local early-warning system), s.18(3)(a) (security agencies provide early warning). Rule 7(e) of the Rules 2076 lets the DDMC prohibit information that creates unnecessary panic. s.24(2)(a) penalises circulating a false alarm leading to panic. DHM's own founding mandate (Ministry of Energy, Water Resources and Irrigation) not retrieved.",
+   "nrcs_role": "May relay official DHM / NDRRMA warnings through volunteers, FM radio, loudspeakers; must not issue its own evacuation order or unofficial forecast.",
+   "pre_agreement": "One-page DHM-NRCS agreement naming the exact DHM product (bulletin colour level or bespoke flash-flood advisory) that fires rung 2 and rung 3a, a 24/7 duty contact, and the message templates pre-approved by NDRRMA so that relays are not 'false alarms'.",
+   "source_url": "https://dpnet.org.np/uploads/files/DRRM_Act_and_Regulation_english%202022-04-13%2007-11-33.pdf",
+   "verify": true,
+   "verify_note": "Mandate of DHM itself and duty-officer obligations unverified."
+  },
+  {
+   "decision": "Send a cell broadcast alert",
+   "legal_body": "NDRRMA named as lead agency in the GSMA/ITU study (per Mongabay); telecom operators (Nepal Telecom, Ncell) and Nepal Telecommunications Authority (NTA) for the technical channel; Ministry of Communications",
+   "legal_basis": "Not found. The Himalayan Times (20 Jul 2026) reports a stakeholder discussion chaired by the NDRRMA Executive Chief but no legal basis, operator or go-live date. Mongabay (Sep 2026): cell broadcast not procured or built as of the 26 Aug 2026 flood. Existing channel is operator SMS (679,295 messages at ~09:15).",
+   "nrcs_role": "None on sending. Can help test coverage and language comprehension in villages.",
+   "pre_agreement": "MoU or SOP template NDRRMA-NTA-operators-DHM: who authorises content, 3-minute authoring path, languages, geographic polygons per corridor, fall-back SMS / IVR; drill tests in Rasuwa and Sindhupalchok villages.",
+   "source_url": "https://thehimalayantimes.com/kathmandu/discussion-held-on-cell-broadcasting-for-early-warning",
+   "verify": true,
+   "verify_note": "Licensing role, content authority and timeline all unverified; Mongabay figure of USD 1.75-3 M is a GSMA/ITU estimate quoted second-hand."
+  },
+  {
+   "decision": "Stand down hydropower tunnel works, camps and in-channel works",
+   "legal_body": "Project operator / employer and contractors (employer duty); Department of Electricity Development (licensing, can issue alerts); NEA for its own plants; CDO / DDMC can restrict activity in a declared area",
+   "legal_basis": "DRRM Act 2074 s.20(1) (public enterprises and business establishments: provide emergency exits, equipment, orientation training) and Rule 9 of the Rules 2076 (business continuity plan; Authority and committees monitor). DoED licence-condition text and Labour / occupational-safety law NOT verified. DoED issued a 'high alert' to Gandaki-basin plants in Sep 2026 (advisory, not an order).",
+   "nrcs_role": "Request and advise only.",
+   "pre_agreement": "Licence condition or equivalent contractual clause (via DoED / Ministry of Energy, IPPAN, lenders): tunnel alarm receiver plus strobe, daily worker roster at the portal, named emergency coordinator, drills, data link to DHM. DHM-IPPAN MoU (21 May 2025) on a flood early-warning system for private hydropower exists but its scope is unverified.",
+   "source_url": "https://ekantipur.com/business/2025/05/21/en/mou-between-meteorological-department-and-ippan-to-develop-flood-early-warning-system-for-private-hydropower-projects-07-28.html",
+   "verify": true,
+   "verify_note": "Electricity Act 2049 and licence template not read; scope of the DHM-IPPAN MoU not read."
+  },
+  {
+   "decision": "Task the Nepal Army, Armed Police Force and Nepal Police for search and rescue; request helicopters",
+   "legal_body": "Government of Nepal (Army mobilisation); NDRRMA / Ministry of Home Affairs; DDMC Chairperson (CDO) directs security agencies in the district",
+   "legal_basis": "DRRM Act 2074 s.18(2) (Government of Nepal may mobilise the Nepal Army for search, rescue and relief), s.18(3) (security agencies act under direction of the Executive Committee, the Authority and the DDMC / Provincial committee chairpersons), s.16(2)(d),(j) (DDMC search and rescue; keep security agencies on high alert), s.11(f),(g),(h) (Authority constitutes SAR teams, mobilises security agencies and the Nepal Red Cross Society). In the 2026 event the government requested private helicopter providers (IFRC DREF MDRNP022).",
+   "nrcs_role": "Cannot task. Requests via the DDMC / NEOC; stages its own first-aid, WASH, logistics and tracing teams.",
+   "pre_agreement": "Standing pre-positioning request in the monsoon plan (DDMC) with named landing sites and a helicopter-tasking contact at NDRRMA.",
+   "source_url": "https://dpnet.org.np/uploads/files/DRRM_Act_and_Regulation_english%202022-04-13%2007-11-33.pdf",
+   "verify": false,
+   "verify_note": "Section wording read in the unofficial English translation; confirm against Nepali text."
+  },
+  {
+   "decision": "Release anticipatory cash from NRCS own resources (IFRC-DREF Anticipatory Pillar)",
+   "legal_body": "NRCS (Secretary General / delegation) with the IFRC-DREF validation; beneficiary lists validated by the LDMC under the SRSP and Relief Distribution Standard",
+   "legal_basis": "DRRM Act 2074 s.39(3) (minimum standards on relief distribution must be followed by all agencies) and s.39(2)(f) (one-window relief); SRSP and Relief Distribution Standard adopted by the Government of Nepal in Nov 2024 (OCHA AA framework 2025). Whether NDRRMA must approve NGO / Red Cross anticipatory cash is NOT confirmed; for government-routed anticipatory cash the IFRC 2025 case study says NDRRMA executive-committee approval is required.",
+   "nrcs_role": "Activates its own funds and standby agreement (NRCS has a special cash fund supported by the British Red Cross and a standby agreement with Global IME Bank, DREF MDRNP022, Aug-Sep 2026). Coordinates lists with the palika / LDMC.",
+   "pre_agreement": "Letter from NDRRMA / MoFAGA confirming that NRCS pre-registered lists drawn from the Social Security Allowance system and validated by the LDMC satisfy the SRSP standard, and stating the transfer value (SRSP 5,000 / 8,000 versus NRCS 2026 MEB 15,000).",
+   "source_url": "https://www.dpnet.org.np/public/uploads/files/250805_AA%20Framework_Nepal_2025_endorsed%202026-01-20%2008-38-35.pdf",
+   "verify": true,
+   "verify_note": "Whether the Red Cross route needs NDRRMA executive-committee approval is unconfirmed."
+  },
+  {
+   "decision": "Release Local Disaster Management Fund (LDMF) money to households or relief",
+   "legal_body": "Local government (palika) through the LDMC; for UN anticipatory action the LDMC transfers to beneficiary bank accounts; NDRRMA executive committee for government-funded anticipatory cash",
+   "legal_basis": "DRRM Act 2074 s.23(1) (a disaster management fund at province, district and local level), s.17(2)(b) (LDMC ensures local budget for disaster management), Rule 11 (district fund). The IFRC 2025 case study states that direct cash assistance is not currently eligible for pre-emptive funding under the disaster management policy, and anticipatory cash through the SRSP needs NDRRMA executive-committee approval; OCHA AA 2025: funds channelled through the LDMF with the LDMC transferring directly to bank accounts.",
+   "nrcs_role": "Support lists and delivery; cannot release LDMF.",
+   "pre_agreement": "Palika resolution and written letter of intent for the co-financed tier; NDRRMA decision on pre-emptive spending eligibility.",
+   "source_url": "https://www.ifrc.org/sites/default/files/2025-09/Strengthening_National_Disaster_Risk_Management_Systems_through_integration_of_anticipatory_action_The_case_of%20Nepal.pdf",
+   "verify": true,
+   "verify_note": "Local LDMF operating rules differ by province; eligibility for pre-emptive use not confirmed."
+  },
+  {
+   "decision": "Declare a disaster-affected / disaster-threatening area",
+   "legal_body": "Government of Nepal by notice in the Nepal Gazette; DDMC recommends",
+   "legal_basis": "DRRM Act 2074 s.32 (declare a 'disaster threatening area' by Gazette notification, with borders and period; extendable), s.33 (orders: close offices and schools, requisition vehicles, restrict movement of people and vehicles), s.16(2)(t) (DDMC recommends). In the 2026 event Rasuwa, Nuwakot and Dhading were declared crisis-affected (IFRC DREF MDRNP022).",
+   "nrcs_role": "Supplies assessment data to the DDMC; no decision role.",
+   "pre_agreement": "Pre-agreed DDMC recommendation template and data pack so the declaration is not the bottleneck for orders under s.33.",
+   "source_url": "https://dpnet.org.np/uploads/files/DRRM_Act_and_Regulation_english%202022-04-13%2007-11-33.pdf",
+   "verify": false,
+   "verify_note": "Act text read in English translation; the Act's term is 'disaster threatening area' (the post-event 'disaster-affected' wording used in news may be a different notice)."
+  },
+  {
+   "decision": "Confirm a landslide-dammed lake and order a controlled breach / spillway",
+   "legal_body": "Technical confirmation: DHM and Department of Mines and Geology (DMG); decision and operation: NDRRMA / Ministry of Home Affairs with Nepal Army; local evacuation by DDMC / LDMC",
+   "legal_basis": "No specific provision found. General: DRRM Act 2074 s.16(2)(s) (DDMC: reduce minor hazards after main disasters), s.18(2) (Army mobilisation), s.11(l).",
+   "nrcs_role": "Request and support evacuation; no technical or breaching role.",
+   "pre_agreement": "Dedicated SOP for dammed lakes: who confirms (DHM / DMG / CDO), decision time limit, Army engineering support, downstream warning to operators.",
+   "source_url": "https://dpnet.org.np/uploads/files/DRRM_Act_and_Regulation_english%202022-04-13%2007-11-33.pdf",
+   "verify": true,
+   "verify_note": "No Nepal-specific legal basis located for breaching; repo evidence (EA20) rated low."
+  },
+  {
+   "decision": "Close schools and move classes during a warning",
+   "legal_body": "Palika education unit and head teachers (pre-event); Government of Nepal s.33(1)(a) after a Gazette declaration",
+   "legal_basis": "DRRM Act 2074 s.33(1)(a) (close academic institutions in a declared area); pre-event closure authority under education law not verified. Rule 7(e) / s.17(2)(g) (drills).",
+   "nrcs_role": "Support school drills and junior / youth circles.",
+   "pre_agreement": "School alert-to-assembly protocol signed by palika education unit; closure decision rule tied to DHM level.",
+   "source_url": "https://dpnet.org.np/uploads/files/DRRM_Act_and_Regulation_english%202022-04-13%2007-11-33.pdf",
+   "verify": true,
+   "verify_note": "Education-law basis not checked."
+  },
+  {
+   "decision": "Restrict trekking routes and national-park camping in runout zones",
+   "legal_body": "Department of National Parks and Wildlife Conservation / Langtang National Park office; palikas; Nepal Tourism Board for communication",
+   "legal_basis": "Not verified (National Parks and Wildlife Conservation Act 2029 and park by-laws not read).",
+   "nrcs_role": "None.",
+   "pre_agreement": "Seasonal exclusion-zone notice via park office plus lodge association agreement.",
+   "source_url": "https://lawcommission.gov.np",
+   "verify": true,
+   "verify_note": "Entire row unverified."
+  },
+  {
+   "decision": "Declare all-clear and permit return",
+   "legal_body": "DDMC / LDMC on technical advice of DHM (and DMG for slopes)",
+   "legal_basis": "DRRM Act 2074 s.16(2)(u) (disseminate information), s.17(2)(j); Rule 7(e) panic-information rule. No explicit 'all-clear' provision.",
+   "nrcs_role": "Relays; helps verify shelter safety before return.",
+   "pre_agreement": "Return criteria checklist (water level, slope inspection) agreed in the standing resolution.",
+   "source_url": "https://dpnet.org.np/uploads/files/DRRM_Act_and_Regulation_english%202022-04-13%2007-11-33.pdf",
+   "verify": true,
+   "verify_note": "Inferred; no explicit provision."
+  }
+ ],
+ "linked_systems": [
+  {
+   "element": "Seismic mass-movement detection (real-time classification of non-earthquake signals)",
+   "owner": "Department of Mines and Geology (National Seismological Centre); international data USGS / ICIMOD as informal back-up",
+   "status_2026": "On 26 Aug 2026 DMG recorded an M4.4 signal but did not alert; its chief said the signal frequency did not match an earthquake, the department's monitoring mandate (Kathmandu Post). Repo literature reports that seismic data detected the 11 Oct 2026 Budhi Gandaki landslide and warnings were sent (Eos, not independently verified here). No operational automatic mass-movement alert or 24/7 duty arrangement verified.",
+   "funding": "Unfunded (no budget line found)",
+   "fallback_without_it": "Upstream phone calls, river watchers, lake / camera watch, gauge rate-of-rise (all slower; on 26 Aug phone calls reached a school ~10 min before the flood).",
+   "source_url": "https://kathmandupost.com/national/2026/09/02/nepal-sent-its-disaster-alert-38-minutes-after-the-glacier-collapse-it-wasn-t-enough",
+   "verify": true
+  },
+  {
+   "element": "Upstream rate-of-rise river gauges (multi-sensor, solar, GSM and radio, with redundancy)",
+   "owner": "DHM Flood Forecasting Division",
+   "status_2026": "Stage-threshold stations only (e.g. Syabrubesi warning 5.5 m, Rasuwagadhi 6 / 7 m, Betrawati 4.1 / 5.0 m per repo literature). The Syabrubesi gauge was swept away at ~08:50 on 26 Aug 2026; gauges were designed to detect gradual rises, not fast floods (Kathmandu Post). No rate-of-rise alarm verified.",
+   "funding": "DHM budget (adequacy unverified; a claim that the budget fell 56% in three years comes from an opinion piece and is unverified)",
+   "fallback_without_it": "River watchers with radio / phone; downstream gauges (Betrawati, Malekhu) give only 30 min to hours.",
+   "source_url": "https://kathmandupost.com/national/2026/09/02/nepal-sent-its-disaster-alert-38-minutes-after-the-glacier-collapse-it-wasn-t-enough",
+   "verify": true
+  },
+  {
+   "element": "Lake-level and camera stations on high-hazard glacial lakes",
+   "owner": "DHM with ICIMOD; Department of Mines and Geology; local palikas",
+   "status_2026": "Repo literature (citing Kathmandu Post 6 Sep 2026, not read in full): Tsho Rolpa EWS from 2000 collapsed for lack of maintenance; Imja sirens reported in disrepair; a GCF proposal of USD 36.1 M reportedly under negotiation; DHM / UNDP prioritised Thulagi, Lower Barun, Lumding Tsho and Hongu 2.",
+   "funding": "GCF proposal (under negotiation, unverified)",
+   "fallback_without_it": "Seasonal exclusion zones and satellite / InSAR watch (EA21); river watchers.",
+   "source_url": "https://kathmandupost.com/",
+   "verify": true
+  },
+  {
+   "element": "Cell broadcast",
+   "owner": "NDRRMA (named lead agency); NTA and operators Nepal Telecom, Ncell for the channel",
+   "status_2026": "Not procured or built as of 26 Aug 2026 (Mongabay). Stakeholder meeting chaired by NDRRMA Executive Chief on 20 Jul 2026 (Himalayan Times). GSMA reports working with NDRRMA, DHM, the Ministry of Communications, the regulator, Ncell and NTC on moving beyond SMS. Operator SMS exists: first public SMS ~09:15 on 26 Aug reached ~679,295 recipients in Rasuwa, Nuwakot, Dhading, Chitwan, 38 min after the collapse (Kathmandu Post, Mongabay).",
+   "funding": "Unfunded in the EAP; GSMA/ITU estimate USD 1.75-3 M set-up (Mongabay)",
+   "fallback_without_it": "Priority SMS with distinct template, voice IVR, police loudspeakers, caller tune, FM radio (EA05, EA27).",
+   "source_url": "https://india.mongabay.com/2026/09/community-based-warning-saves-lives-during-nepal-floods/",
+   "verify": true
+  },
+  {
+   "element": "Sirens at corridor settlements",
+   "owner": "Palikas / ward offices (community-based EWS), with DHM technical standards; NRCS sub-chapters as partner",
+   "status_2026": "Sirens were not reported in use on 26 Aug 2026 (Kathmandu Post). A former NDRRMA executive reportedly called community-operated manual sirens a step backward; former NDRRMA chief Anil Pokhrel says automatic siren plus loud text triggering is needed (Mongabay, Kathmandu Post). No inventory of working sirens verified.",
+   "funding": "Unfunded (EAP line R3 is an assumption from a secondary source)",
+   "fallback_without_it": "Volunteer runners, megaphones, FM radio, school bells at assigned patterns.",
+   "source_url": "https://kathmandupost.com/national/2026/09/02/nepal-sent-its-disaster-alert-38-minutes-after-the-glacier-collapse-it-wasn-t-enough",
+   "verify": true
+  },
+  {
+   "element": "Hydropower control-room alarm receivers and underground tunnel strobes / sirens",
+   "owner": "Project operators and contractors (IPPAN members, NEA); DoED as licensing authority",
+   "status_2026": "DHM-IPPAN MoU for a flood early-warning system for private hydropower projects signed 21 May 2025 (ekantipur headline; scope not read). The ADB independent expert panel had recommended coordinating alerts with upstream / downstream projects and evacuation protocols, reportedly not implemented (Kathmandu Post). 13 plants in Rasuwa and Nuwakot damaged (~431 MW disconnected); 639 people reported trapped at Upper Trishuli-1 and Trishuli 3A. DoED placed Gandaki-basin plants on high alert in Sep 2026 (advisory).",
+   "funding": "Operators' own cost if made a licence condition; otherwise unfunded",
+   "fallback_without_it": "Portal gate watchers with radios, shift-supervisor phone trees, daily rosters; poor underground.",
+   "source_url": "https://kathmandupost.com/national/2026/09/02/nepal-sent-its-disaster-alert-38-minutes-after-the-glacier-collapse-it-wasn-t-enough",
+   "verify": true
+  },
+  {
+   "element": "China-Nepal real-time data link (Kyirong / Poiqu gauges, cameras, seismic)",
+   "owner": "Ministry of Foreign Affairs (with Home / Energy / Water Resources); Chinese Ministry of Water Resources and Tibet hydromet",
+   "status_2026": "Kathmandu Post (2 Sep 2026): no formal protocol or rudimentary early-warning plan between Nepal and China; cooperation runs through MoFA; NDRRMA geologist Prakash Pokhrel: 'There is no protocol'. The repo's earlier evidence of a 2025 data-sharing mechanism 'agreed but not operational' is not contradicted but not verified.",
+   "funding": "Not applicable (diplomatic); no budget",
+   "fallback_without_it": "EAP must not depend on it; use local observers and ICIMOD / CCTV informal contacts. Remove from NRCS action list or label 'advocacy'.",
+   "source_url": "https://kathmandupost.com/national/2026/09/02/nepal-sent-its-disaster-alert-38-minutes-after-the-glacier-collapse-it-wasn-t-enough",
+   "verify": true
+  },
+  {
+   "element": "River watchers (volunteer upstream observers with radio / phone)",
+   "owner": "Palikas and ward task forces; NRCS sub-chapters; DHM technical oversight",
+   "status_2026": "No formal network verified. Historical model: DHM's East Rapti early-warning system in Chitwan (2002) began with a volunteer on a machan platform sending a runner door to door. On 26 Aug 2026 informal calls from upstream reached head teacher Rajendra Dawadi ~09:10 and 900 students were moved before the flood hit ~10 min later (Mongabay).",
+   "funding": "Unfunded (proposed as EA26)",
+   "fallback_without_it": "None below this; this is the fallback for the rest.",
+   "source_url": "https://india.mongabay.com/2026/09/community-based-warning-saves-lives-during-nepal-floods/",
+   "verify": false
+  },
+  {
+   "element": "Local FM radio relay",
+   "owner": "Community radio stations and district chapters; NDRRMA / DHM bulletins",
+   "status_2026": "NRCS used local FM stations and loudspeakers for early warning in Banke and Bardiya under sEAP2024NP01 (2024 activation; 2025 report). Station list for corridors (Dhunche, Trishuli, Chautara, Charikot, Pokhara) from the local review, not verified.",
+   "funding": "Unfunded in EAP (proposed as EA27)",
+   "fallback_without_it": "Phone trees, loudspeakers.",
+   "source_url": "https://go-api.ifrc.org/api/DownloadFile/89905/MDRNP017EAPOU1",
+   "verify": true
+  }
+ ],
+ "operational_matrix": [
+  {
+   "id": "EA01",
+   "name": "Upstream detection to direct alarm chain (multi-sensor trigger -> cell broadcast, sirens, hydropower control rooms, police)",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "IFRC PGI Minimum Standards (2018), Disaster Risk Reduction chapter (Access, Participation: inclusive community-based early warning); Core Humanitarian Standard (Sphere 2018) Commitment 2 (effective and timely). Sphere 2018 has no early-warning standard.",
+   "owner_type": "government",
+   "in_dref_budget": false,
+   "pgi_note": "Alerts must reach people without phones or literacy (older Tamang women, deaf / hard-of-hearing, persons with disabilities): pair every text with siren, strobe and volunteer runner.",
+   "budget_note": "Detection chain is government-owned, outside the DREF budget.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA02",
+   "name": "Hydropower underground works (tunnel/adit/powerhouse/cavern) alarm-triggered evacuation protocol and muster points",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "Sphere Protection Principle 1 (enhance safety, dignity and rights; avoid exposing people to further harm); DRRM Act 2074 s.20 and Rule 9 (business continuity). No Sphere/LEGS standard for underground works.",
+   "owner_type": "operator",
+   "in_dref_budget": false,
+   "pgi_note": "Rosters must include sub-contract, daily-wage and migrant (Indian, Chinese) workers and women staff; alarms in Hindi / Chinese / Nepali; accessible muster points.",
+   "budget_note": "Alarm hardware is operator-funded; only joint drills sit in line R4.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA03",
+   "name": "Headworks / intake gate, sluice and powerhouse isolation sequence on external alarm",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "No Sphere/PGI standard; Sphere Protection Principle 1 applies to downstream communities affected by gate releases.",
+   "owner_type": "operator",
+   "in_dref_budget": false,
+   "pgi_note": "Warn downstream households before gate and spill operations (riverside women washing, children, livestock keepers).",
+   "budget_note": "Operator action.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA04",
+   "name": "Cell-broadcast alert with action-specific, multilingual text (Nepali, Tamang, English, Chinese) for corridor cells",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "IFRC PGI Minimum Standards (2018), Disaster Risk Reduction chapter (Access: information in languages and formats people can use); Core Humanitarian Standard (Sphere 2018) Commitment 4 (communication, participation and feedback).",
+   "owner_type": "government",
+   "in_dref_budget": false,
+   "pgi_note": "Native-speaker review of Nepali, Tamang, Sherpa, Gurung, Yolmo, Chinese texts; message names place and action; test on feature phones.",
+   "budget_note": "NDRRMA / operators.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA05",
+   "name": "Mass SMS/IVR with distinct \"extreme event - move now\" template, voice IVR for low literacy",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "IFRC PGI Minimum Standards (2018), Disaster Risk Reduction chapter (Access: voice for low-literacy); Core Humanitarian Standard (Sphere 2018) Commitment 4.",
+   "owner_type": "government",
+   "in_dref_budget": false,
+   "pgi_note": "IVR in Tamang / Nepali for non-readers; avoid caller IDs that look like marketing.",
+   "budget_note": "DHM / NDRRMA / operators.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA06",
+   "name": "Community siren / loudspeaker / runner network at riverside settlements (CBFEWS node)",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "IFRC PGI Minimum Standards (2018), Disaster Risk Reduction chapter (Safety, Participation: community early-warning systems involve all genders, ages, disabilities); Sphere Protection Principle 1.",
+   "owner_type": "government",
+   "in_dref_budget": true,
+   "pgi_note": "Siren code taught in schools, women's groups, monasteries; add strobe for deaf / hard-of-hearing; named siren keyholders include women.",
+   "budget_note": "Line R3 (6 nodes per corridor; costs assumed).",
+   "standard_verified": true
+  },
+  {
+   "id": "EA07",
+   "name": "School alert-to-assembly protocol and evacuation drills (move to pre-mapped high ground; head-count; students in transit)",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "IFRC PGI Minimum Standards (2018), Disaster Risk Reduction chapter (Safety: systems for unaccompanied and separated children); Core Humanitarian Standard (Sphere 2018) Commitment 4; Sphere Protection Principle 1.",
+   "owner_type": "government",
+   "in_dref_budget": true,
+   "pgi_note": "Head count by sex; plan for children in transit and separation from parents; girls' return to school after displacement; reunification point.",
+   "budget_note": "Lines R2 / R4.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA08",
+   "name": "Pre-mapped evacuation routes and elevated safe points with signage, vertical evacuation where terrain permits",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "Sphere Shelter and settlement standard 2 (Location and settlement planning); IFRC PGI Minimum Standards (2018), Disaster Risk Reduction chapter (accessible routes to evacuation centres for older people, persons with disabilities, pregnant and lactating women).",
+   "owner_type": "government",
+   "in_dref_budget": true,
+   "pgi_note": "Routes lit and step-free where possible; stretcher / porter plan for people who cannot walk uphill; routes avoid slope-unstable ground.",
+   "budget_note": "Line R2.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA09",
+   "name": "Highway and border-crossing hold: close Pasang Lhamu Highway / Rasuwagadhi crossing and Prithvi/Mugling-Narayanghat corridors on trigger",
+   "ifrc_sector": "Coordination & logistics",
+   "standard": "Core Humanitarian Standard (Sphere 2018) Commitment 6 (coordinated and complementary); DRRM Act 2074 s.16(2)(f). No Sphere standard for traffic holds.",
+   "owner_type": "government",
+   "in_dref_budget": false,
+   "pgi_note": "Safe holding areas, water and toilets for stranded travellers; information for women travelling alone, children, drivers' helpers.",
+   "budget_note": "Police / APF.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA10",
+   "name": "Trekker/lodge alert (registered mobile numbers from TIMS/permits, lodge radio tree) for Langtang and Rasuwa corridors",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "IFRC PGI Minimum Standards (2018), Disaster Risk Reduction chapter (Access); Core Humanitarian Standard (Sphere 2018) Commitment 4.",
+   "owner_type": "partner",
+   "in_dref_budget": false,
+   "pgi_note": "Reach porters, guides, lodge staff and pilgrims, not only foreign trekkers; English and Nepali text only plus lodge radio tree.",
+   "budget_note": "Tourism sector (NTB, TAAN, NMA, lodge associations).",
+   "standard_verified": true
+  },
+  {
+   "id": "EA11",
+   "name": "Door-to-door volunteer warning and early evacuation of riverside households to pre-identified centres",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "IFRC PGI Minimum Standards (2018), Disaster Risk Reduction chapter (inclusive evacuation systems; caregivers of older people and persons with disabilities included); Sphere Protection Principle 1; Core Humanitarian Standard (Sphere 2018) Commitment 4.",
+   "owner_type": "NRCS",
+   "in_dref_budget": true,
+   "pgi_note": "Women volunteers work in pairs; buddy list per person with limited mobility; no volunteer enters a risk zone at night; volunteers move their own families first.",
+   "budget_note": "Line E2.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA12",
+   "name": "Livestock and household-asset evacuation (pre-agreed transport providers, shelters)",
+   "ifrc_sector": "Livelihoods & basic needs",
+   "standard": "LEGS Handbook 3rd edition (2023), technical areas Livestock offtake, Shelter and Feed (move, shelter and feed animals); Sphere Livelihoods standard 7.1 (Primary production).",
+   "owner_type": "NRCS",
+   "in_dref_budget": false,
+   "pgi_note": "Human evacuation never waits for animals; women often own small livestock; avoid male-only transport providers.",
+   "budget_note": "Not a budget line; district chapters with livestock service offices.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA13",
+   "name": "Protect documents and essential assets: waterproof bags, shelter toolkits",
+   "ifrc_sector": "Shelter",
+   "standard": "Sphere Shelter and settlement standard 4 (Household items); IFRC PGI Minimum Standards (2018), Non-food Items chapter.",
+   "owner_type": "NRCS",
+   "in_dref_budget": true,
+   "pgi_note": "Documents of women and children (citizenship certificate, bank book) bagged separately; support for those whose papers were lost (DRRM Act 2074 s.40).",
+   "budget_note": "Line P1.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA14",
+   "name": "Pre-position and stage search-and-rescue (Army, APF, Police, NRCS) incl. tunnel-rescue kit (air pumping, excavators, drones, helicopters)",
+   "ifrc_sector": "Coordination & logistics",
+   "standard": "DRRM Act 2074 s.18(3), s.16(2)(d); Sphere Health systems standard 1.1 (Health service delivery) and injury and trauma care standard 2.4 for NRCS first-aid teams; Core Humanitarian Standard (Sphere 2018) Commitment 6.",
+   "owner_type": "government",
+   "in_dref_budget": true,
+   "pgi_note": "Women in first-response teams; dignified management of the dead (ICRC supports NRCS); tracing registers opened early.",
+   "budget_note": "Line P2 covers NRCS first-aid / SAR kits only.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA15",
+   "name": "Pre-position medical supplies, ambulances, blood and trauma teams at downstream hubs",
+   "ifrc_sector": "Health",
+   "standard": "Sphere Health systems standard 1.1 (Health service delivery), 1.3 (Essential medicines and medical devices), Essential healthcare injury and trauma care standard 2.4, Sexual and reproductive health standard 2.3.2 (Sexual violence and clinical management of rape), Mental health standard 2.5 (Mental health care).",
+   "owner_type": "government",
+   "in_dref_budget": false,
+   "pgi_note": "Female health workers on every team; clinical management of rape supplies and referral stocked; privacy in triage.",
+   "budget_note": "Ministry of Health; NRCS ambulance / blood bank complement.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA16",
+   "name": "Anticipatory multipurpose cash (SRSP standard NPR 5,000 or 8,000 by household size) via Local Disaster Management Fund bank transfer + SMS",
+   "ifrc_sector": "Multipurpose cash",
+   "standard": "Sphere Food assistance standard 6.3 (Targeting, distribution and delivery) as the closest 2018 standard for cash; IFRC PGI Minimum Standards (2018), Cash-based Interventions chapter; Core Humanitarian Standard (Sphere 2018) Commitments 4 and 5 (feedback, complaints).",
+   "owner_type": "NRCS",
+   "in_dref_budget": true,
+   "pgi_note": "Transfer to the woman or nominee where safe; ID fallbacks; agents within walking distance; no night cash-out; hotline and ward complaints desk before first payment; consistency with the SRSP tiers.",
+   "budget_note": "Line E1.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA17",
+   "name": "Hygiene/dignity kits, water purification tablets/bleaching powder, buckets, emergency toilets pre-positioned and delivered to evacuation centres",
+   "ifrc_sector": "WASH",
+   "standard": "Sphere Hygiene promotion standard 1.2 (Identification, access to and use of hygiene items), 1.3 (Menstrual hygiene management and incontinence), Water supply standard 2.2 (Water quality), Excreta management standard 3.2 (Access to and use of toilets).",
+   "owner_type": "NRCS",
+   "in_dref_budget": true,
+   "pgi_note": "Dignity kits designed with women; lockable, lit, sex-separated latrines; private bathing; inclusive of persons with disabilities.",
+   "budget_note": "Line P1; dignity-kit procurement by IFRC per 2025 sEAP report.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA18",
+   "name": "Activate evacuation centres with tarpaulins, blankets, mattresses, shelter toolkits",
+   "ifrc_sector": "Shelter",
+   "standard": "Sphere Shelter and settlement standard 2 (Location and settlement planning), 3 (Living space), 4 (Household items); IFRC PGI Minimum Standards (2018), Shelter chapter and DRR chapter (safety of evacuation centres and communal shelters).",
+   "owner_type": "NRCS",
+   "in_dref_budget": true,
+   "pgi_note": "Lighting, internal locks, partitions, women-and-girls space, family-unit areas, accessibility; see EA32 kit.",
+   "budget_note": "Lines P1 / E3 (E3 assumed CHF 8,000 per activation).",
+   "standard_verified": true
+  },
+  {
+   "id": "EA19",
+   "name": "Hydropower and construction-site stand-down on forecast extreme rain (move equipment/camps out of floodplain, pause river-bed works, stop tunnel shifts)",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "No Sphere standard; operator duty under DRRM Act 2074 s.20; Sphere Protection Principle 1 for workers.",
+   "owner_type": "operator",
+   "in_dref_budget": false,
+   "pgi_note": "Stand-down must also release sub-contract and migrant workers from camps; wage protection to prevent staying on.",
+   "budget_note": "Operator action.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA20",
+   "name": "Landslide-dam lake response: daily monitoring, downstream evacuation, controlled breach/spillway, operator notification",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "No Sphere standard; Sphere Protection Principle 1; IFRC PGI Minimum Standards (2018), Disaster Risk Reduction chapter (Safety of evacuation sites).",
+   "owner_type": "government",
+   "in_dref_budget": false,
+   "pgi_note": "Downstream evacuation sites checked for slope safety; plan for livestock and people with limited mobility.",
+   "budget_note": "DHM / DMG / NDRRMA / Army.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA21",
+   "name": "Glacier/lake precursor watch and seasonal exclusion zones (cameras, InSAR/optical lake mapping, no-camp rules in runout zones)",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "No Sphere standard; Core Humanitarian Standard (Sphere 2018) Commitment 1 (appropriate and relevant).",
+   "owner_type": "government",
+   "in_dref_budget": false,
+   "pgi_note": "Exclusion zones need livelihood alternatives for herders and lodge keepers (see EA31).",
+   "budget_note": "Government / ICIMOD.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA22",
+   "name": "Seasonal readiness package: hazard/runout mapping, evacuation-centre mapping, SIMEX drills, early-warning task forces, standby transport, volunteer protocol, EW message pre-agreement",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "IFRC PGI Minimum Standards (2018), Disaster Risk Reduction chapter (Participation: gender and diversity analysis in vulnerability and capacity assessments); Core Humanitarian Standard (Sphere 2018) Commitment 4; DRRM Act 2074 s.17(2)(f),(g) (ward committees, drills).",
+   "owner_type": "NRCS",
+   "in_dref_budget": true,
+   "pgi_note": "Ward task forces with at least 40 percent women (target to be agreed); Dalit, Janajati, persons with disabilities and older people in mapping.",
+   "budget_note": "Lines R1, R2, R7.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA23",
+   "name": "Bilateral China-Nepal real-time data sharing and joint warning SOP for Rasuwagadhi/Kyirong (gauges, cameras, seismic)",
+   "ifrc_sector": "Coordination & logistics",
+   "standard": "Core Humanitarian Standard (Sphere 2018) Commitment 6. No Sphere standard.",
+   "owner_type": "government",
+   "in_dref_budget": false,
+   "pgi_note": "Advocacy only for NRCS.",
+   "budget_note": "Government-to-government.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA24",
+   "name": "Legal/SOP: DHM extreme-event warning triggers pre-authorised evacuation orders by LDMC/DDMC and operators (no-regret list)",
+   "ifrc_sector": "Coordination & logistics",
+   "standard": "Core Humanitarian Standard (Sphere 2018) Commitment 6; DRRM Act 2074 s.16 and s.17.",
+   "owner_type": "government",
+   "in_dref_budget": false,
+   "pgi_note": "Standing resolutions must name protection of persons with limited mobility as a priority group.",
+   "budget_note": "NDRRMA / MoHA / palikas; precondition for rungs 3a and 4.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA25",
+   "name": "Community-based forecast tool and lead-time extension (probabilistic forecast for DHM, 2-3 h -> 7-8 h) for rainfall flash floods",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "No Sphere standard; Core Humanitarian Standard (Sphere 2018) Commitment 2 (effective and timely).",
+   "owner_type": "government",
+   "in_dref_budget": false,
+   "pgi_note": "Co-develop with community forecast users, incl. women farmers.",
+   "budget_note": "DHM / Practical Action / universities.",
+   "standard_verified": true
+  },
+  {
+   "id": "EA26",
+   "name": "River watchers: trained volunteer upstream observers with radio / phone, minimum 2 per side valley, with stipend and written stop-rules",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "IFRC PGI Minimum Standards (2018), Disaster Risk Reduction chapter (Participation, Safety); Core Humanitarian Standard (Sphere 2018) Commitment 4. No Sphere/LEGS standard.",
+   "owner_type": "partner",
+   "in_dref_budget": false,
+   "pgi_note": "Include women watchers; daylight rules; never at river edge; watcher family receives priority warning.",
+   "budget_note": "Not budgeted; proposal.",
+   "standard_verified": true,
+   "category": "minutes",
+   "lead_time_min_hours": 0.1,
+   "implementer": "Palikas / ward task forces (hosts), NRCS sub-chapters (training, radios), DHM (technical protocol)",
+   "unit": "watch post (2 watchers, radio, shelter) per side valley",
+   "unit_cost_npr": null,
+   "evidence": "On 26 Aug 2026 informal upstream phone calls reached a school head teacher ~10 min before the flood and 900 students were moved (Mongabay); DHM's East Rapti system (Chitwan, 2002) began with a volunteer watcher and runner; no evaluation of watcher networks for ice-rock avalanches in Nepal; no unit cost found.",
+   "evidence_strength": "low",
+   "risks": "Watchers in the flood path (safety, never at river edge); fatigue and attrition; false alarms; stipend unfunded; dead phone coverage in side valleys; liability if a call is wrong (Act s.24(2)(a) false-alarm clause).",
+   "source_urls": [
+    "https://india.mongabay.com/2026/09/community-based-warning-saves-lives-during-nepal-floods/",
+    "https://kathmandupost.com/national/2026/09/02/nepal-sent-its-disaster-alert-38-minutes-after-the-glacier-collapse-it-wasn-t-enough"
+   ]
+  },
+  {
+   "id": "EA27",
+   "name": "Local FM radio broadcasts in Nepali, Tamang, Sherpa, Gurung, Yolmo: pre-agreed spots for rungs 2, 3a, 3b and all-clear, plus emergency override arrangement",
+   "ifrc_sector": "DRR/early warning",
+   "standard": "IFRC PGI Minimum Standards (2018), Disaster Risk Reduction chapter (Access: information in languages and formats); Core Humanitarian Standard (Sphere 2018) Commitment 4 (communication, participation and feedback).",
+   "owner_type": "NRCS",
+   "in_dref_budget": false,
+   "pgi_note": "Women's programmes slots; Tamang / Sherpa / Gurung voice reviewed by native speakers; repeat messages for non-literate.",
+   "budget_note": "Not budgeted; proposal.",
+   "standard_verified": true,
+   "category": "hours",
+   "lead_time_min_hours": 0.5,
+   "implementer": "Community radio stations, NRCS district chapters (standing agreements), NDRRMA / DHM (bulletin source)",
+   "unit": "station standing agreement per district",
+   "unit_cost_npr": null,
+   "evidence": "NRCS used FM stations, loudspeakers and volunteers for early-warning messages under sEAP2024NP01 in Banke and Bardiya (2024 activation, 2025 report; 3,600 people received messages); no reach or comprehension data for hill corridors; no unit cost found.",
+   "evidence_strength": "low",
+   "risks": "Radios not listened to at night or in lodges; station power or tower failure; unofficial content treated as false alarm; languages not covered by stations.",
+   "source_urls": [
+    "https://go-api.ifrc.org/api/DownloadFile/89905/MDRNP017EAPOU1",
+    "https://go-api.ifrc.org/api/DownloadFile/87978/MDRNP017eapar2025"
+   ]
+  },
+  {
+   "id": "EA28",
+   "name": "Psychosocial support (MHPSS / psychological first aid) and Restoring Family Links: trained volunteers, hotline, tracing registers and dignified management of the dead",
+   "ifrc_sector": "Health",
+   "standard": "Sphere Mental health standard 2.5 (Mental health care) and Protection Principle 3 (assist people to recover); IFRC PGI Minimum Standards (2018), Emergency Health chapter. RFL: ICRC / IFRC Restoring Family Links strategy (not verified).",
+   "owner_type": "NRCS",
+   "in_dref_budget": false,
+   "pgi_note": "Survivor-centred approach; safe referral for SGBV; protect lists of missing persons; support to families of migrant workers far from the hazard.",
+   "budget_note": "Not budgeted; proposal (IFRC Emergency Appeal 2026 funds PSS and RFL post-event).",
+   "standard_verified": true,
+   "category": "seasonal",
+   "lead_time_min_hours": 720,
+   "implementer": "NRCS district chapters (RFL focal persons in all chapters), ICRC (technical support), IFRC Reference Centre for Psychosocial Support, hospitals / DDMC",
+   "unit": "trained volunteer team per district chapter",
+   "unit_cost_npr": null,
+   "evidence": "After 26 Aug 2026 NRCS reported 116 tracing requests by 1 Sep and more than 1,300 people receiving PFA / PSS by 25 Sep; ICRC supports NRCS RFL in all district chapters; the DRRM Act s.11(w) gives the Authority a psychosocial counselling function. No evaluation of pre-event readiness for this action; no unit cost.",
+   "evidence_strength": "moderate (post-event delivery documented; anticipatory value untested)",
+   "risks": "Volunteers affected themselves; data protection of missing-person lists; duplication across Red Cross and government hotlines; appears only after impact.",
+   "source_urls": [
+    "https://website-api.nrcs.org/media/highlights/files/Rasuwa_Situation_Update_5.pdf",
+    "https://www.icrc.org/en/article/nepal-operational-update-humanitarian-response-after-devastating-flood",
+    "https://go-api.ifrc.org/api/DownloadFile/96508/MDRNP022do",
+    "https://dpnet.org.np/uploads/files/DRRM_Act_and_Regulation_english%202022-04-13%2007-11-33.pdf"
+   ]
+  },
+  {
+   "id": "EA29",
+   "name": "Telecom resilience: batteries and solar at key towers, operator contingency agreements, satellite phones and radios for ward offices and chapters",
+   "ifrc_sector": "Coordination & logistics",
+   "standard": "Core Humanitarian Standard (Sphere 2018) Commitment 6 (coordinated and complementary); Commitment 2 (effective and timely). No Sphere standard.",
+   "owner_type": "partner",
+   "in_dref_budget": false,
+   "pgi_note": "Women's groups and ward offices equipped; phones for persons with disabilities not forgotten (text, vibrate).",
+   "budget_note": "Not budgeted; proposal.",
+   "standard_verified": true,
+   "category": "seasonal",
+   "lead_time_min_hours": 720,
+   "implementer": "Nepal Telecom, Ncell, NTA; NRCS (satellite phones, VHF); palikas",
+   "unit": "site (tower power kit or ward office comms kit)",
+   "unit_cost_npr": null,
+   "evidence": "In the 2026 event Rasuwa's communication towers were destroyed (Kathmandu Post) and the DREF lists intermittent communications and difficulties with satellite communications; satellite phones are licensed by NTA under the Radio Communication (License) Rules 2049, current import and permit rules not verified; no unit cost found.",
+   "evidence_strength": "low",
+   "risks": "Licensing delay for satellite phones; theft or misuse; solar kits in flood path; cost to operators; no coverage of side valleys.",
+   "source_urls": [
+    "https://kathmandupost.com/national/2026/09/02/nepal-sent-its-disaster-alert-38-minutes-after-the-glacier-collapse-it-wasn-t-enough",
+    "https://go-api.ifrc.org/api/DownloadFile/96508/MDRNP022do",
+    "https://ppp.worldbank.org/node/4238"
+   ]
+  },
+  {
+   "id": "EA30",
+   "name": "Bridge and trail contingency: pre-agreed alternate crossings, rope / cable options, helicopter landing sites and drop points, staged porter teams",
+   "ifrc_sector": "Coordination & logistics",
+   "standard": "Core Humanitarian Standard (Sphere 2018) Commitment 2; Sphere Protection Principle 2 (impartial access to assistance). No Sphere standard for helicopter sites.",
+   "owner_type": "government",
+   "in_dref_budget": false,
+   "pgi_note": "Landing sites and carry routes accessible for stretchers and persons with disabilities; priority for pregnant women, injured, older people.",
+   "budget_note": "Not budgeted; proposal.",
+   "standard_verified": true,
+   "category": "seasonal",
+   "lead_time_min_hours": 720,
+   "implementer": "Palikas, DDMC, Department of Roads, Nepal Army / APF, NRCS logistics",
+   "unit": "named crossing or landing site per corridor ward",
+   "unit_cost_npr": null,
+   "evidence": "In 2026 multiple bridges were washed away and roads cut, leaving the worst-hit Rasuwa communities extremely difficult to reach (IFRC); the government requested private helicopter providers (DREF MDRNP022); no evaluation of pre-agreed landing sites in Nepal; no unit cost found.",
+   "evidence_strength": "low",
+   "risks": "Sites themselves in flood or slide path; airspace and weather; helicopter availability; unequal access for women and persons with disabilities; cost.",
+   "source_urls": [
+    "https://go-api.ifrc.org/api/DownloadFile/96508/MDRNP022do",
+    "https://www.ifrc.org/press-release/nepal-ifrc-releases-emergency-funds-flash-floods-leave-communities-isolated"
+   ]
+  },
+  {
+   "id": "EA31",
+   "name": "Lodge and tea-house livelihood protection: cash or in-kind support to close, move stock and protect assets on a warning; income protection for porters and guides",
+   "ifrc_sector": "Livelihoods & basic needs",
+   "standard": "Sphere Livelihoods standard 7.2 (Income and employment); IFRC PGI Minimum Standards (2018), Livelihoods chapter and Cash-based Interventions chapter.",
+   "owner_type": "NRCS",
+   "in_dref_budget": false,
+   "pgi_note": "Women-run lodges and tea houses included; porters and guides (often men) and their families; avoid ethnic targeting.",
+   "budget_note": "Not budgeted; proposal.",
+   "standard_verified": true,
+   "category": "1-3 days",
+   "lead_time_min_hours": 24,
+   "implementer": "NRCS (with palikas and lodge associations), TAAN / NMA for guides, partner CVA agencies",
+   "unit": "household or business",
+   "unit_cost_npr": null,
+   "evidence": "No Nepal evaluation found. Sphere Livelihoods standard 7.2 (Income and employment) is the closest standard. Repo evidence for anticipatory cash is graded high only for slow river floods (Bangladesh and Nepal Terai).",
+   "evidence_strength": "low",
+   "risks": "Moral hazard (closing for nothing), targeting disputes between lodges, seasonal trekking income already lost, duplication with SRSP.",
+   "source_urls": [
+    "https://aha-trainings.akademie.rub.de/wp-content/uploads/sites/3/2025/10/Sphere-Handbook-2018-EN-komprimiert.pdf",
+    "https://www.ifrc.org/sites/default/files/2025-09/Strengthening_National_Disaster_Risk_Management_Systems_through_integration_of_anticipatory_action_The_case_of%20Nepal.pdf"
+   ]
+  },
+  {
+   "id": "EA32",
+   "name": "Safe evacuation-centre PGI kit: lighting, internal locks, privacy partitions, women-and-girls space, separated-children procedure, accessible latrines, referral posters and trained volunteers",
+   "ifrc_sector": "Protection gender & inclusion",
+   "standard": "IFRC PGI Minimum Standards (2018), Shelter chapter and Disaster Risk Reduction chapter (safety of evacuation centres and communal shelters); Sphere Protection Principle 1; Sphere Excreta management standard 3.2 and Hygiene promotion standard 1.3.",
+   "owner_type": "NRCS",
+   "in_dref_budget": false,
+   "pgi_note": "Core PGI action; includes referral for SGBV, child protection and trafficking.",
+   "budget_note": "Not budgeted; proposal.",
+   "standard_verified": true,
+   "category": "1-3 days",
+   "lead_time_min_hours": 24,
+   "implementer": "NRCS (GESI / PGI focal point, district chapters), palikas, UNICEF / UNFPA",
+   "unit": "evacuation centre",
+   "unit_cost_npr": null,
+   "evidence": "IFRC PGI Minimum Standards (2018) DRR chapter lists measures for evacuation centres (safe location, adequate lighting in the centre and on paths to latrines, privacy partitions, separate and individual latrines and bathing with locks inside, systems to protect unaccompanied and separated children). NRCS GESI SGBV training (88 participants) and a feedback mechanism were maintained under sEAP2024NP01 (2025 report). No Nepal evaluation of centre-level PGI kits; no unit cost found.",
+   "evidence_strength": "moderate (standard-based; effect untested)",
+   "risks": "Schools used as centres disrupt schooling; risk of SGBV and trafficking in crowded sites (named in the 2026 DREF); cost per centre per night unknown.",
+   "source_urls": [
+    "https://www.ifrc.org/sites/default/files/Minimum-standards-for-protection-gender-and-inclusion-in-emergencies-LR.pdf",
+    "https://go-api.ifrc.org/api/DownloadFile/87977/MDRNP017eapar2024",
+    "https://go-api.ifrc.org/api/DownloadFile/96508/MDRNP022do"
+   ]
+  }
+ ],
+ "standards_sources": [
+  {
+   "name": "Sphere Handbook 2018 (4th ed.): standard numbers and titles in this file were read from the PDF",
+   "url": "https://aha-trainings.akademie.rub.de/wp-content/uploads/sites/3/2025/10/Sphere-Handbook-2018-EN-komprimiert.pdf",
+   "verify": false
+  },
+  {
+   "name": "IFRC Minimum standards for protection, gender and inclusion in emergencies (2018): chapters Emergency Health, Food Security, WASH, Shelter, Livelihoods, NFIs, Cash-based Interventions, DRR; each uses Dignity, Access, Participation, Safety headings (no numbered standards)",
+   "url": "https://www.ifrc.org/sites/default/files/Minimum-standards-for-protection-gender-and-inclusion-in-emergencies-LR.pdf",
+   "verify": false
+  },
+  {
+   "name": "LEGS Handbook 3rd edition 2023: six technical intervention areas (feed, water, veterinary support, shelter, livestock offtake, provision of livestock) with standards, key actions, guidance notes; exact standard numbers not read",
+   "url": "https://spherestandards.org/wp-content/uploads/LEGS-3rd-edition-2023-English.pdf",
+   "verify": true
+  },
+  {
+   "name": "IFRC CEA: use IFRC Community Engagement and Accountability Toolkit / minimum actions for CEA in operations and CHS Commitments 4 and 5; document names and versions not verified",
+   "url": "https://www.ifrc.org/our-work/community-engagement-and-accountability",
+   "verify": true
+  }
+ ],
+ "four_w": [
+  {
+   "district": "Rasuwa",
+   "province": "Bagmati",
+   "corridor": "Bhote Koshi - Trishuli",
+   "nrcs_presence": "NRCS has 7 provincial committees, 77 district chapters and 1,564 sub-chapters (sEAP2024NP01), so every corridor district has a chapter; chapter office, staff and volunteer numbers are not public and must be filled by NRCS. 2026 response: NRCS EOC activated; district chapters active in Rasuwa, Nuwakot, Dhading (DREF MDRNP022).",
+   "key_non_ns_actors": "DDMC chaired by the Chief District Officer with the NRCS district chapter chief as a member (DRRM Act 2074 s.16(1)(a),(h)); palika LDMCs chaired by the mayor / rural-municipality chair (s.17). Operators: 13 plants in Rasuwa and Nuwakot damaged on 26 Aug 2026; Upper Trishuli-1 and Trishuli 3A named in reports (Kathmandu Post) - operators of the rest named only after verification. Local palikas of Rasuwa (six rural municipalities including Gosaikunda covering Dhunche and Syabrubesi) to be confirmed from the local-level list. Border: Rasuwagadhi / Kyirong customs and APF post.",
+   "main_languages": "Tamang 67.54 percent, Nepali 24.49, Ghale 3.80, Tibetan 1.72 (census 2021); Chinese at the border post; English for trekkers",
+   "rung_coverage": "Rungs 1-3: designed. Rung 4: priority corridor (origin of 26 Aug 2026 event); detection chain unfunded; first-warning gap ~38 min (Kathmandu Post).",
+   "languages_source": "https://en.wikipedia.org/wiki/Rasuwa_District",
+   "languages_note": "Percentages are the 2021 census mother-tongue shares as summarised on English Wikipedia district pages (citing CBS Table 5 'Mother tongue and sex'); not read in the CBS primary report. Confirm at censusnepal.cbs.gov.np.",
+   "verify": true
+  },
+  {
+   "district": "Nuwakot",
+   "province": "Bagmati",
+   "corridor": "Bhote Koshi - Trishuli",
+   "nrcs_presence": "NRCS has 7 provincial committees, 77 district chapters and 1,564 sub-chapters (sEAP2024NP01), so every corridor district has a chapter; chapter office, staff and volunteer numbers are not public and must be filled by NRCS. On 27 Aug 2026 NRCS oriented 30 volunteers for initial rapid assessment in Nuwakot; joint NRCS-ICRC team assessed family-link gaps (ICRC / DREF).",
+   "key_non_ns_actors": "DDMC chaired by the Chief District Officer with the NRCS district chapter chief as a member (DRRM Act 2074 s.16(1)(a),(h)); palika LDMCs chaired by the mayor / rural-municipality chair (s.17). Bidur (district HQ) received the alert about 09:35 on 26 Aug (Mongabay). Operators as for Rasuwa. District hospital at Bidur (EA15).",
+   "main_languages": "Nepali 51.01 percent, Tamang 40.78, Nepal Bhasha 3.28, Danuwar 1.11, Rai 0.97 (census 2021)",
+   "rung_coverage": "Rungs 1-3 designed; rung 4 in Trishuli corridor (about 30-60 min lead time at Betrawati).",
+   "languages_source": "https://en.wikipedia.org/wiki/Nuwakot_District",
+   "languages_note": "Percentages are the 2021 census mother-tongue shares as summarised on English Wikipedia district pages (citing CBS Table 5 'Mother tongue and sex'); not read in the CBS primary report. Confirm at censusnepal.cbs.gov.np.",
+   "verify": true
+  },
+  {
+   "district": "Dhading",
+   "province": "Bagmati",
+   "corridor": "Bhote Koshi - Trishuli",
+   "nrcs_presence": "NRCS has 7 provincial committees, 77 district chapters and 1,564 sub-chapters (sEAP2024NP01), so every corridor district has a chapter; chapter office, staff and volunteer numbers are not public and must be filled by NRCS. 2026 response includes Dhading (IFRC feature: camp for displaced families).",
+   "key_non_ns_actors": "DDMC chaired by the Chief District Officer with the NRCS district chapter chief as a member (DRRM Act 2074 s.16(1)(a),(h)); palika LDMCs chaired by the mayor / rural-municipality chair (s.17). Government declared Rasuwa, Nuwakot and Dhading crisis-affected in 2026 (DREF MDRNP022).",
+   "main_languages": "Nepali 67.05 percent, Tamang 20.11, Chepang 2.95, Magar 2.74, Gurung 2.66, Ghale 1.59, Nepal Bhasha 1.30 (census 2021 table on Wikipedia)",
+   "rung_coverage": "Rungs 1-3 designed; rung 4 lower Trishuli (hours of lead time).",
+   "languages_source": "https://en.wikipedia.org/wiki/Dhading_District",
+   "languages_note": "Percentages are the 2021 census mother-tongue shares as summarised on English Wikipedia district pages (citing CBS Table 5 'Mother tongue and sex'); not read in the CBS primary report. Confirm at censusnepal.cbs.gov.np.",
+   "verify": true
+  },
+  {
+   "district": "Sindhupalchok",
+   "province": "Bagmati",
+   "corridor": "Bhote Koshi - Sun Koshi; Melamchi - Indrawati",
+   "nrcs_presence": "NRCS has 7 provincial committees, 77 district chapters and 1,564 sub-chapters (sEAP2024NP01), so every corridor district has a chapter; chapter office, staff and volunteer numbers are not public and must be filled by NRCS.",
+   "key_non_ns_actors": "DDMC chaired by the Chief District Officer with the NRCS district chapter chief as a member (DRRM Act 2074 s.16(1)(a),(h)); palika LDMCs chaired by the mayor / rural-municipality chair (s.17). Hydropower and border-trade operators on the Bhote Koshi / Araniko corridor to be named after verification. Melamchi water-supply project authority (2021 debris flood) to be confirmed.",
+   "main_languages": "Nepali 47.47 percent, Tamang 35.60, Nepal Bhasha 6.30, Sherpa 3.59, Thami 1.79, Hyolmo 1.58, Danuwar 1.09 (census 2021)",
+   "rung_coverage": "Rungs 1-3 designed; rung 4 for Poiqu (Tibet) source requires China data link (not assumed).",
+   "languages_source": "https://en.wikipedia.org/wiki/Sindhupalchowk_District",
+   "languages_note": "Percentages are the 2021 census mother-tongue shares as summarised on English Wikipedia district pages (citing CBS Table 5 'Mother tongue and sex'); not read in the CBS primary report. Confirm at censusnepal.cbs.gov.np.",
+   "verify": true
+  },
+  {
+   "district": "Kavrepalanchok",
+   "province": "Bagmati",
+   "corridor": "Bhote Koshi - Sun Koshi (lower)",
+   "nrcs_presence": "NRCS has 7 provincial committees, 77 district chapters and 1,564 sub-chapters (sEAP2024NP01), so every corridor district has a chapter; chapter office, staff and volunteer numbers are not public and must be filled by NRCS.",
+   "key_non_ns_actors": "DDMC chaired by the Chief District Officer with the NRCS district chapter chief as a member (DRRM Act 2074 s.16(1)(a),(h)); palika LDMCs chaired by the mayor / rural-municipality chair (s.17)",
+   "main_languages": "Nepali 50.39 percent, Tamang 33.15, Nepal Bhasha 10.91, Magar 1.62, Danuwar 1.40 (census 2021)",
+   "rung_coverage": "Rungs 1-3 designed; rung 4 not planned.",
+   "languages_source": "https://en.wikipedia.org/wiki/Kavrepalanchok_District",
+   "languages_note": "Percentages are the 2021 census mother-tongue shares as summarised on English Wikipedia district pages (citing CBS Table 5 'Mother tongue and sex'); not read in the CBS primary report. Confirm at censusnepal.cbs.gov.np.",
+   "verify": true
+  },
+  {
+   "district": "Dolakha",
+   "province": "Bagmati",
+   "corridor": "Rolwaling - Tama Koshi",
+   "nrcs_presence": "NRCS has 7 provincial committees, 77 district chapters and 1,564 sub-chapters (sEAP2024NP01), so every corridor district has a chapter; chapter office, staff and volunteer numbers are not public and must be filled by NRCS.",
+   "key_non_ns_actors": "DDMC chaired by the Chief District Officer with the NRCS district chapter chief as a member (DRRM Act 2074 s.16(1)(a),(h)); palika LDMCs chaired by the mayor / rural-municipality chair (s.17). Tsho Rolpa GLOF risk reduction by DHM / ICIMOD; Singati-Lamabagar road authority to be confirmed.",
+   "main_languages": "Nepali 62.20 percent, Tamang 16.60, Thami 9.04, Sherpa 4.89, Jirel 2.41, Newari 2.27, Sunuwar 1.03 (census table on Wikipedia)",
+   "rung_coverage": "Rungs 1-3 designed; GLOF watch (EA21).",
+   "languages_source": "https://en.wikipedia.org/wiki/Dolakha_District",
+   "languages_note": "Percentages are the 2021 census mother-tongue shares as summarised on English Wikipedia district pages (citing CBS Table 5 'Mother tongue and sex'); not read in the CBS primary report. Confirm at censusnepal.cbs.gov.np.",
+   "verify": true
+  },
+  {
+   "district": "Ramechhap",
+   "province": "Bagmati",
+   "corridor": "Rolwaling - Tama Koshi (lower)",
+   "nrcs_presence": "NRCS has 7 provincial committees, 77 district chapters and 1,564 sub-chapters (sEAP2024NP01), so every corridor district has a chapter; chapter office, staff and volunteer numbers are not public and must be filled by NRCS.",
+   "key_non_ns_actors": "DDMC chaired by the Chief District Officer with the NRCS district chapter chief as a member (DRRM Act 2074 s.16(1)(a),(h)); palika LDMCs chaired by the mayor / rural-municipality chair (s.17)",
+   "main_languages": "Nepali 55.41 percent, Tamang 18.40, Newari 7.76, Magar 6.12, Sunuwar 4.15, Majhi 2.98, Sherpa 2.30, Thami 1.37 (census table on Wikipedia)",
+   "rung_coverage": "Rungs 1-3 designed.",
+   "languages_source": "https://en.wikipedia.org/wiki/Ramechhap_District",
+   "languages_note": "Percentages are the 2021 census mother-tongue shares as summarised on English Wikipedia district pages (citing CBS Table 5 'Mother tongue and sex'); not read in the CBS primary report. Confirm at censusnepal.cbs.gov.np.",
+   "verify": true
+  },
+  {
+   "district": "Solukhumbu",
+   "province": "Koshi",
+   "corridor": "Imja - Dudh Koshi",
+   "nrcs_presence": "NRCS has 7 provincial committees, 77 district chapters and 1,564 sub-chapters (sEAP2024NP01), so every corridor district has a chapter; chapter office, staff and volunteer numbers are not public and must be filled by NRCS.",
+   "key_non_ns_actors": "DDMC chaired by the Chief District Officer with the NRCS district chapter chief as a member (DRRM Act 2074 s.16(1)(a),(h)); palika LDMCs chaired by the mayor / rural-municipality chair (s.17). Sagarmatha National Park and trekking operators (EA10). Imja sirens reported in disrepair (repo literature, unverified).",
+   "main_languages": "Nepali 34.65 percent, Sherpa 17.00, Kulung 10.77, Tamang 10.06, Khaling 8.53, Thulung 8.48, Nachhiring 3.09, Bahing 2.09 (census table on Wikipedia)",
+   "rung_coverage": "Rungs 1-3 designed; GLOF watch (Imja, Thame).",
+   "languages_source": "https://en.wikipedia.org/wiki/Solukhumbu_District",
+   "languages_note": "Percentages are the 2021 census mother-tongue shares as summarised on English Wikipedia district pages (citing CBS Table 5 'Mother tongue and sex'); not read in the CBS primary report. Confirm at censusnepal.cbs.gov.np.",
+   "verify": true
+  },
+  {
+   "district": "Okhaldhunga",
+   "province": "Koshi",
+   "corridor": "Imja - Dudh Koshi (lower)",
+   "nrcs_presence": "NRCS has 7 provincial committees, 77 district chapters and 1,564 sub-chapters (sEAP2024NP01), so every corridor district has a chapter; chapter office, staff and volunteer numbers are not public and must be filled by NRCS.",
+   "key_non_ns_actors": "DDMC chaired by the Chief District Officer with the NRCS district chapter chief as a member (DRRM Act 2074 s.16(1)(a),(h)); palika LDMCs chaired by the mayor / rural-municipality chair (s.17)",
+   "main_languages": "Nepali 52.62 percent, Tamang 10.23, Magar Dhut 9.70, Sherpa 8.36, Wambule 4.91, Bahing 4.74, Sunuwar 2.92, Newar 2.09 (census table on Wikipedia)",
+   "rung_coverage": "Rungs 1-3 designed.",
+   "languages_source": "https://en.wikipedia.org/wiki/Okhaldhunga_District",
+   "languages_note": "Percentages are the 2021 census mother-tongue shares as summarised on English Wikipedia district pages (citing CBS Table 5 'Mother tongue and sex'); not read in the CBS primary report. Confirm at censusnepal.cbs.gov.np.",
+   "verify": true
+  },
+  {
+   "district": "Manang",
+   "province": "Gandaki",
+   "corridor": "Thulagi - Marsyangdi",
+   "nrcs_presence": "NRCS has 7 provincial committees, 77 district chapters and 1,564 sub-chapters (sEAP2024NP01), so every corridor district has a chapter; chapter office, staff and volunteer numbers are not public and must be filled by NRCS.",
+   "key_non_ns_actors": "DDMC chaired by the Chief District Officer with the NRCS district chapter chief as a member (DRRM Act 2074 s.16(1)(a),(h)); palika LDMCs chaired by the mayor / rural-municipality chair (s.17). Annapurna Conservation Area and trekking operators (EA10); Thulagi GLOF prioritised by DHM / UNDP (repo literature, unverified).",
+   "main_languages": "Gurung / Manange (Nyeshang) and Nepali expected; percentages not retrieved",
+   "rung_coverage": "Rungs 1-3 designed; GLOF watch (Thulagi).",
+   "languages_source": "https://en.wikipedia.org/wiki/Manang_District",
+   "languages_note": "Percentages not retrieved",
+   "verify": true
+  },
+  {
+   "district": "Lamjung",
+   "province": "Gandaki",
+   "corridor": "Thulagi - Marsyangdi",
+   "nrcs_presence": "NRCS has 7 provincial committees, 77 district chapters and 1,564 sub-chapters (sEAP2024NP01), so every corridor district has a chapter; chapter office, staff and volunteer numbers are not public and must be filled by NRCS.",
+   "key_non_ns_actors": "DDMC chaired by the Chief District Officer with the NRCS district chapter chief as a member (DRRM Act 2074 s.16(1)(a),(h)); palika LDMCs chaired by the mayor / rural-municipality chair (s.17)",
+   "main_languages": "Nepali 59.62 percent, Gurung 27.74, Tamang 6.71, Nepal Bhasha 1.58, Magar 0.99 (census 2021)",
+   "rung_coverage": "Rungs 1-3 designed.",
+   "languages_source": "https://en.wikipedia.org/wiki/Lamjung_District",
+   "languages_note": "Percentages are the 2021 census mother-tongue shares as summarised on English Wikipedia district pages (citing CBS Table 5 'Mother tongue and sex'); not read in the CBS primary report. Confirm at censusnepal.cbs.gov.np.",
+   "verify": true
+  },
+  {
+   "district": "Tanahun",
+   "province": "Gandaki",
+   "corridor": "Thulagi - Marsyangdi (lower)",
+   "nrcs_presence": "NRCS has 7 provincial committees, 77 district chapters and 1,564 sub-chapters (sEAP2024NP01), so every corridor district has a chapter; chapter office, staff and volunteer numbers are not public and must be filled by NRCS.",
+   "key_non_ns_actors": "DDMC chaired by the Chief District Officer with the NRCS district chapter chief as a member (DRRM Act 2074 s.16(1)(a),(h)); palika LDMCs chaired by the mayor / rural-municipality chair (s.17)",
+   "main_languages": "Nepali 62.71 percent, Magar 19.69, Gurung 8.13, Nepal Bhasha 3.54, Darai 1.10 (census 2021)",
+   "rung_coverage": "Rungs 1-3 designed.",
+   "languages_source": "https://en.wikipedia.org/wiki/Tanahun_District",
+   "languages_note": "Percentages are the 2021 census mother-tongue shares as summarised on English Wikipedia district pages (citing CBS Table 5 'Mother tongue and sex'); not read in the CBS primary report. Confirm at censusnepal.cbs.gov.np.",
+   "verify": true
+  },
+  {
+   "district": "Kaski",
+   "province": "Gandaki",
+   "corridor": "Seti Gandaki - Pokhara",
+   "nrcs_presence": "NRCS has 7 provincial committees, 77 district chapters and 1,564 sub-chapters (sEAP2024NP01), so every corridor district has a chapter; chapter office, staff and volunteer numbers are not public and must be filled by NRCS.",
+   "key_non_ns_actors": "DDMC chaired by the Chief District Officer with the NRCS district chapter chief as a member (DRRM Act 2074 s.16(1)(a),(h)); palika LDMCs chaired by the mayor / rural-municipality chair (s.17). Pokhara Metropolitan City (LDMC) with large urban exposure along the Seti.",
+   "main_languages": "Nepali 77.67 percent, Gurung 11.14, Magar 3.92, Nepal Bhasha 1.91, Tamang 1.50 (census 2021)",
+   "rung_coverage": "Rungs 1-3 designed; rock-ice avalanche history (2012).",
+   "languages_source": "https://en.wikipedia.org/wiki/Kaski_District",
+   "languages_note": "Percentages are the 2021 census mother-tongue shares as summarised on English Wikipedia district pages (citing CBS Table 5 'Mother tongue and sex'); not read in the CBS primary report. Confirm at censusnepal.cbs.gov.np.",
+   "verify": true
+  },
+  {
+   "district": "Chitwan",
+   "province": "Bagmati",
+   "corridor": "Bhote Koshi - Trishuli (lower, Narayani)",
+   "nrcs_presence": "NRCS has 7 provincial committees, 77 district chapters and 1,564 sub-chapters (sEAP2024NP01), so every corridor district has a chapter; chapter office, staff and volunteer numbers are not public and must be filled by NRCS. Chitwan was among districts receiving the 26 Aug 2026 alert.",
+   "key_non_ns_actors": "DDMC chaired by the Chief District Officer with the NRCS district chapter chief as a member (DRRM Act 2074 s.16(1)(a),(h)); palika LDMCs chaired by the mayor / rural-municipality chair (s.17). Downstream sites at Mugling and Devghat flagged in reports (Mongabay, Kathmandu Post); DHM East Rapti volunteer-watcher system (2002).",
+   "main_languages": "Nepali 67.79 percent, Tharu 9.52, Tamang 4.94, Chepang 3.32, Gurung 3.24, Magar 3.22, Bhojpuri 2.48, Nepal Bhasha 2.03, Darai 1.02 (census table on Wikipedia)",
+   "rung_coverage": "Rungs 1-3 designed; rung 4 lower reach (hours of lead time, flood peak at Devghat ~16:00 on 26 Aug).",
+   "languages_source": "https://en.wikipedia.org/wiki/Chitwan_District",
+   "languages_note": "Percentages are the 2021 census mother-tongue shares as summarised on English Wikipedia district pages (citing CBS Table 5 'Mother tongue and sex'); not read in the CBS primary report. Confirm at censusnepal.cbs.gov.np.",
+   "verify": true
+  }
+ ],
+ "endorsement": [
+  {
+   "step": 1,
+   "who": "NRCS: Central Working Committee / Secretary General, DM department, PGI / GESI, finance, CVA lead, district chapters",
+   "what_they_agree": "Ownership of NRCS actions only (rungs 1-3b); delegation of authority for NRCS activation; volunteer, safeguarding and cash policies; explicit statement that NRCS does NOT order evacuations",
+   "timing": "Months 0-3 (Gate G0)"
+  },
+  {
+   "step": 2,
+   "who": "NLRC / 510, IFRC Country Delegation and IFRC-DREF Anticipatory Pillar",
+   "what_they_agree": "Technical review against the EAP checklist, trigger and budget, cash value rationale",
+   "timing": "Months 0-6, in parallel"
+  },
+  {
+   "step": 3,
+   "who": "DHM (Flood Forecasting Division, duty officers) and Department of Mines and Geology",
+   "what_they_agree": "Named trigger product, 24/7 duty contact, data-sharing, role in rung 4 sensors, dammed-lake confirmation SOP",
+   "timing": "Months 1-6 (Gate G1 together with step 5)"
+  },
+  {
+   "step": 4,
+   "who": "NDRRMA (Executive Committee, Anticipatory Action Clinic, NEOC) under the Ministry of Home Affairs",
+   "what_they_agree": "Recognition of the EAP in the monsoon plan; SRSP and Relief Distribution Standard compliance and any executive-committee approval for pre-event cash; cell-broadcast role and content authority; helicopter / SAR tasking contact; BIPAD integration",
+   "timing": "Months 2-8"
+  },
+  {
+   "step": 5,
+   "who": "District Disaster Management Committees (CDO-chaired) of Rasuwa, Nuwakot, Dhading, Chitwan first; then Sindhupalchok, Dolakha and the other corridor districts; provincial governments (Bagmati, Gandaki, Koshi)",
+   "what_they_agree": "Standing resolutions: rung-3a-evacuate and rung-4 evacuation pre-authorisation; highway / road holds; security agency staging; evacuation centres; return criteria. No rung 3a-evacuate is signed before this step",
+   "timing": "Months 3-9 (Gate G1: no rung 3a-evacuate or 4 claims without it)"
+  },
+  {
+   "step": 6,
+   "who": "Palikas: mayors / chairs, ward chairs, LDMCs, disaster focal persons, education units",
+   "what_they_agree": "Targeting lists drawn from the Social Security Allowance system, LDMF letter of intent, ward task forces, school protocols, evacuation centres, complaints desk",
+   "timing": "Months 3-9 (Gate G2: no cash pre-registration or first payment before LDMC validation)"
+  },
+  {
+   "step": 7,
+   "who": "Ministry of Energy, Water Resources and Irrigation, DoED, NEA, IPPAN, operators and contractors, lenders (ADB, AIIB, IFC) and labour authorities",
+   "what_they_agree": "Licence-condition or contract text: alarm receivers, tunnel strobes and sirens, daily rosters including sub-contract and migrant workers, drills, emergency coordinator, data link to DHM",
+   "timing": "Months 3-12 (Gate G3: no rung 4 worker protection claims without it)"
+  },
+  {
+   "step": 8,
+   "who": "Nepal Telecom, Ncell, NTA, Ministry of Communications",
+   "what_they_agree": "Cell-broadcast test and priority, SMS and IVR fall-backs, languages, tower power resilience, satellite-phone licensing",
+   "timing": "Months 3-9"
+  },
+  {
+   "step": 9,
+   "who": "Nepal Police, Armed Police Force, Nepal Army, Department of Roads, customs",
+   "what_they_agree": "Closure points and authority, SAR staging, helicopter sites, border hold",
+   "timing": "Months 4-10"
+  },
+  {
+   "step": 10,
+   "who": "Tourism: Nepal Tourism Board, TAAN, NMA, national park offices, lodge associations",
+   "what_they_agree": "Trekker and lodge alert channel, exclusion zones, livelihood protection scheme",
+   "timing": "Months 4-10"
+  },
+  {
+   "step": 11,
+   "who": "Communities and civil society: women's groups, Dalit and Janajati federations, disability organisations, community radio, schools, monasteries",
+   "what_they_agree": "Targeting criteria, message languages and siren code, acceptable false-alarm tolerance, complaints procedure (before sign-off, not after)",
+   "timing": "Months 2-9, before steps 5 and 6 are signed"
+  },
+  {
+   "step": 12,
+   "who": "Financial service providers (e.g. Global IME Bank standby agreement; banks and wallets with coverage per corridor ward)",
+   "what_they_agree": "Service-level agreement, agent float, KYC fall-backs, test transfer to about 100 households",
+   "timing": "Months 4-9"
+  },
+  {
+   "step": 13,
+   "who": "Government-to-government: MoFA / Home with China (Rasuwagadhi / Kyirong, Poiqu)",
+   "what_they_agree": "Optional data link and joint SOP; never a condition for activation",
+   "timing": "Parallel, no deadline for the EAP"
+  },
+  {
+   "step": 14,
+   "who": "UN and I/NGO partners: WFP, UNICEF, FAO, UNFPA, OCHA, Practical Action, ICIMOD, Danish Red Cross",
+   "what_they_agree": "Common beneficiary list and transfer value; avoid duplication with OCHA / CERF anticipatory action framework",
+   "timing": "Months 6-12"
+  },
+  {
+   "step": 15,
+   "who": "Final: NRCS Secretary General signs the EAP; IFRC validates; NDRRMA acknowledges",
+   "what_they_agree": "Final EAP with status table (funded / planned / unfunded) for each rung-4 element and an annex of signed documents",
+   "timing": "After gates G0-G3"
+  }
+ ],
+ "ns_capacity": {
+  "template_statement": "Capacity assessment of the Nepal Red Cross Society (NRCS) for the proposed EAP. Public sources give the national structure and recent track record only; every corridor-level number below must be supplied and signed off by NRCS. Items marked 'to be completed by the National Society' have no public value and have deliberately not been guessed.",
+  "status": "to be completed by the National Society",
+  "items": [
+   {
+    "topic": "Network and presence",
+    "known_public": "7 provincial committees, 77 district chapters, 1,564 sub-chapters; auxiliary status to the government; warehouses in each of the seven provinces (sEAP2024NP01). In Aug 2026 NRCS maintained NFI stock for at least 25,000 people prepositioned at 12 strategic locations and an activated EOC (IFRC DREF MDRNP022).",
+    "to_complete": "For each of the 14 corridor districts: chapter office, paid staff, active sub-chapters, accessible by road in monsoon (yes / no), key-holders of warehouses, named stores (e.g. Dhunche, Trishuli, Charikot, Chautara).",
+    "source_url": "https://go-api.ifrc.org/api/DownloadFile/96508/MDRNP022do",
+    "verify": false,
+    "flag": "To be completed by the National Society"
+   },
+   {
+    "topic": "EAP / sEAP experience",
+    "known_public": "sEAP2024NP01 (Western Terai floods): approved 4 Jun 2024, CHF 199,964, 22 communities in 12 municipalities of Banke, Bardiya, Kailali, 10,500 people; partially activated 27 Sep 2024 (102 volunteers informed communities; 3,600 people received early-warning messages; the operation update states no further early action was carried out); 110 volunteers trained in 2024 and 99 on standby in 2025; 17 evacuation centres mapped; 60 volunteers refreshed on water treatment; SGBV training for 88 participants. Successor sEAP2026NP03 (CHF 218,397, 9,500 people) listed on IFRC GO (not read).",
+    "to_complete": "Lessons learned report of the 2024 activation, post-activation evaluation, what worked about the trigger, time from trigger to first action.",
+    "source_url": "https://go-api.ifrc.org/api/DownloadFile/87976/sEAP2024NP01_MDRNP017",
+    "verify": false,
+    "flag": "To be completed by the National Society"
+   },
+   {
+    "topic": "CVA experience",
+    "known_public": "The sEAP2024NP01 budget has zero in the multipurpose cash row; a separate EUR 200,000 multipurpose cash grant (EU Civil Protection and Humanitarian Aid via IFRC / Danish Red Cross) supported Tikapur and Kailali on the Karnali in 2024. NRCS cash with SSA infrastructure (Danish Red Cross, 2021 floods). NRCS CVA Strategy 2024-2025 exists. Jajarkot earthquake response (2023-24) paid NPR 8,000 per beneficiary through bank accounts and IME (NRCS CVA newsletter via search snippet; the inter-agency cash coordinator reported 47 days instead of 7 for the start of distribution, IPS). Aug 2026: special cash fund supported by British Red Cross, standby agreement with Global IME Bank, MEB NPR 15,000, up to 2,000 households; lesson that beneficiary verification and banking procedures slowed past cash.",
+    "to_complete": "No anticipatory cash by NRCS to date is documented here. NRCS to supply: number of CVA-trained staff and volunteers, hours from list approval to payment in last three operations, financial-service-provider coverage per corridor ward, failure rates, data-protection and registration system, 2024 CVA strategy contents.",
+    "source_url": "https://cash-hub.org/resource/nepal-red-cross-society-cash-and-voucher-assistance-strategy-2024-2025",
+    "verify": true,
+    "flag": "To be completed by the National Society"
+   },
+   {
+    "topic": "Volunteers per corridor district",
+    "known_public": "National network only; district numbers are not public. Example: 30 volunteers oriented in Nuwakot on 27 Aug 2026; 99 volunteers on standby across Banke, Bardiya, Kailali in 2025 (sEAP).",
+    "to_complete": "Active trained volunteers by district and sub-chapter, by sex; those living in the flood path; accident insurance status; allowance policy (EAP assumes CHF 20 per day; NRCS policy to be checked).",
+    "source_url": "https://go-api.ifrc.org/api/DownloadFile/87977/MDRNP017eapar2024",
+    "verify": false,
+    "flag": "To be completed by the National Society"
+   },
+   {
+    "topic": "Warehouses, stock and logistics",
+    "known_public": "Provincial warehouses; 12 prepositioning points; dignity-kit procurement through IFRC for standardisation; kits remained in storage when no activation in 2025.",
+    "to_complete": "Named stores for the Trishuli, Sun Koshi, Tama Koshi, Dudh Koshi, Marsyangdi and Seti corridors, time from store to each ward under open and cut road conditions, boats / rope crossings, vehicles, helicopter access, stock rotation and shelf-life.",
+    "source_url": "https://go-api.ifrc.org/api/DownloadFile/96508/MDRNP022do",
+    "verify": false,
+    "flag": "To be completed by the National Society"
+   },
+   {
+    "topic": "Finance, procurement and PMER",
+    "known_public": "Nothing public located on NRCS audit status, DREF financial-reporting track record or PMER staffing.",
+    "to_complete": "Latest audit, DREF reporting timeliness, procurement thresholds, fraud and SEA policies, PMER officers, monitoring and CEA systems, data-protection impact assessment for pre-registration.",
+    "source_url": "https://lawcommission.gov.np",
+    "verify": true,
+    "flag": "To be completed by the National Society"
+   },
+   {
+    "topic": "PGI, CEA and safeguarding",
+    "known_public": "NRCS GESI department SGBV training manual used for 88 participants (2025 sEAP report); joint feedback mechanism with hotline and community meetings kept functional in 2025; PGI Minimum Standards endorsed by NRCS (DREF MDRNP022).",
+    "to_complete": "PGI focal persons per district, referral pathways in the 14 districts, hotline languages, complaint handling statistics.",
+    "source_url": "https://go-api.ifrc.org/api/DownloadFile/87977/MDRNP017eapar2024",
+    "verify": false,
+    "flag": "To be completed by the National Society"
+   },
+   {
+    "topic": "Restoring Family Links and PSS",
+    "known_public": "RFL focal persons designated in all district chapters with ICRC support; 116 tracing requests by 1 Sep 2026; more than 1,300 people reached with PFA / PSS by 25 Sep 2026.",
+    "to_complete": "Number of trained PSS volunteers per corridor district; RFL data-protection arrangements.",
+    "source_url": "https://website-api.nrcs.org/media/highlights/files/Rasuwa_Situation_Update_5.pdf",
+    "verify": true,
+    "flag": "To be completed by the National Society"
+   },
+   {
+    "topic": "Alignment with government",
+    "known_public": "NRCS district chapter chief is a statutory member of the DDMC (DRRM Act 2074 s.16(1)(h)) and the NRCS Chairperson sits on the national Council (s.6). NDRRMA runs an Anticipatory Action Clinic since 2024 with Danish Red Cross support.",
+    "to_complete": "Existing MoUs with NDRRMA, DHM, provinces and palikas; inclusion of NRCS actions in district and local disaster preparedness and response plans; LDMF arrangements.",
+    "source_url": "https://dpnet.org.np/uploads/files/DRRM_Act_and_Regulation_english%202022-04-13%2007-11-33.pdf",
+    "verify": false,
+    "flag": "To be completed by the National Society"
+   }
+  ]
+ },
+ "messages": {
+  "draft_status": "draft - to be reviewed by native speakers",
+  "length_note": "All English texts are at most 160 characters (checked programmatically).",
+  "cell_broadcast_note": "Cell broadcast limits: GSM-7 text about 93 characters per page, UCS-2 (Devanagari, Chinese) about 41 per page; SMS 160 / 70 characters per segment. Texts may need multi-page or shortening after native review.",
+  "texts": [
+   {
+    "rung": "Rung 3a - prepare (no evacuation)",
+    "sender_note": "Official channel (DHM / NDRRMA / DDMC); NRCS may relay only pre-approved text (DRRM Act 2074 s.24(2)(a) penalises false alarms)",
+    "english": "PREPARE: heavy rain/flood risk for [river] on [day]. Pack documents, charge phone, know your high-ground route. Do NOT leave yet. Wait for ward/Red Cross.",
+    "english_chars": 154,
+    "nepali": {
+     "text": "तयारी गर्नुहोस्: [नदी] मा [दिन] बाढी/भारी वर्षाको जोखिम। कागजात बटुल्नुहोस्, फोन चार्ज गर्नुहोस्, अग्लो सुरक्षित स्थानको बाटो थाहा पाउनुहोस्। अहिले नछाड्नुहोस्। वडा/रेडक्रसको सूचना पर्खनुहोस्।",
+     "status": "draft - to be reviewed by native speakers",
+     "chars": 192
+    },
+    "chinese_simplified": {
+     "text": "防汛准备:[河流][日期]有强降雨和洪水风险。请备好证件,手机充电,熟悉高处撤离路线。暂不撤离,等待通知。",
+     "status": "draft - to be reviewed by native speakers (Rasuwagadhi border; native Chinese speaker / Chinese border authority)",
+     "chars": 53
+    },
+    "tamang": "to be translated and checked by native speakers",
+    "sherpa": "to be translated and checked by native speakers",
+    "gurung": "to be translated and checked by native speakers",
+    "other_languages_hyolmo_thami_newar": "to be translated and checked by native speakers"
+   },
+   {
+    "rung": "Rung 3a - evacuate (requires second signal and CDO / LDMC decision)",
+    "sender_note": "Official channel (DHM / NDRRMA / DDMC); NRCS may relay only pre-approved text (DRRM Act 2074 s.24(2)(a) penalises false alarms)",
+    "english": "MOVE NOW to [safe point] ([ward]). Take children, elders, documents. Leave animals. Do not cross rivers. Ordered by [CDO/ward chair].",
+    "english_chars": 133,
+    "nepali": {
+     "text": "अहिले नै [सुरक्षित स्थान] ([वडा]) तर्फ जानुहोस्। बालबालिका, वृद्धवृद्धा र कागजात लिनुहोस्। पशु छोड्नुहोस्। नदी नतर्नुहोस्। [प्रमुख जिल्ला अधिकारी/वडाध्यक्ष] को निर्देशन।",
+     "status": "draft - to be reviewed by native speakers",
+     "chars": 169
+    },
+    "chinese_simplified": {
+     "text": "请立即撤往[安全点]。带上儿童、老人和证件,不要带牲畜,切勿过河。依[地方政府]指令。",
+     "status": "draft - to be reviewed by native speakers (Rasuwagadhi border; native Chinese speaker / Chinese border authority)",
+     "chars": 43
+    },
+    "tamang": "to be translated and checked by native speakers",
+    "sherpa": "to be translated and checked by native speakers",
+    "gurung": "to be translated and checked by native speakers",
+    "other_languages_hyolmo_thami_newar": "to be translated and checked by native speakers"
+   },
+   {
+    "rung": "Rung 3b - cash tier",
+    "sender_note": "Official channel (DHM / NDRRMA / DDMC); NRCS may relay only pre-approved text (DRRM Act 2074 s.24(2)(a) penalises false alarms)",
+    "english": "Red Cross cash: registered households get NPR [amount] in account/wallet by [date]. Problems? Free call [number]. Never pay for this help.",
+    "english_chars": 138,
+    "nepali": {
+     "text": "रेडक्रस नगद सहयोग: दर्ता भएका घरपरिवारलाई [मिति] सम्म रु [रकम] खाता/वालेटमा जम्मा हुनेछ। समस्या भए [नम्बर] मा निःशुल्क फोन गर्नुहोस्। यस सहयोगको लागि पैसा तिर्नु पर्दैन।",
+     "status": "draft - to be reviewed by native speakers",
+     "chars": 169
+    },
+    "chinese_simplified": {
+     "text": null,
+     "status": "not applicable: cash is for registered Nepali households; no Chinese text needed"
+    },
+    "tamang": "to be translated and checked by native speakers",
+    "sherpa": "to be translated and checked by native speakers",
+    "gurung": "to be translated and checked by native speakers",
+    "other_languages_hyolmo_thami_newar": "to be translated and checked by native speakers"
+   },
+   {
+    "rung": "Rung 4 - imminent (minutes)",
+    "sender_note": "Official channel (DHM / NDRRMA / DDMC); NRCS may relay only pre-approved text (DRRM Act 2074 s.24(2)(a) penalises false alarms)",
+    "english": "FLOOD COMING NOW! Run to high ground away from the river NOW. Leave everything. Leave tunnels and riverside camps. Do not go back.",
+    "english_chars": 130,
+    "nepali": {
+     "text": "बाढी आउँदैछ! अहिले नै नदीदेखि टाढा अग्लो ठाउँमा दौडनुहोस्। सबै कुरा छोड्नुहोस्। सुरुङ र नदी किनारका क्याम्प खाली गर्नुहोस्। फर्कनु हुँदैन।",
+     "status": "draft - to be reviewed by native speakers",
+     "chars": 138
+    },
+    "chinese_simplified": {
+     "text": "洪水马上到来!立刻跑向远离河流的高处,放弃一切物品。撤离隧道和河边营地,不要返回。",
+     "status": "draft - to be reviewed by native speakers (Rasuwagadhi border; native Chinese speaker / Chinese border authority)",
+     "chars": 41
+    },
+    "tamang": "to be translated and checked by native speakers",
+    "sherpa": "to be translated and checked by native speakers",
+    "gurung": "to be translated and checked by native speakers",
+    "other_languages_hyolmo_thami_newar": "to be translated and checked by native speakers"
+   },
+   {
+    "rung": "All clear",
+    "sender_note": "Official channel (DHM / NDRRMA / DDMC); NRCS may relay only pre-approved text (DRRM Act 2074 s.24(2)(a) penalises false alarms)",
+    "english": "ALL CLEAR for [river/ward] by [authority] at [time]. Return only if told your home is safe. Stay away from riverbanks and landslide areas.",
+    "english_chars": 138,
+    "nepali": {
+     "text": "खतरा टरेको सूचना: [नदी/वडा] मा [समय] मा [निकाय] ले खतरा सकिएको जनायो। घर सुरक्षित भनेपछि मात्र फर्कनुहोस्। नदी किनार र पहिरो क्षेत्रबाट टाढा रहनुहोस्।",
+     "status": "draft - to be reviewed by native speakers",
+     "chars": 150
+    },
+    "chinese_simplified": {
+     "text": "警报解除:[地点]于[时间]由[机构]宣布。确认安全前请勿返回,远离河岸和滑坡区。",
+     "status": "draft - to be reviewed by native speakers (Rasuwagadhi border; native Chinese speaker / Chinese border authority)",
+     "chars": 41
+    },
+    "tamang": "to be translated and checked by native speakers",
+    "sherpa": "to be translated and checked by native speakers",
+    "gurung": "to be translated and checked by native speakers",
+    "other_languages_hyolmo_thami_newar": "to be translated and checked by native speakers"
+   }
+  ],
+  "siren_pattern_proposal": {
+   "status": "Proposal only, to be agreed with DHM / NDRRMA and tested with communities; must be distinct from fire, school and festival signals.",
+   "patterns": [
+    {
+     "signal": "Rung 3a-prepare",
+     "pattern": "No siren. Voice, SMS, FM radio and volunteers only, to avoid siren fatigue.",
+     "verify": true
+    },
+    {
+     "signal": "Rung 3a-evacuate",
+     "pattern": "Three long blasts (10 s on, 5 s off) repeated every 10 minutes for 1 hour, followed by voice message over loudspeaker.",
+     "verify": true
+    },
+    {
+     "signal": "Rung 4 imminent",
+     "pattern": "Rapid pulsing (1 s on, 1 s off) for at least 5 minutes, auto-repeated until stopped by DHM / ward; with red flashing strobes at tunnel portals and underground.",
+     "verify": true
+    },
+    {
+     "signal": "All clear",
+     "pattern": "One continuous 60-second tone, then voice message.",
+     "verify": true
+    }
+   ],
+   "teaching_note": "Teach one rule first: any pulsing siren means go up now. Practice in schools, women's groups, monasteries and lodges; include visual strobe for deaf and hard-of-hearing people.",
+   "verify": true
+  }
+ },
+ "cash_design": [
+  {
+   "topic": "Standard governing relief and anticipatory cash",
+   "statement": "The Shock Responsive Social Protection (SRSP) and Relief Distribution Standard was adopted by the Government of Nepal in November 2024 (OCHA AA framework 2025; IFRC 2025 case study says NDRRMA approved it at the end of 2024). Humanitarian partners are required to prioritise individuals listed in the Social Security Allowance System; identification, data collection, verification and approval are done with the Local Disaster Management Committee (LDMC). The DRRM Act 2074 s.39 requires all agencies to follow government minimum standards on relief distribution.",
+   "source_url": "https://www.dpnet.org.np/public/uploads/files/250805_AA%20Framework_Nepal_2025_endorsed%202026-01-20%2008-38-35.pdf",
+   "verify": false
+  },
+  {
+   "topic": "Transfer value tiers",
+   "statement": "UNICEF, FAO and WFP transfer NPR 5,000 or 8,000 per household depending on household size under the SRSP standard in the 2025 OCHA/CERF anticipatory framework. The household-size cut-off between the two tiers is not stated in the documents read. NRCS DREF MDRNP022 (Aug 2026, response not anticipatory) uses a minimum expenditure basket of NPR 15,000 for up to 2,000 households and says it is in line with the SRSP standard, which looks inconsistent with 5,000 / 8,000. This EAP defaults to the upper SRSP tier, NPR 8,000. Decision needed: align with the tiers, or justify the difference and agree it with NDRRMA.",
+   "source_url": "https://www.dpnet.org.np/public/uploads/files/250805_AA%20Framework_Nepal_2025_endorsed%202026-01-20%2008-38-35.pdf",
+   "verify": true
+  },
+  {
+   "topic": "Approval path",
+   "statement": "UN anticipatory action: DHM publishes bulletins; the action trigger is reported; the Resident Coordinator's office convenes the activation group which decides within 12 hours whether to opt out (activation is the default); NDRRMA convenes its executive committee to confirm activation within 12 hours; the LDMC then transfers funds from the Local Disaster Management Fund directly to beneficiaries' bank accounts. For government-routed anticipatory cash the IFRC 2025 case study states approval of the NDRRMA executive committee is still required and agencies worry about lead time. Direct cash is not yet eligible for pre-emptive funding under the disaster management policy; an NDRRMA National Framework on Anticipatory Action is under development. Whether an NRCS DREF-funded transfer needs the same approval is not confirmed.",
+   "source_url": "https://www.ifrc.org/sites/default/files/2025-09/Strengthening_National_Disaster_Risk_Management_Systems_through_integration_of_anticipatory_action_The_case_of%20Nepal.pdf",
+   "verify": true
+  },
+  {
+   "topic": "Base list: social-security registers",
+   "statement": "Beneficiary base is the Social Security Allowance System and Prime Minister's Employment Programme. Priority groups named in the 2025 framework: landless people, daily-wage workers, female-headed households, senior citizens, single women, families with persons with disabilities, families with children under five. The final lists are validated and endorsed by the LDMC and are pre-registered before activation. The SSA system is described as a public information resource that the LDMC can share with agencies. Coverage is partial: a Bardiya study cited in the Anticipation Hub material found only about 7 percent of flood-exposed individuals were likely SSA beneficiaries, so exposure-based additions are needed.",
+   "source_url": "https://www.dpnet.org.np/public/uploads/files/250805_AA%20Framework_Nepal_2025_endorsed%202026-01-20%2008-38-35.pdf",
+   "verify": true
+  },
+  {
+   "topic": "Social security payment infrastructure",
+   "statement": "Section 17 of the Social Security Act 2018 makes banking-channel payment mandatory in areas notified in the Nepal Gazette; all 753 local levels were phased in (Nov 2020 to Nov 2021); local levels issue identity cards to beneficiaries and caretakers; cash continues only where no bank is available. The World Bank reports that all about 3.5 million SSA recipients are paid into bank accounts. In 2021 the Danish Red Cross and NRCS used SSA infrastructure (finance, information management, grievance, communication) to send multipurpose cash to flood-affected households in western Nepal and cross-checked post-disaster assessment against the SSA registry, notifying recipients by SMS from registry contacts.",
+   "source_url": "https://thehimalayantimes.com/nepal/banking-channel-mandatory-for-distribution-of-social-security-allowance",
+   "verify": false
+  },
+  {
+   "topic": "Delivery option: bank transfer",
+   "statement": "Primary route under SRSP (LDMC to bank accounts). NRCS has a standby agreement with Global IME Bank (DREF MDRNP022, Aug 2026) and paid cash through personal bank accounts in Jajarkot (2024 CVA newsletter, search snippet). Branches in remote corridors are few (local review, unverified); banks close on Saturdays and holidays; branch cash-out may be on the other side of a river or road cut.",
+   "source_url": "https://go-api.ifrc.org/api/DownloadFile/96508/MDRNP022do",
+   "verify": true
+  },
+  {
+   "topic": "Delivery option: mobile wallet",
+   "statement": "NRB reports about 26.76 million mobile wallet users at mid-July 2025 (search summary of the Payment Systems Oversight Report 2024/25) and found weak KYC verification in on-site inspections. Wallets depend on handset, charge, network and agent float, which fail in the very events the cash is for. Wallet tier limits for unverified users were once NPR 500 per transaction and NPR 5,000 per month (older Himalayan Times report); current NRB Unified Directive (March 2025) not read.",
+   "source_url": "https://www.nrb.org.np/psd/payment-systems-oversight-report-2081-82-2024-2025/",
+   "verify": true
+  },
+  {
+   "topic": "Delivery option: agent / cash-out point",
+   "statement": "Agent banking and wallet merchants are options but coverage per palika is unknown. A coverage table per palika (branches, agents, merchants, whether on the same bank of the river, float) must be built before the season. Agents need float prepaid and an alternate route.",
+   "source_url": "https://www.nrb.org.np/psd/payment-systems-oversight-report-2081-82-2024-2025/",
+   "verify": true
+  },
+  {
+   "topic": "Delivery option: palika / LDMF account",
+   "statement": "Under the OCHA/CERF framework cash is channelled through the Local Disaster Management Fund with the LDMC transferring directly to beneficiaries' bank accounts. Palika accounts are the fall-back when a household has no account: payment to the household head or senior woman through the palika. LDMF operating rules differ by province and pre-emptive use is not yet eligible under the disaster management policy (IFRC 2025).",
+   "source_url": "https://www.ifrc.org/sites/default/files/2025-09/Strengthening_National_Disaster_Risk_Management_Systems_through_integration_of_anticipatory_action_The_case_of%20Nepal.pdf",
+   "verify": true
+  },
+  {
+   "topic": "KYC and document fallbacks",
+   "statement": "Account opening and wallet KYC normally need citizenship or national ID. Groups likely to miss out: Tamang and other women who could not obtain citizenship through their mothers, married women with documents in another district, people whose documents were lost in 2015 or 2026, migrant households (local review, unverified). DRRM Act 2074 s.40 provides for substantiation and duplicate copies of documents lost in disasters; s.17(2)(m) lets the local level identify affected households and issue identity cards. Proposed fall-backs: nominee household member recorded at pre-registration; payment through the palika for the household head or senior woman; SSA identity card as proof; LDMC-certified list; in-kind alternative.",
+   "source_url": "https://dpnet.org.np/uploads/files/DRRM_Act_and_Regulation_english%202022-04-13%2007-11-33.pdf",
+   "verify": true
+  },
+  {
+   "topic": "Duplication safeguards",
+   "statement": "Joint registration and verification by agencies using the SSA system, with data shared through the LDMC to avoid duplicates (OCHA 2025). Cross-check against LDMF relief and I/NGO programmes via the Cash Coordination Group, keep one list per ward, record transfers in a shared register, post-distribution monitoring, hotline and ward complaints desk. Act s.39(2)(f) requires a one-window relief system. SSA duplicates and fake beneficiaries are a known problem (Himalayan Times). Because anticipatory cash is one-off, record whether the household later receives post-event cash.",
+   "source_url": "https://www.dpnet.org.np/public/uploads/files/250805_AA%20Framework_Nepal_2025_endorsed%202026-01-20%2008-38-35.pdf",
+   "verify": false
+  },
+  {
+   "topic": "Speed and the real payout clock",
+   "statement": "Past performance: the inter-agency cash coordinator said distribution after the Jajarkot earthquake took 47 days instead of the expected 7 (IPS, Jan 2024); NRCS's 2026 DREF notes that delays in beneficiary verification and banking procedures slow cash. Any 24-hour claim needs a test transfer to about 100 households in one corridor ward before the season, including a Friday night and a festival day, and measurement of the payout clock under three conditions (open, network down, road cut).",
+   "source_url": "https://go-api.ifrc.org/api/DownloadFile/96508/MDRNP022do",
+   "verify": true
+  },
+  {
+   "topic": "Data protection",
+   "statement": "Pre-registration holds phone numbers, bank details and vulnerability status of households (the IFRC review raises data protection). Lists should not be public; share on a need-to-know basis; legal basis for data sharing between SSA, LDMC and NRCS needs a data-sharing agreement. Nepal's data-protection law status not checked.",
+   "source_url": "https://lawcommission.gov.np",
+   "verify": true
+  }
+ ]
+}

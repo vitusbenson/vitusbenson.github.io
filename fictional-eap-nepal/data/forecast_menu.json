@@ -1,0 +1,463 @@
+[
+ {
+  "name": "DHM daily Flood Forecast Bulletin and flash-flood risk outlook",
+  "provider": "DHM Nepal, Flood Forecasting Section",
+  "type": "bulletin",
+  "variables": "Basin-level flood/flash-flood risk category, expected river stage, 3-day rainfall outlook",
+  "resolution": "Basin / district-level text and map",
+  "lead_time": "Up to 3 days (bulletin issued ~07:00-08:00 NPT)",
+  "latency": "Daily; seasonal (monsoon) service",
+  "access": "open",
+  "cost": "free",
+  "known_skill_nepal": "No published POD/FAR found. 26 Aug 2026 08:00 bulletin flagged high flash-flood risk for Rasuwa corridor before the event (per existing literature note). Part of the dual trigger in the CERF Koshi/West Rapti frameworks (Sep-Oct 2024 activations).",
+  "fit_for_rung": [
+   "2",
+   "3a"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "Bulletin archive PDFs exist on district administration sites (e.g. 2021 bulletins), so a hindcast count of 'high risk' days is feasible by manual/OCR extraction. Inputs: ~120 rain and ~85 water-level stations, HEC-HMS (Karnali, Babai, Narayani), MIKE-11 (Koshi), GloFAS.",
+  "source_urls": [
+   "https://daobhojpur.moha.gov.np/upload/0c86b0873e4e04ba18d1308320f56ab7/files/Flood_Bulletin_16Aug_2021_7AM_(श्रावण_३२).pdf",
+   "https://english.ratopati.com/story/77571/water-levels-in-rivers-across-the-country-are-forecast-to-rise-risk-of-flooding-remains-in-rasuwa-and-nuwakot",
+   "https://www.dpnet.org.np/public/uploads/files/250805_AA Framework_Nepal_2025_endorsed 2026-01-20 08-38-35.pdf"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "name": "DHM real-time river-level and rainfall stations with warning/danger levels",
+  "provider": "DHM Nepal (www.dhm.gov.np / hydrology.gov.np)",
+  "type": "observation",
+  "variables": "River stage (warning and danger levels), rainfall accumulations",
+  "resolution": "Point; ~85 water-level and ~120 rain stations reported in bulletins",
+  "lead_time": "0 (observation); persistence only",
+  "latency": "Near real time (telemetry); hourly-ish",
+  "access": "open",
+  "cost": "free to view; bulk historical data by request (licence not checked)",
+  "known_skill_nepal": "Height-based thresholds, no rate-of-rise alarm; upstream gauges on the Trishuli/Bhote Koshi were destroyed before crossing thresholds on 26 Aug 2026 (existing literature note). Thresholds reported 2026: Rasuwagadhi 6/7 m, Syabrubesi 5.5 m, Betrawati 4.1/5.0 m, Devghat 7.3 m.",
+  "fit_for_rung": [
+   "3b",
+   "4"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "Numeric DHM rainfall warning thresholds were not found online. Danger-level exceedance is the action trigger in CERF frameworks (with GloFAS).",
+  "source_urls": [
+   "https://www.dhm.gov.np/",
+   "https://english.ratopati.com/story/77571/water-levels-in-rivers-across-the-country-are-forecast-to-rise-risk-of-flooding-remains-in-rasuwa-and-nuwakot"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "name": "DHM WRF / NWP rainfall products",
+  "provider": "DHM Nepal (WRF, locally run)",
+  "type": "NWP ensemble",
+  "variables": "Rainfall, temperature, wind (deterministic WRF; ensemble status unknown)",
+  "resolution": "Reported ~3-9 km nested domains (unverified)",
+  "lead_time": "Up to 3 days (3/6/24 h accumulations)",
+  "latency": "Daily runs; website availability intermittent",
+  "access": "restricted",
+  "cost": "free to view on DHM site where posted; raw output not public",
+  "known_skill_nepal": "No peer-reviewed verification for flash floods found in this search. Feeds the daily bulletin.",
+  "fit_for_rung": [
+   "2",
+   "3a"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "Needs direct request to DHM for archive and verification statistics.",
+  "source_urls": [
+   "https://www.dhm.gov.np/",
+   "https://nhess.copernicus.org/articles/17/423/2017/"
+  ],
+  "confidence": "low"
+ },
+ {
+  "name": "DHM weather radars (Surkhet; Palpa and Udayapur planned)",
+  "provider": "DHM Nepal; supplier EEC (Defender C350, C-band Doppler)",
+  "type": "nowcast",
+  "variables": "Reflectivity, Doppler velocity, rain-rate (QPE)",
+  "resolution": "Typically ~1 km range gates, 5-10 min volume scans (generic C-band, not Nepal-verified)",
+  "lead_time": "0 to ~2 h nowcast",
+  "latency": "Minutes",
+  "access": "not public",
+  "cost": "not applicable (no public feed found)",
+  "known_skill_nepal": "Weather 2022 paper (Weather radar in Nepal: opportunities and challenges in a mountainous region) discusses beam blockage; no QPE skill for flash floods found. A 2020 paper says the first radar was installed in 2019 in the western region (Surkhet district per supplier release).",
+  "fit_for_rung": [
+   "3b",
+   "4"
+  ],
+  "notes": "Supplier release: two further EEC Defender C350 systems purchased for Palpa and Udayapur (installation status NOT confirmed; release undated). No radar covers the Rasuwa/Langtang north-central corridor, so none of these would have seen the 26 Aug 2026 event; Kathmandu-area coverage not confirmed. Earlier plans named Bhojpur/Udayapur, Palpa/Nawalparasi, Surkhet. Data appear to be obtained via DHM contacts, not a public portal (inference).",
+  "source_urls": [
+   "https://meteorologicaltechnologyinternational.com/news/developing-countries/eec-expands-weather-radar-network-in-nepal.html",
+   "https://arxiv.org/abs/2010.06501v1",
+   "https://thehimalayantimes.com/ampArticle/111272"
+  ],
+  "confidence": "low",
+  "tested_in_this_eap": false
+ },
+ {
+  "name": "DHM SMS / cell-broadcast alert dissemination",
+  "provider": "DHM with Nepal Telecom and Ncell; NDRRMA",
+  "type": "bulletin",
+  "variables": "Alert text to subscribers / cell broadcast",
+  "resolution": "Nationwide / district-targeted",
+  "lead_time": "Not a forecast: dissemination channel (minutes)",
+  "latency": "Minutes; 679,295 SMS sent 09:16 on 26 Aug 2026 after first wave",
+  "access": "restricted",
+  "cost": "operator-borne; MoUs required",
+  "known_skill_nepal": "26 Aug 2026: alerts reached Malekhu >2 h after first wave (existing literature note); 08:00 bulletin had no standing response protocol.",
+  "fit_for_rung": [
+   "3a",
+   "3b",
+   "4"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "Included in menu as the delivery layer, not a trigger. Needs NDRRMA/DHM MoU for pre-agreed message templates.",
+  "source_urls": [
+   "https://www.dhm.gov.np/"
+  ],
+  "confidence": "low"
+ },
+ {
+  "name": "South Asia Flash Flood Guidance System (SAsiaFFGS)",
+  "provider": "WMO / Hydrologic Research Center / NOAA / USAID; IMD regional centre; DHM national user",
+  "type": "flash-flood guidance",
+  "variables": "Flash Flood Risk (daily), Imminent and Persistent Flash Flood Threat, soil moisture, flash-flood guidance (mm)",
+  "resolution": "Small-catchment (~tens to hundreds km2) basins, ~4 km gridded inputs",
+  "lead_time": "Imminent threat 0-6 h; risk up to 24 h (sources differ 6 vs 12 h)",
+  "latency": "Hourly to 6-hourly updates",
+  "access": "restricted",
+  "cost": "free for NMHS with login; DHM staff have access; not open to NGOs by default",
+  "known_skill_nepal": "No published evaluation over Nepal found. IMD evaluated it for July 2023 Himachal Pradesh event (MAUSAM) and reported it captured spatial/temporal evolution. Nepal used WRF 3/6/24 h products in practice.",
+  "fit_for_rung": [
+   "3a",
+   "3b"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "Request access via DHM; ask for archive of threat products to compute hit/false-alarm rates. USAID fact sheet: Kamala basin pilot with DHM.",
+  "source_urls": [
+   "https://mausamjournal.imd.gov.in/index.php/MAUSAM/article/download/7366/5901/34582",
+   "https://uatweb.usaid.gov/sites/default/files/2022-05/End_to_End_Early_Warning_System_Fact_Sheet.pdf",
+   "https://www.preventionweb.net/go/52634"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "name": "ECMWF IFS ENS (open data, real time)",
+  "provider": "ECMWF",
+  "type": "NWP ensemble",
+  "variables": "Total precipitation, T2m, winds, MSLP, pressure-level fields (open subset)",
+  "resolution": "0.25 deg (open data); ~9 km native",
+  "lead_time": "Up to 15 days (51 members); 6-hourly steps",
+  "latency": "~7-9 h after 00/12 UTC",
+  "access": "open",
+  "cost": "free (CC-BY-4.0 subset); higher-resolution via licensed Real-time Dissemination",
+  "known_skill_nepal": "No Nepal flash-flood verification found. Generic: reliable synoptic monsoon rain at 3-7 d, poor placement of convective cells in steep valleys.",
+  "fit_for_rung": [
+   "2",
+   "3a"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "Open archive of real-time data short; long reforecasts (11 members, twice weekly, 20 years) are on ECMWF/MARS or S2S, access conditions to check (not confirmed here). Needed to replace the 5-member GEFS reforecast in the backtest (review 6.4).",
+  "source_urls": [
+   "https://ecmwf.int/en/forecasts/datasets/open-data",
+   "https://www.ecmwf.int/node/28999"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "name": "ECMWF AIFS-ENS (machine-learning ensemble)",
+  "provider": "ECMWF",
+  "type": "NWP ensemble",
+  "variables": "Precipitation and standard surface/upper fields",
+  "resolution": "0.25 deg",
+  "lead_time": "Up to 15 days",
+  "latency": "Hours after run time (similar to IFS open data)",
+  "access": "open",
+  "cost": "free (CC-BY-4.0)",
+  "known_skill_nepal": "None for Nepal. Operational since 1 Jul 2025; v2 from 12 May 2026 (ECMWF). Archive exists only from Jul 2025, so no 9-season backtest possible.",
+  "fit_for_rung": [
+   "2",
+   "3a"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "Short archive; treat as candidate for operations, not for hindcast evidence.",
+  "source_urls": [
+   "https://www.ecmwf.int/en/forecasts/datasets/aifs-machine-learning-data"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "name": "ECMWF Extreme Forecast Index (EFI) and Shift of Tails",
+  "provider": "ECMWF",
+  "type": "NWP ensemble",
+  "variables": "EFI/SOT for 24 h precipitation, derived from ENS vs model climate",
+  "resolution": "~9 km native; open-data availability of EFI itself not confirmed",
+  "lead_time": "1-10 days",
+  "latency": "As for ENS",
+  "access": "licence",
+  "cost": "Charts via ECMWF web (some open); gridded EFI generally licensed (to be confirmed)",
+  "known_skill_nepal": "No Nepal-specific verification found.",
+  "fit_for_rung": [
+   "2",
+   "3a"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "Ranks rainfall anomaly relative to model climate, so avoids absolute bias in the Himalaya. Can be recomputed from the open ENS plus reforecasts if gridded EFI is unavailable.",
+  "source_urls": [
+   "https://www.ecmwf.int/en/forecasts/documentation-and-support/extreme-forecast-index"
+  ],
+  "confidence": "low"
+ },
+ {
+  "name": "NOAA GEFS v12 (operational and reforecast)",
+  "provider": "NOAA NCEP",
+  "type": "NWP ensemble",
+  "variables": "Precipitation, standard fields",
+  "resolution": "0.25 deg (operational output); reforecast ~0.25 deg for first days then coarser",
+  "lead_time": "Up to 16 days operational (31 members: 30 + control); reforecast up to 35 days",
+  "latency": "~4-5 h after 00/06/12/18 UTC",
+  "access": "open",
+  "cost": "free (AWS Open Data / NOMADS)",
+  "known_skill_nepal": "The EAP's current backtest uses the 5-member reforecast 2000-2019 (once daily; weekly 11-member). No published Nepal skill found.",
+  "fit_for_rung": [
+   "2",
+   "3a",
+   "3b"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "Reforecast: 5 members daily (00 UTC), 11 members weekly, 2000-2019, no restrictions on use. Member-count mismatch with operational 31 means thresholds from reforecast are not directly transferable.",
+  "source_urls": [
+   "https://registry.opendata.aws/noaa-gefs-reforecast",
+   "https://registry.opendata.aws/noaa-gefs"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "name": "GloFAS river discharge forecasts and reforecasts (CEMS)",
+  "provider": "Copernicus Emergency Management Service / ECMWF",
+  "type": "hydrological",
+  "variables": "River discharge, probability of exceeding 2/5/20-yr return periods",
+  "resolution": "0.05 deg (~5 km) routing grid, v4",
+  "lead_time": "Up to 30 days (daily); reforecast 46 d, twice weekly then monthly schedule per v4.2 note, 2003-2022",
+  "latency": "Daily, ~ half-day after ENS run",
+  "access": "open",
+  "cost": "free (EWDS / GloFAS viewer); registration for API",
+  "known_skill_nepal": "HDX Centre: only a fraction of 1-in-2-yr exceedances were forecast correctly at 4-7 d; ~70% at Chatara (Koshi), historical forecast never reached threshold at Chisapani (Karnali). Used with DHM bulletin as dual trigger in OCHA/CERF Nepal frameworks (readiness 70% prob. of 2-yr RP at 7 d; action 70% at 3 d or DHM danger level); activations Oct 2022, Sep 2024 (Koshi) and Oct 2024 (west).",
+  "fit_for_rung": [
+   "2",
+   "3a"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "Designed for large rivers (upstream area > ~1000 km2 effective); not for steep headwater catchments like Bhote Koshi/Trishuli upper reaches or cryosphere cascades. Check EWDS page for reforecast freeze mentioned in v4.2 note.",
+  "source_urls": [
+   "https://centre.humdata.org/triggering-anticipatory-action-for-floods-in-nepal/",
+   "https://ewds.climate.copernicus.eu/datasets/cems-glofas-reforecast",
+   "https://www.anticipation-hub.org/resources/anticipatory-action-framework-nepal-pilot",
+   "https://www.dpnet.org.np/public/uploads/files/250805_AA Framework_Nepal_2025_endorsed 2026-01-20 08-38-35.pdf"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "name": "Google Flood Hub / Flood Forecasting API (virtual gauges)",
+  "provider": "Google Research",
+  "type": "hydrological",
+  "variables": "River discharge/ flood severity at gauges; virtual-gauge forecasts; inundation maps",
+  "resolution": "Gauge/reach point forecasts",
+  "lead_time": "Up to 7 days",
+  "latency": "Daily updates",
+  "access": "licence",
+  "cost": "Flood Hub map free; expanded 'virtual gauge' API for researchers/experts by application (terms not verified)",
+  "known_skill_nepal": "Nepal coverage NOT confirmed in this search; Nepal likely only in virtual-gauge tier if covered. Global skill: Nearing et al. 2024, Nature (ungauged extreme floods).",
+  "fit_for_rung": [
+   "2",
+   "3a"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "Action: check Flood Hub web map for Nepal rivers; apply for API access. India and Bangladesh covered since 2018/2021 (Karnali, Koshi, Narayani flow into India's CWC network upstream).",
+  "source_urls": [
+   "https://sites.research.google/gr/floodforecasting/flood-hub-expert-mode",
+   "https://stormwater.wef.org/2022/11/google-takes-on-flooding-with-satellites-machine-learning/"
+  ],
+  "confidence": "low"
+ },
+ {
+  "name": "NCMRWF NEPS-G ensemble and IMD regional products",
+  "provider": "NCMRWF / IMD (India); RIMES as regional intermediary",
+  "type": "NWP ensemble",
+  "variables": "Rainfall probability, ensemble means, flood advisory products",
+  "resolution": "12 km, 23 members (lagged), 70 levels",
+  "lead_time": "Up to 10 days",
+  "latency": "Daily, ~ half day",
+  "access": "restricted",
+  "cost": "Charts/data partly on IMD/NCMRWF sites; raw ensemble access by request (not verified)",
+  "known_skill_nepal": "None for Nepal found. NCMRWF presented an ensemble flood advisory product (2021).",
+  "fit_for_rung": [
+   "2"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "RIMES (Regional Integrated Multi-Hazard Early Warning System) supports Nepal DHM with products; search returned nothing specific, details unverified.",
+  "source_urls": [
+   "https://websevak.ncmrwf.gov.in/ncmrwf/NEPSG-Writeup-for-WEB-June2020.pdf",
+   "https://websevak.ncmrwf.gov.in/ENSEMBLE-Workshop-January-2021/Presentations/Day1/1_AS_NCMRWF.pdf"
+  ],
+  "confidence": "low"
+ },
+ {
+  "name": "GPM IMERG Early / Late / Final",
+  "provider": "NASA GSFC / JAXA",
+  "type": "observation",
+  "variables": "Precipitation rate, 30-min",
+  "resolution": "0.1 deg, 30 min",
+  "lead_time": "0 (observation) with Early-run forward propagation of limited use",
+  "latency": "Early ~4 h; Late ~14 h; Final ~3.5 months",
+  "access": "open",
+  "cost": "free (Earthdata login)",
+  "known_skill_nepal": "Not quantified in this search; known to underestimate orographic and short convective rain in the Himalaya.",
+  "fit_for_rung": [
+   "3b",
+   "4"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "Useful for event verification and nowcast-style gauge-free monitoring of accumulations; too coarse/late to resolve a small-catchment cloudburst.",
+  "source_urls": [
+   "https://gpm.nasa.gov/resources/faq/what-are-differences-between-imerg-early-late-and-final-runs-and-which-should-be-used",
+   "https://gpm.nasa.gov/data/IMERG"
+  ],
+  "confidence": "high"
+ },
+ {
+  "name": "JAXA GSMaP NOW / near-real-time",
+  "provider": "JAXA EORC",
+  "type": "nowcast",
+  "variables": "Precipitation rate",
+  "resolution": "0.1 deg, hourly (NRT); NOW is 0.1 deg 10-min (unverified)",
+  "lead_time": "0 to 1 h extrapolation (NOW)",
+  "latency": "~ 4 h (NRT); NOW about 30 min (unverified)",
+  "access": "open",
+  "cost": "free (registration for FTP)",
+  "known_skill_nepal": "None found.",
+  "fit_for_rung": [
+   "4"
+  ],
+  "notes": "Latency and resolution of GSMaP NOW not confirmed in this search; check JAXA GSMaP site.",
+  "tested_in_this_eap": false,
+  "source_urls": [
+   "https://sharaku.eorc.jaxa.jp/GSMaP/"
+  ],
+  "confidence": "low"
+ },
+ {
+  "name": "Sentinel-1 InSAR slope-deformation screening",
+  "provider": "ICIMOD with ESA/Copernicus data",
+  "type": "cryosphere monitoring",
+  "variables": "Line-of-sight displacement time series",
+  "resolution": "~10-20 m pixel; 6-12 day revisit",
+  "lead_time": "Weeks to months of precursor, not event timing",
+  "latency": "Days (processing)",
+  "access": "open",
+  "cost": "free data (Copernicus); processing effort",
+  "known_skill_nepal": "ICIMOD synthesis: up to 40 cm LoS deformation 7 Jul-24 Aug 2026 at the Gyirong-Rasuwa slope, but timing not predictable; steep north face of Langtang Lirung is poor for InSAR, optical offset tracking (Wang et al. 2026, Landslides) used instead. Chamoli 2021 precursor only found retrospectively.",
+  "fit_for_rung": [
+   "4"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "Screening/watch trigger, not an action trigger; acceleration thresholds unvalidated. Primary ICIMOD report not read directly (secondary news).",
+  "source_urls": [
+   "https://theannapurnaexpress.com/story/67902/",
+   "https://eos.org/thelandslideblog/nepal-landslide-precursory-behaviour"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "name": "Glacial lake mapping (Sentinel-2 / Planet) and PDGL screening",
+  "provider": "ICIMOD; Planet Labs; Sentinel-2 (ESA)",
+  "type": "cryosphere monitoring",
+  "variables": "Lake area, ice-cored moraine/dam condition, new lakes",
+  "resolution": "10 m (S2, 5-day); ~3 m (Planet daily, commercial)",
+  "lead_time": "Hazard screening (months-years), not event warning",
+  "latency": "Days",
+  "access": "open",
+  "cost": "S2 free; Planet by licence (research programmes available)",
+  "known_skill_nepal": "HMAGLOFDB v1.3.0 (CC0) and ICIMOD 2020 PDGL report support screening; no event-level skill.",
+  "fit_for_rung": [
+   "1",
+   "4"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "Feeds rung 1 pre-positioning for corridors with potentially dangerous lakes.",
+  "source_urls": [
+   "https://zenodo.org/records/18257243",
+   "https://lib.icimod.org/"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "name": "Seismic detection of mass movements (NSC Nepal network; global catalogues)",
+  "provider": "National Seismological Centre (DMG Nepal); USGS/GFZ global networks; Chinese networks near Gyirong (status unknown)",
+  "type": "cryosphere monitoring",
+  "variables": "Seismic waveforms; landslide-type long-period signals",
+  "resolution": "Station network; location error km-scale",
+  "lead_time": "None as forecast; detection lag minutes if automated, hours-to-days if manual",
+  "latency": "Minutes (raw); catalogue entries delayed",
+  "access": "restricted",
+  "cost": "NSC bulletin public; raw data by request; global IRIS/GFZ data open",
+  "known_skill_nepal": "Langtang Lirung collapse logged as M4.4 earthquake, re-catalogued as landslide with >1 day delay (ICIMOD). 11 Oct 2026 Budhi Gandaki: seismic record posted by K. Cook shows a landslide near Chumchet about 04:22 local, dam breach ~06:00 (unofficial, via Eos blog); NDRRMA assessment: energy comparable to M3.5.",
+  "fit_for_rung": [
+   "4"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "No operational automated mass-flow alert in Nepal or China (Gyirong) found. Official onset times conflict (04:22 seismic vs 05:30 NDRRMA); a seismic trigger could have given roughly 1-1.5 h of lead for downstream bridges and villages on 11 Oct.",
+  "source_urls": [
+   "https://eos.org/?p=251642",
+   "https://kathmandupost.com/gandaki-province/2026/10/11/landslide-may-have-triggered-flash-flooding-in-budhi-gandaki",
+   "https://kathmandupost.com/national/2026/10/12/budhigandaki-flood-what-the-report-says-about-the-gap-between-local-warnings-and-official-records"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "name": "Community-based flood EWS (Practical Action / DHM)",
+  "provider": "Practical Action Nepal with DHM; local DRR committees",
+  "type": "observation",
+  "variables": "Upstream gauge / rain readings relayed by volunteers, sirens, SMS",
+  "resolution": "Village / river reach",
+  "lead_time": "2-3 h baseline; 7-8 h with probabilistic forecasting on the Karnali (Smith et al. 2017)",
+  "latency": "Minutes",
+  "access": "restricted",
+  "cost": "programme-funded; local O&M cost",
+  "known_skill_nepal": "Smith, Brown and Dugar 2017 (NHESS): probabilistic forecasts raised lead time from 2-3 h to 7-8 h on the Karnali (Practical Action summary: additional ~5 h). Budimir et al. 2019 (preprint): communication/dissemination remains the weak link.",
+  "fit_for_rung": [
+   "3b",
+   "4"
+  ],
+  "tested_in_this_eap": false,
+  "notes": "Karnali/Babai/Rapti systems are in the Terai-lowland rivers; no equivalent known for Rasuwa/Bhote Koshi corridor.",
+  "source_urls": [
+   "https://nhess.copernicus.org/articles/17/423/2017/",
+   "https://practicalaction.org/knowledge-centre/resources/improving-flood-early-warning-lead-time-in-nepal/",
+   "https://gc.copernicus.org/preprints/gc-2019-3/gc-2019-3-manuscript-version5.pdf"
+  ],
+  "confidence": "medium"
+ },
+ {
+  "name": "GLOF early warning systems (Tsho Rolpa, Imja)",
+  "provider": "DHM / UNDP / CBFEWS-GLOF facility; ICIMOD",
+  "type": "cryosphere monitoring",
+  "variables": "Lake-level / dam sensors, sirens",
+  "resolution": "Per lake",
+  "lead_time": "Minutes to tens of minutes",
+  "latency": "Real time when working",
+  "access": "not public",
+  "cost": "capital and O&M (Tsho Rolpa EWS >USD 1 M)",
+  "known_skill_nepal": "Tsho Rolpa sensor EWS from 2000 collapsed from lack of maintenance; Imja sirens reported in disrepair in an April 2026 news report (local officials, not an official assessment). A GCF proposal (US$36.1M) was reported under negotiation.",
+  "fit_for_rung": [
+   "4"
+  ],
+  "notes": "Not operational as a trigger; cite as precedent for sustainability risk of hardware detection.",
+  "source_urls": [
+   "https://bangladeshmonitor.com.bd/en/everest-region-flood-warning-system-falls-into-disrepair",
+   "https://www.preventionweb.net/quick/32585",
+   "https://www.eco-business.com/news/tsho-rolpa-to-get-early-warning-system/"
+  ],
+  "confidence": "medium",
+  "tested_in_this_eap": false
+ }
+]

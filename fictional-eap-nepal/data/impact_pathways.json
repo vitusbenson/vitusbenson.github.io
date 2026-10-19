@@ -1,0 +1,297 @@
+{
+ "meta": {
+  "created": "2026-10-19",
+  "note": "Priority 1 = life safety at minute scale; counts are press/agency figures that changed over time and between sources."
+ },
+ "impact_pathways": [
+  {
+   "id": "IP01",
+   "impact": "Loss of life (drowning, burial, debris impact)",
+   "hazard_types": [
+    "ice-rock avalanche debris flood",
+    "GLOF",
+    "landslide-dam outburst",
+    "rainfall flash flood"
+   ],
+   "magnitude_evidence": "26 Aug 2026: ~1,410 dead and ~6,145 unaccounted for in Nepal, 1,453 dead incl. Tibet side (Explorersweb, later tally); NDRRMA 3 Sep: 1,252 dead, 4,216 missing; counts differ by source and date. Melamchi 2021: 17-21 dead (sources differ). Sept 2024: >=217 dead, 28 missing by 1 Oct (secondary). Rasuwagadhi July 2025: ~9 dead, ~19 missing.",
+   "vulnerable_groups": [
+    "migrant and local hydropower/road workers",
+    "riverside households (Tamang communities in Hakubesi etc.)",
+    "children in transit",
+    "trekkers/pilgrims/traders at border",
+    "older people, PwD"
+   ],
+   "pathway": "Source event -> ~7-10 min to first settlement (Syabrubesi ~14 km in <10 min) -> no/late alert -> too short to move uphill; secondary floods downstream hours later (Gaidakot 15:30).",
+   "lead_time_window": "minutes (source-adjacent), 2-5 h (lower corridor: Malekhu ~11:50, Devghat ~13:00)",
+   "early_action_ids": [
+    "EA01",
+    "EA04",
+    "EA06",
+    "EA07",
+    "EA08",
+    "EA11",
+    "EA24"
+   ],
+   "sources": [
+    "https://english.nepalnews.com/s/long-reads/bhote-koshi-catastrophe-exposes-limits-of-nepals-flood-warning-system/",
+    "https://explorersweb.com/langtang-flood-update-1453-dead-6664-missing/",
+    "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/"
+   ],
+   "priority": "1"
+  },
+  {
+   "id": "IP02",
+   "impact": "Hydropower and construction workers trapped in tunnels/powerhouses/camps",
+   "hazard_types": [
+    "ice-rock avalanche debris flood",
+    "GLOF"
+   ],
+   "magnitude_evidence": "IPPAN: 934 linked to 11 projects unaccounted for (29 Aug); energy minister 23 Sep: >800 remain missing; UT-1 573 unaccounted, UT-3B 122, Rasuwagadhi 93; 13 plants/~431 MW (about a tenth of national capacity) disconnected; Army prioritised 19 tunnels; 2 survivors after 9 days at Trishuli 3A where 40-45 were present vs 5-6 normal.",
+   "vulnerable_groups": [
+    "migrant and contract workers",
+    "foreign engineers (Chinese, Indian)",
+    "night/maintenance shift staff",
+    "interns and support staff"
+   ],
+   "pathway": "No operator alarm known; underground, phones fail; portals/adits fill with mud; access cut by bridge loss -> rescue in days not hours.",
+   "lead_time_window": "minutes",
+   "early_action_ids": [
+    "EA02",
+    "EA03",
+    "EA14",
+    "EA19",
+    "EA21",
+    "EA23"
+   ],
+   "sources": [
+    "https://kathmandupost.com/national/2026/08/29/hundreds-feared-trapped-in-hydropower-tunnels-after-bhotekoshi-flood",
+    "https://kathmandupost.com/national/2026/09/04/how-two-nepal-hydropower-workers-survived-nine-days-trapped-underground",
+    "https://kathmandupost.com/national/2026/09/23/over-800-people-remain-missing-from-hydropower-projects-after-bhotekoshi-floods-says-energy-minister-shrestha"
+   ],
+   "priority": "1"
+  },
+  {
+   "id": "IP03",
+   "impact": "Injuries and health-system strain",
+   "hazard_types": [
+    "all"
+   ],
+   "magnitude_evidence": "Not quantified in sources read; 13,396 rescued by 7 Sep (Explorersweb); IFRC: local health facilities impacted, NRCS clinic deployment.",
+   "vulnerable_groups": [
+    "people in isolated settlements",
+    "pregnant and lactating women"
+   ],
+   "pathway": "Bridges/roads lost -> isolated communities -> delayed care; most casualties are fatalities/missing rather than injured.",
+   "lead_time_window": "hours",
+   "early_action_ids": [
+    "EA14",
+    "EA15"
+   ],
+   "sources": [
+    "https://go-api.ifrc.org/api/DownloadFile/96511/MDRNP022EA"
+   ],
+   "priority": "3"
+  },
+  {
+   "id": "IP04",
+   "impact": "Houses, displacement and shelter",
+   "hazard_types": [
+    "all"
+   ],
+   "magnitude_evidence": "IFRC (citing Climate Risk and Resilience Lab, preliminary): ~18,000 households affected, >6,000 homes completely damaged; 93,000 people at risk, CHF 18 M IFRC appeal; permanent-shelter benchmark NPR 500,000 (CHF ~2,700) per house in mountains.",
+   "vulnerable_groups": [
+    "riverside households",
+    "Tamang and other indigenous communities",
+    "women-headed households",
+    "older people",
+    "PwD"
+   ],
+   "pathway": "Flood-path settlements flattened; displaced people stay with neighbours or in open spaces; protection risks (SGBV, trafficking).",
+   "lead_time_window": "days-weeks (readiness), minutes (life safety)",
+   "early_action_ids": [
+    "EA08",
+    "EA18",
+    "EA22"
+   ],
+   "sources": [
+    "https://go-api.ifrc.org/api/DownloadFile/96511/MDRNP022EA"
+   ],
+   "priority": "2"
+  },
+  {
+   "id": "IP05",
+   "impact": "Livelihoods, livestock, agriculture and income shocks",
+   "hazard_types": [
+    "rainfall flash flood",
+    "river flood",
+    "debris flood"
+   ],
+   "magnitude_evidence": "WFP RCT Nepal 2022: early cash raised food consumption score 6%; Rai 2020 Karnali: avoided loss NPR 117,027/household (reported).",
+   "vulnerable_groups": [
+    "smallholders",
+    "daily wage workers",
+    "households losing remittance-linked workers"
+   ],
+   "pathway": "Asset/livestock loss and debt -> negative coping; cash and livestock moves in 1-3 days can cut this for slow river floods.",
+   "lead_time_window": "1-3 days",
+   "early_action_ids": [
+    "EA12",
+    "EA13",
+    "EA16"
+   ],
+   "sources": [
+    "https://docs.wfp.org/api/documents/WFP-0000165848/download",
+    "https://doi.org/10.1016/j.ijdrr.2020.101534"
+   ],
+   "priority": "2"
+  },
+  {
+   "id": "IP06",
+   "impact": "WASH and disease (water scheme damage, displacement crowding)",
+   "hazard_types": [
+    "all"
+   ],
+   "magnitude_evidence": "IFRC 2026 appeal lists safe drinking water, hygiene kits, epidemic preparedness, rehabilitation of drinking water schemes as priorities; no case counts in sources.",
+   "vulnerable_groups": [
+    "displaced people",
+    "children",
+    "women/girls (menstrual hygiene)"
+   ],
+   "pathway": "Damaged schemes + crowding -> diarrhoeal disease risk.",
+   "lead_time_window": "days",
+   "early_action_ids": [
+    "EA17"
+   ],
+   "sources": [
+    "https://go-api.ifrc.org/api/DownloadFile/96511/MDRNP022EA"
+   ],
+   "priority": "3"
+  },
+  {
+   "id": "IP07",
+   "impact": "Infrastructure (hydropower, bridges, roads, banks, telecom, gauges)",
+   "hazard_types": [
+    "debris flood",
+    "GLOF",
+    "landslide-dam outburst"
+   ],
+   "magnitude_evidence": "12 operating plants (431.1 MW) and 15 under construction (470 MW) damaged (Nepalnews); 22 concrete + 5 Bailey bridges swept away; 9 bank branches washed away (26 bank staff untraceable); 4 gauging stations destroyed; Jure 2014 and Melamchi 2021 also hit headworks.",
+   "vulnerable_groups": [
+    "downstream communities losing power/road access",
+    "operators and lenders (ADB, AIIB, IFC, Exim)"
+   ],
+   "pathway": "Peak debris loads exceed design; headworks/powerhouse and bridges destroyed; sensors lost, so warning degrades as flood propagates.",
+   "lead_time_window": "n/a (mitigation by siting, design)",
+   "early_action_ids": [
+    "EA03",
+    "EA19",
+    "EA21"
+   ],
+   "sources": [
+    "https://english.nepalnews.com/s/long-reads/bhote-koshi-catastrophe-exposes-limits-of-nepals-flood-warning-system/",
+    "https://kathmandupost.com/national/2026/09/02/nepal-sent-its-disaster-alert-38-minutes-after-the-glacier-collapse-it-wasn-t-enough"
+   ],
+   "priority": "2"
+  },
+  {
+   "id": "IP08",
+   "impact": "Trade and border crossing (Rasuwagadhi/Kyirong, Pasang Lhamu Highway)",
+   "hazard_types": [
+    "GLOF",
+    "debris flood"
+   ],
+   "magnitude_evidence": "July 2025: Miteri bridge destroyed, dry port inoperable, border closed; Aug 2026: border buildings, Gyirong port road and Rasuwagadhi crossing destroyed.",
+   "vulnerable_groups": [
+    "traders, drivers, pilgrims (Kailash)",
+    "port workers",
+    "Rasuwa border economy"
+   ],
+   "pathway": "Single chokepoint on a flood path: people present at crossing when event hits; economic loss through months of closure.",
+   "lead_time_window": "minutes",
+   "early_action_ids": [
+    "EA09",
+    "EA23"
+   ],
+   "sources": [
+    "https://english.onlinekhabar.com/rasuwa-flood-report-nepal.html",
+    "https://explorersweb.com/langtang-flood-update-1453-dead-6664-missing/"
+   ],
+   "priority": "2"
+  },
+  {
+   "id": "IP09",
+   "impact": "Tourism and trekkers (Langtang valley, Rasuwa)",
+   "hazard_types": [
+    "avalanche",
+    "debris flood"
+   ],
+   "magnitude_evidence": "403 tourists untraceable (341 foreign, 62 Nepali; Nepalnews); main Langtang trekking valley bypassed by the debris (Explorersweb).",
+   "vulnerable_groups": [
+    "foreign trekkers",
+    "guides and porters",
+    "lodge owners"
+   ],
+   "pathway": "Alerts in Nepali only; registration data not linked to alert.",
+   "lead_time_window": "minutes",
+   "early_action_ids": [
+    "EA04",
+    "EA10"
+   ],
+   "sources": [
+    "https://english.nepalnews.com/s/long-reads/bhote-koshi-catastrophe-exposes-limits-of-nepals-flood-warning-system/",
+    "https://india.mongabay.com/2026/09/community-based-warning-saves-lives-during-nepal-floods/"
+   ],
+   "priority": "3"
+  },
+  {
+   "id": "IP10",
+   "impact": "Children and schooling",
+   "hazard_types": [
+    "debris flood",
+    "rainfall flood"
+   ],
+   "magnitude_evidence": "Tribhuvan Trishuli Secondary School (roll 1,643-1,650): ~900 on campus evacuated, school buried; 777 students displaced (Education Ministry, 17 Oct report); 14,500 children's schooling disrupted in 3 districts (Kathmandu Post 18 Sep; figure from headline).",
+   "vulnerable_groups": [
+    "children in transit",
+    "girls",
+    "displaced students"
+   ],
+   "pathway": "Daytime school hours, flood between 8:40-10:30 local = peak school commute/assembly.",
+   "lead_time_window": "minutes",
+   "early_action_ids": [
+    "EA07"
+   ],
+   "sources": [
+    "https://india.mongabay.com/2026/09/community-based-warning-saves-lives-during-nepal-floods/",
+    "https://kathmandupost.com/national/2026/10/17/bhotekoshi-flood-displaced-777-students-nepal-plans-five-year-school-recovery",
+    "https://kathmandupost.com/national/2026/09/18/bhotekoshi-floods-disrupt-schooling-for-14-500-children-in-three-districts"
+   ],
+   "priority": "2"
+  },
+  {
+   "id": "IP11",
+   "impact": "Protection, trust and warning credibility",
+   "hazard_types": [
+    "all"
+   ],
+   "magnitude_evidence": "Mongabay: repeated generic SMS with no consequence reduced trust; DHM mandate covers warning, not evacuation order; DHM budget cut 56%.",
+   "vulnerable_groups": [
+    "non-Nepali speakers",
+    "low-literacy",
+    "PwD"
+   ],
+   "pathway": "Alert fatigue -> informal networks beat official SMS (4 independent calls reached the head teacher before the SMS).",
+   "lead_time_window": "n/a",
+   "early_action_ids": [
+    "EA04",
+    "EA05",
+    "EA24"
+   ],
+   "sources": [
+    "https://india.mongabay.com/2026/09/community-based-warning-saves-lives-during-nepal-floods/",
+    "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/"
+   ],
+   "priority": "2"
+  }
+ ]
+}
