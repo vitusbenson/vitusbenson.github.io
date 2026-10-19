@@ -46,4 +46,5 @@ jobs:
         with:
           fail: true
           # only check local links
-          args: --offline --remap '_site(/?.*)/assets/(.*) _site/assets/$2' --verbose --no-progress '_site/**/*.html'
+          # fictional-eap-nepal is a standalone app with its own relative assets/, which the remap would break
+          args: --offline --exclude-path '_site/fictional-eap-nepal' --remap '_site(/?.*)/assets/(.*) _site/assets/$2' --verbose --no-progress '_site/**/*.html'
