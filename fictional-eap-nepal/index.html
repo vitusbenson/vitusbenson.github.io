@@ -4,489 +4,323 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Fictional EAP · Nepal Flash Floods</title>
-<meta name="description" content="A fictional Early Action Protocol for flash floods and cryosphere cascades in Nepal: an interactive design study with trigger, forecast, lead-time, action and budget explorers. Not a real NRCS or IFRC protocol.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500;600;700&family=Mukta:wght@300;400;500;600;700&display=swap">
+<meta name="description" content="A fictional Early Action Protocol for flash floods and cryosphere cascades in Nepal, built on real data: an interactive design study.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Mukta:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
 <link rel="stylesheet" href="assets/style.css">
-<script>
-  try { const t = localStorage.getItem("eap-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
-</script>
+<link rel="preload" as="image" href="img/hero-langtang-lirung.webp">
+<script>try { const t = localStorage.getItem("eap-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
 </head>
 <body>
-<div class="fictional-band" role="note"><div class="inner">
-  <span><b>FICTIONAL EAP</b> · An illustrative design study. Not a real Nepal Red Cross, IFRC or Government of Nepal protocol.</span>
-  <span>Real data and real events; invented institutional commitments.</span>
-</div></div>
-<div class="shell">
-  <nav class="rail" aria-label="Protocol sections">
-    <div class="brand">
-      <span class="tag">FICTIONAL EAP</span>
-      <b>FLASH FLOODS · NEPAL</b>
-      <span><span class="mono" data-k="version"></span> · <span class="dev">बाढी पूर्वकार्य प्रोटोकल (काल्पनिक)</span></span>
+<header class="topnav" id="topnav">
+  <a class="brand" href="#prologue"><b>Fictional EAP</b><span>Nepal flash floods</span></a>
+  <span class="tag" title="A design study: real data and law, invented commitments">Design study</span>
+  <nav class="ticks" id="ticks" aria-label="Chapters"></nav>
+  <div class="navtools">
+    <button type="button" class="ghost" id="btn-glossary">Glossary</button>
+    <button type="button" class="ghost" id="btn-review" aria-pressed="false">Review mode</button>
+    <button type="button" class="ghost icon" id="btn-theme" aria-label="Switch light or dark theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></button>
+  </div>
+  <div class="progress" aria-hidden="true"><i id="progress-bar"></i></div>
+</header>
+<div class="numbers" id="numbers" aria-label="The protocol in numbers"></div>
+
+<main id="main">
+  <!-- ======================================================= PROLOGUE -->
+  <section class="prologue" id="prologue" data-title="Prologue">
+    <div class="prologue-bg" role="img" aria-label="Langtang Lirung, Rasuwa"></div>
+    <div class="prologue-inner">
+      <p class="kicker">Rasuwa, Nepal · 26 August 2026, 08:37</p>
+      <h1>The warning came <span class="count" id="count38">38</span> minutes after the mountain fell.</h1>
+      <p class="lede">A rock-ice slab broke from Langtang Lirung and became a debris flood down the Bhote Koshi and Trishuli.
+        By the time the first SMS arrived, the flood had passed the first villages and the hydropower tunnels.
+        This page works out what could be agreed and funded <i>before</i> the next one.</p>
+      <p class="fiction">A fictional protocol for a real problem: real data, real law, invented commitments. <button type="button" class="linkish" data-open="ap-real">What is real?</button></p>
+      <a class="scrollcue" href="#summary">The protocol in one minute ↓</a>
     </div>
-    <ol class="toc" id="toc"></ol>
-    <div class="rail-foot">
-      <div>Review progress: <b id="review-progress" class="mono">0 / 0</b></div>
-      <button class="theme-btn" id="theme-btn" type="button">Switch theme</button>
-      <div>Fictional EAP for illustration and teaching. No organisation named here has endorsed it.</div>
+    <p class="credit" data-credit="hero-langtang-lirung"></p>
+  </section>
+
+  <!-- ======================================================= SUMMARY -->
+  <section class="chapter paper" id="summary" data-title="In one minute" data-n="·">
+    <div class="wrap">
+      <header class="chead"><p class="cnum">The protocol in one minute</p>
+        <h2>A forecast can get people ready. Only sensors upstream can warn of a collapse.</h2></header>
+      <ol class="story" id="story"></ol>
+      <h3 class="sub">The four steps at a glance</h3>
+      <div class="glance-steps" id="glance-steps"></div>
+      <div class="cannot"><h3>What this protocol cannot do</h3><ul id="cannot"></ul></div>
+      <p class="paths">Reading paths: <a href="#day">the event</a> · <a href="#protocol">how it works</a> · <a href="#evidence">does it work?</a> · <a href="#cost">cost</a> · <a href="#decisions">decisions</a> · <a href="#appendix">all detail</a></p>
     </div>
-  </nav>
+  </section>
 
-  <main id="main">
-    <section class="cover sec" id="overview" data-title="Overview" data-n="00">
-      <div class="inner">
-        <div class="cover-top">
-          <span class="eyebrow">Fictional Early Action Protocol · Anticipatory action · Review edition</span>
-          <span class="chip"><i></i> Fictional EAP <span data-k="version"></span> · <span data-k="built"></span></span>
-        </div>
-        <h1>Flash floods &amp; <em>cryosphere cascades</em> in Nepal</h1>
-        <p class="dev-title dev">हिमनदी, पहिरो र अत्यधिक वर्षाबाट आउने आकस्मिक बाढीका लागि पूर्वकार्य प्रोटोकल · काल्पनिक</p>
-        <p class="lede" style="margin-top:22px">
-          On 26 August 2026 a rock-ice slab fell from Langtang Lirung and became a debris flood that ran down the
-          Bhote Koshi and Trishuli. The first SMS warning went out 38 minutes after the collapse. By then the flood had
-          already passed Rasuwagadhi, Syabrubesi and the hydropower tunnels below them. This fictional protocol works out
-          what could be decided, funded and pre-agreed <b>before</b> the next flash flood, on every timescale where a
-          warning is physically possible, and is open about where a forecast-based protocol cannot help.
-        </p>
-        <div class="glance" id="glance">
-          <div><span class="eyebrow">Hazard</span><span class="v">Flash floods</span><span class="d">Intense-rain flash floods and debris flows in hill and mountain districts; glacial lake outbursts, ice-rock avalanches and landslide-dam breaches in 7 corridors.</span></div>
-          <div><span class="eyebrow">Trigger</span><span class="v">4-rung ladder</span><span class="d">Readiness → prepare (forecast, co-financed) → act (DREF: dammed lake, or extreme rain confirmed) → imminent (linked government warning system).</span></div>
-          <div><span class="eyebrow">Lead time</span><span class="v" data-k="lead_range"></span><span class="d">Dammed lakes: days to weeks. Rain: 1–3 days. Cascades: minutes, and only where a sensor sits upstream (§05).</span></div>
-          <div><span class="eyebrow">People reached with cash</span><span class="v" data-k="people_target"></span><span class="d">Pre-registered households in the flood path of the corridor palikas, per DREF activation (§07).</span></div>
-          <div><span class="eyebrow">DREF budget</span><span class="v" data-k="budget_total"></span><span class="d">Readiness, stock and one activation's early action, within the full-EAP ceiling; co-financed lines shown apart (§09).</span></div>
-          <div><span class="eyebrow">Validity</span><span class="v" data-k="validity"></span><span class="d">Expected DREF activations: <b data-k="expected_activations"></b> (backtest and event catalogue, §03).</span></div>
-        </div>
-        <div class="callout" style="margin-top:28px">
-          <b>How to review this page.</b> Each section ends with the choices it leaves open. Your settings in the explorers
-          update the summary above, the budget and the trigger statements. The <a href="#review">review checklist (§12)</a>
-          holds your verdicts and notes. They are stored only in this browser, and you can export them as Markdown.
-          <a href="#methods">§13</a> lists every change made after two independent reviews of version 0.9.
-        </div>
+  <!-- ======================================================= 1 THE DAY -->
+  <section class="chapter dark" id="day" data-title="The day" data-n="1">
+    <div class="wrap">
+      <header class="chead"><p class="cnum">1 · The day</p>
+        <h2>No sensor sat where the flood began.</h2>
+        <p class="lede">Replay the flood front as river gauges, cameras and reports recorded it. Then switch on detection at the source.</p></header>
+    </div>
+    <div class="replay">
+      <div id="map-event" class="map map-xl"></div>
+      <div class="replay-hud">
+        <div class="seg" role="group" aria-label="Scenario"><button type="button" data-scn="actual" aria-pressed="true">As it happened</button><button type="button" data-scn="eap" aria-pressed="false">With detection at the source</button></div>
+        <div class="clock"><span id="ev-clock">08:35</span><small id="ev-where">Before the collapse</small></div>
+        <div class="hud-stats" id="event-stats"></div>
       </div>
-    </section>
+    </div>
+    <div class="wrap">
+      <div class="scrubber">
+        <button type="button" class="play" id="event-play" aria-label="Play">▶</button>
+        <div class="scrub-track"><input type="range" id="event-time" min="0" max="480" step="1" value="5" aria-label="Time"><div class="scrub-ticks" id="scrub-ticks"></div></div>
+      </div>
+      <figure class="chain"><svg id="chart-chain" class="chart" role="img" aria-label="Alert chain: what happened and what the protocol proposes"></svg>
+        <figcaption>Each row is a link in the warning chain. Grey: 26 August 2026. Red: with detection at the source.</figcaption></figure>
+      <div class="split-photo">
+        <figure class="photo"><img src="img/syabrubesi.webp" alt="Syabrubesi, houses on terraces above the Bhote Koshi" loading="lazy"><figcaption data-credit="syabrubesi"></figcaption></figure>
+        <div class="facts" id="event-facts"></div>
+      </div>
+      <div class="deeper"><span>Go deeper</span><button data-open="ap-event">Timeline and sources</button><button data-open="ap-toll">The toll, and why figures differ</button></div>
+    </div>
+  </section>
 
-    <section class="sec" id="event" data-title="26 August 2026" data-n="01">
-      <div class="inner">
-        <header class="sec-head">
-          <span class="clause">§01 · WHY THIS PROTOCOL</span>
-          <h2>Seven hours on the Trishuli</h2>
-          <p class="lede">Replay the flood front as it was recorded by river gauges, cameras and reports. Then switch on
-            detection at the source and see how much time each place would have had.</p>
-        </header>
-        <div class="panel">
-          <div class="panel-head">
-            <h3>26 Aug 2026 · Langtang Lirung → Devghat</h3>
-            <div class="seg" role="group" aria-label="Warning scenario">
-              <button type="button" data-scn="actual" aria-pressed="true">As it happened</button>
-              <button type="button" data-scn="eap" aria-pressed="false">With detection at the source</button>
+  <!-- ======================================================= 2 HAZARD -->
+  <section class="chapter" id="hazard" data-title="The hazard" data-n="2">
+    <div class="wrap">
+      <header class="chead split-head"><div><p class="cnum">2 · The hazard</p>
+        <h2>Three ways a valley floods in minutes. Only one gives days.</h2></div>
+        <div class="hero-num"><b data-k="hill_share"></b><span>of recorded flood deaths in 2011–2025 were in the hills and mountains, not on the plains.</span></div></header>
+      <div class="hazards" id="hazards"></div>
+      <figure class="fig"><figcaption class="fighead"><b>Sixty years of fast floods.</b> <span class="muted">Circle area: dead and missing. Cryosphere events do not keep to the monsoon.</span><span class="legend" id="legend-history"></span></figcaption>
+        <svg id="chart-history" class="chart" role="img" aria-label="Documented events by year and type"></svg>
+        <div class="tbl-wrap"><table id="tbl-heat" class="heat"></table></div></figure>
+      <div class="two">
+        <div><h3 class="sub">Where people live in the flood path</h3>
+          <p class="body">Seven river valleys lie below known glacial lakes or collapse sources. These are the people living less than 25 m above the river <button class="x" data-x="hand">?</button>.</p>
+          <div id="corr-bars"></div></div>
+        <div><h3 class="sub">Lakes with the most people below them</h3>
+          <div id="lakes-top"></div>
+          <div id="map-lakes" class="map map-sm"></div></div>
+      </div>
+      <div class="deeper"><span>Go deeper</span><button data-open="ap-events">All 24 events</button><button data-open="ap-lakes">All 47 dangerous lakes</button><button data-open="ap-corridors">Corridor exposure</button><button data-open="ap-impacts">Priority impacts</button><button data-open="ap-bipad">Impact records by month and terrain</button></div>
+    </div>
+  </section>
+
+  <!-- ======================================================= 3 PROTOCOL -->
+  <section class="chapter paper" id="protocol" data-title="The protocol" data-n="3">
+    <div class="wrap">
+      <header class="chead"><p class="cnum">3 · The protocol</p>
+        <h2>Four steps, each released only when its warning time allows.</h2>
+        <p class="lede">Weeks, days, hours or minutes. Each step names who decides and who pays. Only step 3 draws on the Red Cross emergency fund.</p></header>
+      <div class="steps" id="steps"></div>
+      <figure class="fig"><figcaption class="fighead"><b>What happens when.</b> <span class="muted">Hours before impact. Colour shows who acts.</span>
+        <span class="legend"><span><i class="own rc"></i>Red Cross</span><span><i class="own gov"></i>Government</span><span><i class="own op"></i>Operators, schools, police</span></span></figcaption>
+        <svg id="chart-when" class="chart" role="img" aria-label="Timeline of actions before impact, coloured by owner"></svg></figure>
+      <div class="rules" id="rules"></div>
+      <div class="deeper"><span>Go deeper</span><button data-open="ap-triggers">Exact trigger statements and stop rules</button><button data-open="ap-orders">Who can order what (law)</button><button data-open="ap-clock">Activation clock</button><button data-open="ap-dam">Dammed-lake procedure</button><button data-open="ap-messages">Alert messages</button></div>
+    </div>
+  </section>
+
+  <!-- ======================================================= 4 EVIDENCE -->
+  <section class="chapter" id="evidence" data-title="Does it work?" data-n="4">
+    <div class="wrap">
+      <header class="chead split-head"><div><p class="cnum">4 · Does it work?</p>
+        <h2>A forecast gets people ready. It rarely says where the flood will hit.</h2></div>
+        <div class="hero-num"><b data-k="dial_headline"></b><span>major hill flood disasters flagged in advance by the recommended get-ready alert, 2011–2019.</span></div></header>
+      <div class="tool" id="dial-tool">
+        <div class="tool-q"><b>How sensitive should the alert be?</b> Slide from rare to frequent alerts and watch which past disasters it would have flagged.</div>
+        <div class="presets" id="dial-presets"></div>
+        <div class="dial"><input type="range" id="dial" min="0" max="74" step="1" aria-label="Alert sensitivity"><div class="dial-scale"><span>rare alerts</span><span id="dial-limit-label">fund limit</span><span>frequent alerts</span></div><i class="dial-limit" id="dial-limit"></i></div>
+        <div class="dial-out" id="dial-out"></div>
+        <div class="dots" id="dial-dots"></div>
+        <p class="note" id="dial-note"></p>
+      </div>
+      <div class="three">
+        <div class="card"><h3>In Rasuwa, the rain alert missed every fatal flood day.</h3><div id="village"></div></div>
+        <div class="card"><h3>A second signal halves evacuation requests.</h3><div id="second"></div></div>
+        <div class="card"><h3>ECMWF forecasts are better than the ones we tested.</h3><svg id="chart-skill" class="chart" role="img" aria-label="Forecast skill: ECMWF versus GEFS"></svg><p class="note" id="skill-note"></p></div>
+      </div>
+      <figure class="fig"><figcaption class="fighead"><b>Before two disasters.</b> <span class="muted">ECMWF ensemble forecasts of district rain, run by run.</span> <select id="case-sel" aria-label="Case study"></select></figcaption>
+        <svg id="chart-case" class="chart" role="img" aria-label="Ensemble forecasts before a disaster"></svg><p class="note" id="case-note"></p></figure>
+      <div class="deeper"><span>Go deeper</span><button data-open="ap-workbench">Trigger workbench</button><button data-open="ap-robust">Strict, generous and out-of-sample scores</button><button data-open="ap-menu">Menu of forecasts</button><button data-open="ap-methods">How we tested</button></div>
+    </div>
+  </section>
+
+  <!-- ======================================================= 5 UPSTREAM -->
+  <section class="chapter paper" id="upstream" data-title="Minutes upstream" data-n="5">
+    <div class="wrap">
+      <header class="chead"><p class="cnum">5 · Minutes upstream</p>
+        <h2>Where the sensor sits decides who gets a warning.</h2>
+        <div class="formula"><span><b>Warning time</b></span><span>=</span><span>flood travel time<small>sensor → you</small></span><span>−</span><span>confirm and send<small>detection → phones</small></span></div></header>
+      <div class="tool">
+        <div class="tool-q"><b>Drag the red sensor along the river.</b> Places turn green when people there have time to reach high ground.</div>
+        <div class="presets" id="lt-presets"></div>
+        <div class="lt-grid">
+          <div><svg id="chart-lt" class="chart" role="img" aria-label="Warning time along the river; drag the sensor"></svg>
+            <div class="stopwatch">
+              <label>Detection → phones <input type="range" id="lt-delay" min="0" max="45" step="1" value="3"><output id="lt-delay-o"></output></label>
+              <label>Time to reach safety <input type="range" id="lt-react" min="2" max="30" step="1" value="10"><output id="lt-react-o"></output></label>
             </div>
-          </div>
-          <div class="split" style="gap:0">
-            <div class="map-wrap"><div id="map-event" class="map" style="border-radius:0 0 0 var(--radius)"></div>
-              <div class="map-legend" id="legend-event"></div></div>
-            <div style="display:grid;align-content:start;border-left:1px solid var(--line)">
-              <div class="panel-pad" style="display:grid;gap:14px" id="event-card"></div>
-              <div class="stats" id="event-stats" style="--cols:2"></div>
-            </div>
-          </div>
-          <div class="scrub">
-            <label for="event-time" class="eyebrow">Time (Nepal Standard Time)</label>
-            <input type="range" id="event-time" min="0" max="480" step="1" value="5">
-            <div class="ticks"><span>08:30</span><span>10:30</span><span>12:30</span><span>14:30</span><span>16:30</span></div>
-            <div style="display:flex;gap:10px;flex-wrap:wrap"><button type="button" id="event-play" class="primary">Play</button>
-              <span class="note" id="event-note"></span></div>
-          </div>
-        </div>
-        <div class="grid-3" id="event-facts"></div>
-        <div class="panel">
-          <div class="panel-head"><h3>The alert chain: what happened, and what the protocol pre-agrees</h3><span class="muted small">minutes after the collapse at 08:37 NPT</span></div>
-          <div class="panel-pad"><svg id="chart-chain" class="chart" role="img" aria-label="Swimlane of the alert chain on 26 August 2026 compared with the proposed chain"></svg></div>
-        </div>
-        <p class="note">Times are flood-front arrivals from gauge records and reports (Rasuwagadhi 08:40–08:45; Betrawati gauge
-          silent 09:20; Furke/Malekhu danger level 11:40; Devghat peak 16:00), interpolated along the river in between. The toll is
-          provisional and sources disagree; the figures chosen and the alternatives are listed in <code>data/curated/event_2026_langtang.json</code>.</p>
-      </div>
-    </section>
-
-    <section class="sec" id="risk" data-title="Risk analysis" data-n="02">
-      <div class="inner">
-        <header class="sec-head">
-          <span class="clause">§02 · RISK ANALYSIS</span>
-          <h2>Three ways a valley floods in minutes</h2>
-          <p class="lede">Nepal's deadliest floods do not only come down the big Terai rivers. In the hills and mountains they
-            arrive as debris-laden surges from intense rain, failing glacial lakes, collapsing ice and rock, or landslide dams.
-            Each has its own warning physics and its own season.</p>
-        </header>
-        <div class="grid-3" id="hazard-types"></div>
-        <div class="panel">
-          <div class="panel-head"><h3>Documented flash floods and cryosphere cascades, 1963–2026</h3><span class="legend" id="legend-history"></span></div>
-          <div class="panel-pad"><svg id="chart-history" class="chart" role="img" aria-label="Timeline of documented events by type, circle area by people dead or missing"></svg></div>
-          <div class="panel-pad" style="border-top:1px solid var(--line)"><h4 style="margin-bottom:8px">By month and type: cryosphere events do not follow the monsoon</h4>
-            <div class="tbl-wrap"><table id="tbl-heat" class="heat"></table></div></div>
-          <details class="panel-pad" style="border-top:1px solid var(--line)"><summary>Table view (<span data-k="n_events"></span> events)</summary>
-            <div class="tbl-wrap" style="margin-top:12px"><table id="tbl-history"></table></div></details>
-        </div>
-        <div class="grid-2">
-          <div class="panel">
-            <div class="panel-head"><h3>When: flood incidents by month</h3><span class="muted small">BIPAD, 2011–2025</span></div>
-            <div class="panel-pad"><svg id="chart-season" class="chart" role="img" aria-label="Flood incidents and deaths by month"></svg>
-              <p class="note" style="margin-top:8px"><span data-k="monsoon_share"></span> of flood-family incidents and
-                <span data-k="monsoon_death_share"></span> of the dead and missing fall in June–September: the rain-trigger season. Cryosphere readiness runs all year (§08).</p></div>
-          </div>
-          <div class="panel">
-            <div class="panel-head"><h3>Where: recorded flood deaths by terrain</h3><span class="muted small">BIPAD, 2011–2025</span></div>
-            <div class="panel-pad"><svg id="chart-terrain" class="chart" role="img" aria-label="Flood deaths in Terai versus hill and mountain"></svg>
-              <p class="note" style="margin-top:8px" id="terrain-note"></p></div>
-          </div>
-        </div>
-        <div class="panel">
-          <div class="panel-head"><h3>Who lives below the 47 potentially dangerous glacial lakes</h3>
-            <span class="muted small">ICIMOD 2020 list · people &lt; 25 m above the river, first 120 km downstream</span></div>
-          <div class="split" style="gap:0">
-            <div class="map-wrap"><div id="map-lakes" class="map" style="border-radius:0 0 0 var(--radius)"></div></div>
-            <div class="tbl-wrap" style="max-height:min(72vh,640px);overflow-y:auto;border-left:1px solid var(--line)"><table id="tbl-lakes"></table></div>
-          </div>
-        </div>
-        <div class="panel">
-          <div class="panel-head"><h3>Who lives in the flood path: seven priority corridors</h3>
-            <span class="muted small">WorldPop 2020 · OpenStreetMap · Copernicus DEM</span></div>
-          <div class="controls">
-            <div class="ctl"><label for="hand-band">Height above river</label>
-              <select id="hand-band"><option value="10">≤ 10 m</option><option value="25" selected>≤ 25 m</option><option value="50">≤ 50 m</option></select></div>
-            <div class="ctl" style="flex:1"><span class="muted small">Height above the river channel is a screening proxy for flood depth, not an inundation model. The 2026 debris flood splashed up to 800 m above the valley floor near its source, and 10–20 m in the middle reaches.</span></div>
-          </div>
-          <div class="tbl-wrap"><table id="tbl-corridors"></table></div>
-        </div>
-        <div class="prose">
-          <h3>Priority impacts</h3>
-          <p>The impacts this protocol acts on are ranked by harm and by whether anything done in the available lead time can
-            reduce them. Loss of life dominates in every cascade. In 2026 it fell hardest on groups that household-based
-            targeting misses: hydropower and road workers in tunnels and camps, traders and drivers at the border, and trekkers.</p>
-        </div>
-        <div class="tbl-wrap panel"><table id="tbl-impacts"></table></div>
-      </div>
-    </section>
-
-    <section class="sec" id="trigger" data-title="Trigger model" data-n="03">
-      <div class="inner">
-        <header class="sec-head">
-          <span class="clause">§03 · TRIGGER METHODOLOGY</span>
-          <h2>A ladder, not a threshold</h2>
-          <p class="lede">No single forecast covers hazards whose warning time ranges from weeks (a dammed lake) to minutes (a
-            collapsing slope). Each rung releases only the actions that fit its lead time and its false-alarm rate, and only
-            rung 3b draws on the DREF.</p>
-        </header>
-        <div class="panel ladder" id="ladder"></div>
-        <div class="panel">
-          <div class="panel-head"><h3>Trigger explorer · rain-driven flash floods</h3>
-            <span class="muted small">GEFS reforecast vs BIPAD impact records, monsoons 2011–2019 · generous scoring</span></div>
-          <div class="controls" id="trig-controls">
-            <div class="ctl"><label>Rung</label><div class="seg" role="group" aria-label="Activation rung">
-              <button type="button" data-tier="alert" aria-pressed="true">2 Prepare · ≤ 2/yr</button>
-              <button type="button" data-tier="cash" aria-pressed="false">3b Act · DREF</button></div></div>
-            <div class="ctl"><label for="trig-src">Signal</label>
-              <select id="trig-src"><option value="obs">Observed rain (ERA5-Land): upper bound</option><option value="gefs" selected>Ensemble forecast (GEFS reforecast)</option></select></div>
-            <div class="ctl"><label for="trig-lead">Lead</label><select id="trig-lead"><option value="1">day 1</option><option value="2" selected>day 2 (24–48 h)</option><option value="3">day 3 (48–72 h)</option></select></div>
-            <div class="ctl"><label for="trig-freq">Rain threshold</label><input type="range" id="trig-freq" min="0" max="4" step="1" value="1"><output id="trig-freq-o"></output></div>
-            <div class="ctl"><label for="trig-prob">Ensemble probability ≥</label><input type="range" id="trig-prob" min="0" max="4" step="1" value="1"><output id="trig-prob-o"></output></div>
-            <div class="ctl"><label for="trig-level">Impact counted</label>
-              <select id="trig-level"><option value="any">any flood report</option><option value="loss" selected>death, missing or house destroyed</option><option value="severe">≥3 dead/missing or ≥10 houses</option></select></div>
-            <div class="ctl"><label for="trig-m">Districts at once</label>
-              <select id="trig-m"><option value="1">≥ 1</option><option value="2">≥ 2</option><option value="3">≥ 3</option></select></div>
-            <div class="ctl"><label for="trig-region">Area</label>
-              <select id="trig-region"><option value="hill" selected>hill &amp; mountain districts</option><option value="corridor">districts of the 7 corridors</option><option value="all">all districts</option></select></div>
-            <div class="ctl"><button type="button" id="trig-best" class="primary">Use recommended setting</button></div>
-          </div>
-          <div class="stats" id="trig-stats" style="--cols:3"></div>
-          <div class="grid-2" style="padding:20px">
-            <div><h4 style="margin-bottom:6px">Hit rate vs false-alarm ratio, all thresholds</h4>
-              <svg id="chart-roc" class="chart" role="img" aria-label="Hit rate against false alarm ratio for all trigger settings"></svg></div>
-            <div><h4 style="margin-bottom:6px">Which districts would activate, per year</h4>
-              <div id="map-trig" class="map" style="height:340px;min-height:300px;border-radius:5px;border:1px solid var(--line)"></div></div>
-          </div>
-          <div class="panel-pad" style="border-top:1px solid var(--line)">
-            <p class="eyebrow">Trigger statement (as currently set)</p>
-            <p id="trig-statement" style="font-size:1.08rem;margin-top:6px;max-width:70ch"></p>
-          </div>
-        </div>
-        <div class="panel">
-          <div class="panel-head"><h3>Does the rain trigger hold up? Strict scoring, cross-validation, chance</h3><span class="muted small">hill &amp; mountain districts, day 2, 2011–2019</span></div>
-          <div class="panel-pad" style="display:grid;gap:16px">
-            <div class="kpi-row" id="robust-kpis"></div>
-            <div class="tbl-wrap"><table id="tbl-robust-events"></table></div>
-            <p class="note" id="robust-note"></p>
-          </div>
-        </div>
-        <div class="grid-2">
-          <div class="panel"><div class="panel-head"><h3>A second signal before anyone is asked to leave</h3></div>
-            <div class="panel-pad" style="display:grid;gap:12px"><div class="kpi-row" id="second-kpis"></div><p class="note" id="second-note"></p></div></div>
-          <div class="panel"><div class="panel-head"><h3>What a district experiences in ten monsoons</h3></div>
-            <div class="tbl-wrap"><table id="tbl-village"></table></div><p class="note panel-pad" id="village-note"></p></div>
-        </div>
-        <div class="prose"><h3>Reading the backtest</h3><ul id="trig-reading"></ul></div>
-        <div class="prose"><h3>Stop mechanism</h3><ul id="stop-list"></ul></div>
-      </div>
-    </section>
-
-    <section class="sec" id="forecasts" data-title="Menu of forecasts" data-n="04">
-      <div class="inner">
-        <header class="sec-head">
-          <span class="clause">§04 · MENU OF FORECASTS</span>
-          <h2>Every signal that could pull a trigger</h2>
-          <p class="lede">The products a monitoring desk in Kathmandu could use, what each is good for, and which ones this
-            protocol has tested against data. ECMWF ENS, the operational choice for rungs 2 and 3b, is compared with the GEFS
-            reforecast used for the long backtest.</p>
-        </header>
-        <div class="panel"><div class="tbl-wrap" style="max-height:620px;overflow-y:auto"><table id="tbl-menu"></table></div></div>
-        <div class="grid-2">
-          <div class="panel"><div class="panel-head"><h3>Skill at predicting heavy district rain</h3><span class="muted small">vs ERA5-Land · ROC area</span></div>
-            <div class="panel-pad"><svg id="chart-skill" class="chart" role="img" aria-label="ROC area of ECMWF ENS and GEFS for district rain exceedance by lead day"></svg>
-              <p class="note" id="skill-note" style="margin-top:8px"></p></div></div>
-          <div class="panel"><div class="panel-head"><h3>ECMWF ENS before two disasters</h3>
-              <select id="case-sel" aria-label="Case study"></select></div>
-            <div class="panel-pad"><svg id="chart-case" class="chart" role="img" aria-label="Ensemble district rain forecasts by run for a case study"></svg>
-              <p class="note" id="case-note" style="margin-top:8px"></p></div></div>
+            <details class="custom"><summary>Other corridors and flood speeds</summary>
+              <div class="custom-row"><label>Corridor <select id="lt-corr"></select></label><label>Flood-front speed <select id="lt-speed"></select></label>
+              <label>Sensor at <input type="range" id="lt-sensor" min="0" max="60" step="0.5" value="0"><output id="lt-sensor-o"></output></label></div></details></div>
+          <div class="lt-side"><div class="big-out" id="lt-big"></div><div id="lt-left"></div><div id="map-lt" class="map map-sm"></div></div>
         </div>
       </div>
-    </section>
-
-    <section class="sec" id="leadtime" data-title="Lead time & detection" data-n="05">
-      <div class="inner">
-        <header class="sec-head">
-          <span class="clause">§05 · LEAD TIME AND THE LINKED WARNING SYSTEM</span>
-          <h2>Minutes are bought upstream</h2>
-          <p class="lede">For cascades there is no forecast. The lead time is the river's travel time from a sensor to a
-            community, minus the time it takes to confirm the signal and send the alert. Move the sensor and change the delays
-            to see who gets enough warning to reach high ground.</p>
-        </header>
-        <div class="panel">
-          <div class="controls">
-            <div class="ctl"><label for="lt-corr">Corridor</label><select id="lt-corr"></select></div>
-            <div class="ctl"><label for="lt-sensor">Detection point (km below source)</label><input type="range" id="lt-sensor" min="0" max="60" step="0.5" value="0"><output id="lt-sensor-o"></output></div>
-            <div class="ctl"><label for="lt-delay">Detection → alert on phones</label><input type="range" id="lt-delay" min="0" max="45" step="1" value="3"><output id="lt-delay-o"></output></div>
-            <div class="ctl"><label for="lt-react">Time people need to reach safety</label><input type="range" id="lt-react" min="2" max="30" step="1" value="10"><output id="lt-react-o"></output></div>
-            <div class="ctl"><label for="lt-speed">Flood-front speed</label><select id="lt-speed"></select></div>
-          </div>
-          <div class="stats" id="lt-stats" style="--cols:4"></div>
-          <div style="padding:16px 20px 4px"><svg id="chart-lt" class="chart" role="img" aria-label="Warning time along the river"></svg></div>
-          <div class="legend" id="legend-lt" style="padding:0 20px 14px"></div>
-          <div class="grid-2" style="padding:0 20px 20px">
-            <div id="map-lt" class="map" style="height:380px;border-radius:5px;border:1px solid var(--line)"></div>
-            <div class="tbl-wrap" style="max-height:380px;overflow-y:auto;border:1px solid var(--line);border-radius:5px"><table id="tbl-lt"></table></div>
-          </div>
-        </div>
-        <div class="panel">
-          <div class="panel-head"><h3>Hydropower sites: warning time with the current explorer settings</h3><span class="muted small">sites mapped in OpenStreetMap</span></div>
-          <div class="tbl-wrap"><table id="tbl-hydro"></table></div>
-        </div>
-        <div class="panel">
-          <div class="panel-head"><h3>The linked warning system: who owns each piece today</h3><span class="flag-note">government / partner-owned · not an NRCS commitment until signed</span></div>
-          <div class="tbl-wrap"><table id="tbl-linked"></table></div>
-        </div>
-        <div class="prose">
-          <h3>What the explorer shows</h3>
-          <ul>
-            <li><b>Detection is the binding constraint.</b> On 26 August the alert came from a phone call at about 09:00. Even a
-              perfect 3-minute chain triggered at the Betrawati gauge would have saved nobody above it. Sensors have to sit where
-              the cascade starts: a seismic detector for mass movements, lake-level and camera stations, and gauges that alarm on
-              how fast the water rises, not on its height.</li>
-            <li><b>Redundancy matters more than precision.</b> The Rasuwagadhi, Syabrubesi and Betrawati gauges were destroyed
-              before they reached their thresholds. A gauge that goes silent while the one upstream is rising is a signal in its own right.</li>
-            <li><b>Without hardware, people still help.</b> Paid river watchers with radios upstream of side valleys, a siren
-              code everybody knows, and phone trees are what NRCS can fund now (EA26). The 2026 school evacuation in Trishuli
-              came from informal calls, not from the SMS.</li>
-          </ul>
-        </div>
+      <div class="two">
+        <div><h3 class="sub">The alarm chain belongs to government. Today most of it is missing.</h3><div id="linked-status"></div></div>
+        <figure class="photo"><img src="img/hydropower.webp" alt="Hydropower headworks reservoir in a narrow valley" loading="lazy"><figcaption data-credit="hydropower"></figcaption></figure>
       </div>
-    </section>
+      <div class="deeper"><span>Go deeper</span><button data-open="ap-places">Every place and its warning time</button><button data-open="ap-hydro">Hydropower sites</button><button data-open="ap-linked">Who owns each part of the alarm</button></div>
+    </div>
+  </section>
 
-    <section class="sec" id="actions" data-title="Early actions" data-n="06">
-      <div class="inner">
-        <header class="sec-head">
-          <span class="clause">§06 · EARLY ACTIONS AND OPERATIONAL MATRIX</span>
-          <h2>Every action matched to the time it needs, and to its owner</h2>
-          <p class="lede">An action belongs here only if it reduces a priority impact and fits inside the lead time of the rung
-            that releases it. Each card shows who owns it, and only NRCS-owned actions are in the DREF budget. Click a card to
-            include or exclude it.</p>
-        </header>
-        <div class="panel panel-pad"><div class="matrix" id="matrix"></div></div>
-        <div class="panel" id="action-detail" hidden></div>
-        <div class="panel">
-          <div class="panel-head"><h3>Operational matrix: IFRC sector, standards, owner</h3><span class="muted small">Sphere 2018 · LEGS · IFRC PGI minimum standards</span></div>
-          <div class="tbl-wrap" style="max-height:560px;overflow-y:auto"><table id="tbl-opmatrix"></table></div>
-        </div>
-        <p class="note">Evidence grades: <span class="ev high">high</span> = experimental or quasi-experimental evaluation;
-          <span class="ev medium">medium</span> = evaluations or consistent case evidence; <span class="ev low">low</span> = expert
-          judgement or a single case. The only high-grade action (cash) was evaluated for slow river floods with 3–5 days of lead
-          time; the evidence does not extend to flash floods.</p>
+  <!-- ======================================================= 6 PEOPLE -->
+  <section class="chapter" id="people" data-title="What people get" data-n="6">
+    <div class="wrap">
+      <header class="chead"><p class="cnum">6 · What people get</p>
+        <h2>Who is warned, who is paid, and who is not on any list.</h2></header>
+      <div class="journey" id="journey"></div>
+      <div class="two">
+        <div><h3 class="sub">What the Red Cross itself does</h3><div class="filter" id="act-filter"></div><div id="actions"></div></div>
+        <div><h3 class="sub">Who is registered for cash</h3>
+          <ul class="body tight">
+            <li><b>Where:</b> households less than 25 m above a corridor river, within 3 km of it.</li>
+            <li><b>From which list:</b> the government's social-security registers, checked with each municipality.</li>
+            <li><b>Who first:</b> landless and riverside households, women-headed households, older people and persons with disabilities. Ethnicity is not a criterion.</li>
+            <li><b>Not on household lists:</b> hydropower and road workers, traders and trekkers, reached through operators and associations.</li></ul>
+          <div id="pal-bars"></div>
+          <figure class="photo"><img src="img/road-langtang.webp" alt="Landslide scars above the road to the Langtang valley" loading="lazy"><figcaption data-credit="road-langtang"></figcaption></figure></div>
       </div>
-    </section>
+      <div class="deeper"><span>Go deeper</span><button data-open="ap-actions">All 32 actions and standards</button><button data-open="ap-cash">Cash design and delivery</button><button data-open="ap-palikas">People by municipality</button><button data-open="ap-4w">Who does what, by district</button><button data-open="ap-ready">Preparation and stock</button></div>
+    </div>
+  </section>
 
-    <section class="sec" id="targeting" data-title="Intervention area" data-n="07">
-      <div class="inner">
-        <header class="sec-head">
-          <span class="clause">§07 · INTERVENTION AREA, TARGETING AND CASH</span>
-          <h2>Where, for whom, and how the money arrives</h2>
-          <p class="lede">The rain trigger watches all hill and mountain districts, but cash can only reach households that are
-            registered in advance. Pre-registration is concentrated in the corridor palikas, where cascades and dammed lakes
-            occur and the flood path is mapped.</p>
-        </header>
-        <div class="grid-2">
-          <div class="prose" id="targeting-prose">
-            <h3>Targeting criteria</h3>
-            <ol>
-              <li><b>Location:</b> households less than 25 m above the river channel and within 3 km of it in a corridor palika
-                (table), or in a ward with a recorded flash-flood death since 2011.</li>
-              <li><b>Base list:</b> the government's Social Security Allowance registers (senior citizens, single women, disability,
-                endangered ethnic groups, child grants), as the SRSP standard requires, cross-checked with the palika's own list.</li>
-              <li><b>Vulnerability within the flood path:</b> landless and riverside-tenure households, households headed by women,
-                persons with disabilities and older people. Ethnicity is not used as a marker: in Rasuwa or Sindhupalchok,
-                Tamang and other Janajati households are the majority.</li>
-              <li><b>Non-household groups:</b> hydropower and road workers, border traders and drivers, trekkers and lodge staff.
-                They are reached through operators, IPPAN, the tourism associations and gate rosters, not household registers.</li>
-            </ol>
-            <p>Lists are validated by the Local Disaster Management Committee and the ward, with a complaints desk and a free
-              phone line before the first payment.</p>
-            <p class="note" id="reach-note"></p>
-          </div>
-          <div class="panel"><div class="panel-head"><h3>People in the flood path by palika</h3>
-              <select id="pal-corr" aria-label="Corridor"></select></div>
-            <div class="tbl-wrap" style="max-height:520px;overflow-y:auto"><table id="tbl-palikas"></table></div></div>
-        </div>
-        <div class="panel"><div class="panel-head"><h3>Cash design and delivery</h3><span class="muted small">SRSP standard, NRCS cash pipeline, fallbacks</span></div>
-          <div class="tbl-wrap"><table id="tbl-cash"></table></div></div>
-      </div>
-    </section>
-
-    <section class="sec" id="operations" data-title="Activation protocol" data-n="08">
-      <div class="inner">
-        <header class="sec-head">
-          <span class="clause">§08 · IMPLEMENTATION, AUTHORITY AND READINESS</span>
-          <h2>Who decides what, and who does it</h2>
-          <p class="lede">NRCS activates its own actions and funds. It does not order evacuations, close roads or task the
-            security forces. Under the DRRM Act 2074 those belong to the district and local disaster management committees, so
-            the protocol depends on standing decisions those committees adopt before the season.</p>
-        </header>
-        <div class="panel"><div class="panel-head"><h3>Who can order what</h3><span class="muted small">DRRM Act 2074 and Rules 2076 · "verify" = to be checked against the Nepali text</span></div>
-          <div class="tbl-wrap"><table id="tbl-orders"></table></div></div>
-        <div class="panel"><div class="panel-head"><h3>Activation clock</h3></div><div class="tbl-wrap"><table id="tbl-sop"></table></div></div>
-        <div class="panel"><div class="panel-head"><h3>Landslide-dammed lake: the trigger with the most lead time</h3></div>
-          <div class="tbl-wrap"><table id="tbl-dam"></table></div></div>
-        <div class="grid-2">
-          <div class="prose"><h3>Readiness</h3><ul id="readiness-list"></ul></div>
-          <div class="prose"><h3>Pre-positioning</h3><ul id="prepos-list"></ul></div>
-        </div>
-        <div class="panel"><div class="panel-head"><h3>4W by corridor district</h3></div><div class="tbl-wrap" style="max-height:520px;overflow-y:auto"><table id="tbl-4w"></table></div></div>
-        <div class="panel"><div class="panel-head"><h3>Message gallery</h3><span class="flag-note">draft · to be reviewed by native speakers</span></div>
-          <div class="panel-pad"><div class="grid-2" id="msg-gallery"></div><p class="note" id="msg-note" style="margin-top:10px"></p></div></div>
-      </div>
-    </section>
-
-    <section class="sec" id="budget" data-title="Budget" data-n="09">
-      <div class="inner">
-        <header class="sec-head">
-          <span class="clause">§09 · BUDGET</span>
-          <h2>What it costs, who pays, and what it buys</h2>
-          <p class="lede">The DREF budget covers readiness, stock and one activation's early action; the second activation is
-            allocated after the first activation report. Lines outside the DREF (prepare activations, the linked warning
-            system, operator drills) are shown separately, because the protocol's protection depends on them too.</p>
-        </header>
-        <div class="panel">
-          <div class="controls">
-            <div class="ctl"><label for="b-hh">Pre-registered households</label><input type="range" id="b-hh" min="1000" max="12000" step="250" value="6000"><output id="b-hh-o"></output></div>
-            <div class="ctl"><label for="b-cash">Cash per household (NPR)</label><input type="range" id="b-cash" min="0" max="15000" step="500" value="8000"><output id="b-cash-o"></output></div>
-            <div class="ctl"><label for="b-corr">Corridors with river watchers</label><input type="range" id="b-corr" min="0" max="7" step="1" value="2"><output id="b-corr-o"></output></div>
-            <div class="ctl"><label for="b-cof">Co-financed lines</label><select id="b-cof"><option value="show" selected>show</option><option value="hide">hide</option></select></div>
-            <div class="ctl"><label>NPR per CHF</label><output id="b-fx-o" class="mono"></output></div>
-          </div>
-          <div class="panel-pad" style="display:grid;gap:12px">
-            <div class="bar" id="budget-bar" role="img" aria-label="Budget split"></div>
-            <div class="legend" id="budget-legend"></div>
-            <div class="stats" id="budget-stats" style="--cols:3;border:1px solid var(--line);border-radius:5px;overflow:hidden"></div>
-          </div>
-          <div class="tbl-wrap"><table id="tbl-budget"></table></div>
+  <!-- ======================================================= 7 COST -->
+  <section class="chapter paper" id="cost" data-title="What it costs" data-n="7">
+    <div class="wrap">
+      <header class="chead split-head"><div><p class="cnum">7 · What it costs</p>
+        <h2>What the fund pays for, and what it does not.</h2></div>
+        <div class="hero-num"><b data-k="budget_dref"></b><span>from the Red Cross emergency fund over five years <button class="x" data-x="budget">?</button></span></div></header>
+      <div class="tool">
+        <div class="cost-bar"><div class="bar" id="budget-bar"></div><i class="ceiling" id="ceiling"><span id="ceiling-label"></span></i></div>
+        <div class="legend" id="budget-legend"></div>
+        <div class="pips" id="budget-pips"></div>
+        <div class="sliders">
+          <label>Registered households <input type="range" id="b-hh" min="1000" max="12000" step="250"><output id="b-hh-o"></output></label>
+          <label>Cash per household <input type="range" id="b-cash" min="0" max="15000" step="500"><output id="b-cash-o"></output></label>
+          <label>Corridors with river watchers <input type="range" id="b-corr" min="0" max="7" step="1"><output id="b-corr-o"></output></label>
         </div>
         <p class="note" id="budget-note"></p>
       </div>
-    </section>
+      <div class="deeper"><span>Go deeper</span><button data-open="ap-budget">Every budget line and its basis</button></div>
+    </div>
+  </section>
 
-    <section class="sec" id="meal" data-title="MEAL, capacity, risks" data-n="10">
-      <div class="inner">
-        <header class="sec-head">
-          <span class="clause">§10 · MONITORING, CAPACITY, ENDORSEMENT AND RISKS</span>
-          <h2>Learning from every activation, including the false alarms</h2>
-        </header>
-        <div class="grid-3" id="meal-cards"></div>
-        <div class="panel"><div class="panel-head"><h3>MEAL indicators</h3></div><div class="tbl-wrap"><table id="tbl-indicators"></table></div></div>
-        <div class="panel"><div class="panel-head"><h3>National Society capacity</h3><span class="flag-note">to be completed by the National Society</span></div><div class="tbl-wrap"><table id="tbl-capacity"></table></div></div>
-        <div class="panel"><div class="panel-head"><h3>Endorsement sequence</h3></div><div class="tbl-wrap"><table id="tbl-endorse"></table></div></div>
-        <div class="panel"><div class="panel-head"><h3>Risks and mitigation</h3></div><div class="tbl-wrap"><table id="tbl-risks"></table></div></div>
-      </div>
-    </section>
+  <!-- ======================================================= 8 DECISIONS -->
+  <section class="chapter" id="decisions" data-title="Decisions" data-n="8">
+    <div class="wrap">
+      <header class="chead"><p class="cnum">8 · Decisions</p>
+        <h2>Six choices the protocol cannot make alone.</h2>
+        <p class="lede">Pick an option for each. The numbers on the right, and in the bar at the top, follow your choices.</p></header>
+      <div class="stepper" id="stepper"></div>
+    </div>
+  </section>
 
-    <section class="sec" id="decisions" data-title="Decisions" data-n="11">
-      <div class="inner">
-        <header class="sec-head">
-          <span class="clause">§11 · DECISIONS FOR THE VALIDATION COMMITTEE</span>
-          <h2>Six choices this protocol cannot make alone</h2>
-          <p class="lede">Each option shows what it changes, and the recommended option is marked. Your selection updates the
-            summary at the top and travels with your exported review.</p>
-        </header>
-        <div class="panel" id="decision-list"></div>
-      </div>
-    </section>
-
-    <section class="sec" id="review" data-title="Review checklist" data-n="12">
-      <div class="inner">
-        <header class="sec-head">
-          <span class="clause">§12 · REVIEW</span>
-          <h2>Validation checklist</h2>
-          <p class="lede">The criteria a DREF validation committee applies to a full EAP, each linked to where this fictional
-            protocol answers it. Rate each criterion and add a note; your review stays in this browser until you export it.</p>
-        </header>
-        <div class="panel">
-          <div class="panel-head"><h3 id="review-count">Criteria</h3>
-            <div style="display:flex;gap:8px;flex-wrap:wrap">
-              <input type="text" id="reviewer" placeholder="Your name / organisation" aria-label="Reviewer name" style="padding:6px 8px">
-              <button type="button" id="review-copy">Copy review as Markdown</button>
-              <button type="button" class="primary" id="review-dl">Download review</button>
-              <button type="button" id="review-clear">Clear</button>
-            </div></div>
-          <div id="checklist"></div>
+  <!-- ======================================================= APPENDIX -->
+  <section class="chapter appendix" id="appendix" data-title="Appendix" data-n="A">
+    <div class="wrap">
+      <header class="chead"><p class="cnum">Appendix</p><h2>All the detail.</h2></header>
+      <div class="tabs" id="ap-tabs" role="tablist"></div>
+      <div id="ap-panels">
+        <div class="ap" data-tab="Hazard and exposure">
+          <div class="panel-block" id="ap-events"><h3>Documented events, 1963–2026</h3><div class="tbl-wrap"><table id="tbl-history"></table></div></div>
+          <div class="panel-block" id="ap-lakes"><h3>Potentially dangerous glacial lakes (ICIMOD 2020)</h3><p class="note">People living less than 25 m above the river in the first 120 km downstream. Codes give the lake's position (longitude, latitude).</p><div class="tbl-wrap"><table id="tbl-lakes"></table></div></div>
+          <div class="panel-block" id="ap-corridors"><h3>Corridor exposure</h3><div class="seg" role="group" id="hand-seg"></div><div class="tbl-wrap"><table id="tbl-corridors"></table></div></div>
+          <div class="panel-block" id="ap-impacts"><h3>Priority impacts</h3><div class="tbl-wrap"><table id="tbl-impacts"></table></div></div>
+          <div class="panel-block" id="ap-bipad"><h3>Impact records by month and terrain (BIPAD, 2011–2025)</h3><div class="two"><svg id="chart-season" class="chart"></svg><svg id="chart-terrain" class="chart"></svg></div><p class="note" id="terrain-note"></p></div>
         </div>
-        <p class="note" id="review-status" role="status"></p>
-      </div>
-    </section>
-
-    <section class="sec" id="methods" data-title="Methods & changes" data-n="13">
-      <div class="inner">
-        <header class="sec-head">
-          <span class="clause">§13 · METHODS, DATA, CHANGES AND SOURCES</span>
-          <h2>How every number on this page was made</h2>
-          <p class="lede">All figures come from public data through a scripted pipeline; one command rebuilds the page:
-            <code class="mono">make env &amp;&amp; make all</code>.</p>
-        </header>
-        <div class="panel"><div class="panel-head"><h3>What changed after review (v0.9 → v1.0)</h3><span class="muted small">two independent reviews: a validation-committee perspective and a local practitioner perspective</span></div>
-          <div class="panel-pad"><ul class="changelog" id="changelog" style="display:grid;gap:8px;padding-left:1.2em;margin:0"></ul></div></div>
-        <div class="grid-2">
-          <div class="prose" id="methods-prose"></div>
-          <div class="panel"><div class="panel-head"><h3>Data sources</h3></div><div class="tbl-wrap"><table id="tbl-data"></table></div></div>
+        <div class="ap" data-tab="Trigger evidence">
+          <div class="panel-block" id="ap-robust"><h3>Strict, generous and out-of-sample scores</h3><div class="kpi-row" id="robust-kpis"></div><div class="tbl-wrap"><table id="tbl-robust-events"></table></div><p class="note" id="robust-note"></p></div>
+          <div class="panel-block" id="ap-workbench"><h3>Trigger workbench</h3><p class="note">Every setting of the rain test (GEFS forecasts or ERA5-Land observations, 2011–2019), scored generously: an alert during the event counts.</p>
+            <div class="controls">
+              <label>Signal <select id="trig-src"><option value="obs">Observed rain (ERA5-Land)</option><option value="gefs" selected>Forecast (GEFS)</option></select></label>
+              <label>Days ahead <select id="trig-lead"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option></select></label>
+              <label>Rain level <input type="range" id="trig-freq" min="0" max="4" step="1"><output id="trig-freq-o"></output></label>
+              <label>Forecast runs agreeing <input type="range" id="trig-prob" min="0" max="4" step="1"><output id="trig-prob-o"></output></label>
+              <label>Impact counted <select id="trig-level"><option value="any">any report</option><option value="loss" selected>death, missing or house lost</option><option value="severe">≥ 3 dead or ≥ 10 houses</option></select></label>
+              <label>Districts at once <select id="trig-m"><option value="1">≥ 1</option><option value="2">≥ 2</option><option value="3">≥ 3</option></select></label>
+              <label>Area <select id="trig-region"><option value="hill" selected>hill and mountain districts</option><option value="corridor">corridor districts</option><option value="all">all districts</option></select></label>
+            </div>
+            <div class="kpi-row" id="trig-stats"></div>
+            <div class="two"><svg id="chart-roc" class="chart" role="img" aria-label="Hit rate against false alarms"></svg><div id="map-trig" class="map map-sm"></div></div>
+            <p class="statement" id="trig-statement"></p></div>
+          <div class="panel-block" id="ap-methods"><h3>How we tested</h3><dl class="methods" id="methods-list"></dl></div>
         </div>
-        <div class="prose"><h3>Limitations</h3><ul id="limits"></ul></div>
-        <div class="prose"><h3>References</h3><ol class="refs" id="refs"></ol></div>
+        <div class="ap" data-tab="Forecasts">
+          <div class="panel-block" id="ap-menu"><h3>Menu of forecasts and monitoring</h3><div class="tbl-wrap"><table id="tbl-menu"></table></div></div>
+        </div>
+        <div class="ap" data-tab="Actions and standards">
+          <div class="panel-block" id="ap-actions"><h3>All actions by warning time</h3><div class="matrix" id="matrix"></div><div class="tbl-wrap"><table id="tbl-opmatrix"></table></div></div>
+          <div class="panel-block" id="ap-cash"><h3>Cash design and delivery</h3><div class="tbl-wrap"><table id="tbl-cash"></table></div></div>
+          <div class="panel-block" id="ap-palikas"><h3>People in the flood path by municipality</h3><select id="pal-corr" aria-label="Corridor"></select><div class="tbl-wrap"><table id="tbl-palikas"></table></div></div>
+          <div class="panel-block" id="ap-ready"><h3>Preparation and stock</h3><div class="two"><ul id="readiness-list" class="body"></ul><ul id="prepos-list" class="body"></ul></div></div>
+        </div>
+        <div class="ap" data-tab="Operations and law">
+          <div class="panel-block" id="ap-triggers"><h3>Exact trigger statements and stop rules</h3><dl class="methods" id="trigger-list"></dl></div>
+          <div class="panel-block" id="ap-orders"><h3>Who can order what</h3><p class="note">Nepal's Disaster Risk Reduction and Management Act 2074 and Rules 2076, read in an unofficial English translation. Items marked "check" need the Nepali text.</p><div class="tbl-wrap"><table id="tbl-orders"></table></div></div>
+          <div class="panel-block" id="ap-clock"><h3>Activation clock</h3><div class="tbl-wrap"><table id="tbl-sop"></table></div></div>
+          <div class="panel-block" id="ap-dam"><h3>Dammed-lake procedure</h3><div class="tbl-wrap"><table id="tbl-dam"></table></div></div>
+          <div class="panel-block" id="ap-messages"><h3>Alert messages (proposed, for native-speaker review)</h3><div class="msgs" id="msg-gallery"></div><p class="note" id="msg-note"></p></div>
+          <div class="panel-block" id="ap-4w"><h3>Who does what, by district</h3><div class="tbl-wrap"><table id="tbl-4w"></table></div></div>
+          <div class="panel-block" id="ap-event"><h3>Timeline of 26 August 2026</h3><div class="tbl-wrap"><table id="tbl-timeline"></table></div></div>
+          <div class="panel-block" id="ap-toll"><h3>The toll, and why figures differ</h3><div class="tbl-wrap"><table id="tbl-toll"></table></div></div>
+        </div>
+        <div class="ap" data-tab="Lead time">
+          <div class="panel-block" id="ap-places"><h3>Every mapped place and its warning time</h3><p class="note">Follows the sensor and delays set in chapter 5. Places at the same distance are grouped.</p><div class="tbl-wrap"><table id="tbl-lt"></table></div></div>
+          <div class="panel-block" id="ap-hydro"><h3>Hydropower sites</h3><div class="tbl-wrap"><table id="tbl-hydro"></table></div></div>
+          <div class="panel-block" id="ap-linked"><h3>Who owns each part of the alarm chain</h3><div class="tbl-wrap"><table id="tbl-linked"></table></div></div>
+        </div>
+        <div class="ap" data-tab="Budget">
+          <div class="panel-block" id="ap-budget"><h3>Budget lines</h3><label class="inline">Show co-financed lines <input type="checkbox" id="b-cof" checked></label><div class="tbl-wrap"><table id="tbl-budget"></table></div></div>
+        </div>
+        <div class="ap" data-tab="Monitoring and risks">
+          <div class="panel-block" id="ap-meal"><h3>Learning from every activation</h3><dl class="methods" id="meal-list"></dl><div class="tbl-wrap"><table id="tbl-indicators"></table></div></div>
+          <div class="panel-block" id="ap-capacity"><h3>National Society capacity (to be completed by the National Society)</h3><div class="tbl-wrap"><table id="tbl-capacity"></table></div></div>
+          <div class="panel-block" id="ap-endorse"><h3>Endorsement sequence</h3><div class="tbl-wrap"><table id="tbl-endorse"></table></div></div>
+          <div class="panel-block" id="ap-risks"><h3>Risks and mitigation</h3><div class="tbl-wrap"><table id="tbl-risks"></table></div></div>
+        </div>
+        <div class="ap" data-tab="Data and sources">
+          <div class="panel-block" id="ap-real"><h3>What is real, what is invented</h3><div class="two" id="real-invented"></div></div>
+          <div class="panel-block" id="ap-data"><h3>Data</h3><div class="tbl-wrap"><table id="tbl-data"></table></div><p class="note">All figures are rebuilt from public data by a scripted pipeline.</p></div>
+          <div class="panel-block" id="ap-limits"><h3>Limitations</h3><ul id="limits" class="body"></ul></div>
+          <div class="panel-block" id="ap-images"><h3>Image credits</h3><ul id="img-credits" class="body small"></ul></div>
+          <div class="panel-block" id="ap-refs"><h3>References</h3><ol class="refs" id="refs"></ol></div>
+        </div>
+        <div class="ap" data-tab="Glossary">
+          <div class="panel-block" id="ap-glossary"><h3>Glossary</h3><dl class="gloss" id="glossary-list"></dl></div>
+        </div>
       </div>
-    </section>
-    <footer class="sec" style="border-bottom:0;padding-block:28px">
-      <div class="inner"><p class="note"><b>Fictional EAP.</b> Prepared by the NICE group (Neural Inference for the Carbon Cycle,
-        Ecosystems, Earth Observation and Early Warning), Max Planck Institute for Biogeochemistry, Jena, as an illustrative design
-        study. It follows the structure of the IFRC DREF Anticipatory Pillar EAP but is not endorsed by, and does not speak for,
-        the Nepal Red Cross Society, the IFRC, the Netherlands Red Cross or any government body. Events, data and laws are real;
-        the protocol, its commitments and its budget are invented. Map imagery: Sentinel-2 cloudless 2016 by EOX (CC BY 4.0),
-        contains modified Copernicus Sentinel data; elevation: Mapzen/AWS Terrain Tiles; rivers: HydroRIVERS; © OpenStreetMap
-        contributors; ECMWF open data (CC BY 4.0).</p></div>
-    </footer>
-  </main>
-</div>
+    </div>
+  </section>
+  <footer class="foot"><div class="wrap"><p>A fictional Early Action Protocol, prepared by the NICE group at the Max Planck Institute for Biogeochemistry, Jena, as a design study. It follows the structure of an IFRC Anticipatory Pillar EAP but is not endorsed by, and does not speak for, the Nepal Red Cross Society, the IFRC or any government body. Map imagery: Sentinel-2 cloudless 2016 by EOX (CC BY 4.0), contains modified Copernicus Sentinel data; terrain: Mapzen/AWS Terrain Tiles; rivers: HydroRIVERS; © OpenStreetMap contributors; ECMWF open data (CC BY 4.0). Photos: see the image credits in the appendix.</p></div></footer>
+</main>
+
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Detail">
+  <div class="drawer-head"><b id="drawer-title"></b><button type="button" class="ghost icon" id="drawer-close" aria-label="Close">✕</button></div>
+  <div class="drawer-body" id="drawer-body"></div>
+</aside>
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer review" id="review-drawer" aria-hidden="true" aria-label="Review checklist">
+  <div class="drawer-head"><b>Review <span id="review-progress">0 / 18</span></b><button type="button" class="ghost icon" id="review-close" aria-label="Close">✕</button></div>
+  <div class="drawer-body">
+    <p class="note">The criteria a validation committee applies to a full EAP. Ratings and notes stay in this browser until you export them.</p>
+    <div class="review-tools"><input type="text" id="reviewer" placeholder="Your name or organisation" aria-label="Reviewer"><button type="button" id="review-copy">Copy</button><button type="button" class="primary" id="review-dl">Download</button><button type="button" id="review-clear">Clear</button></div>
+    <div id="checklist"></div><p class="note" id="review-status" role="status"></p>
+  </div>
+</aside>
+<button type="button" class="review-fab" id="review-fab" hidden>Checklist <span id="review-fab-n">0/18</span></button>
+<div class="pop" id="pop" role="tooltip" hidden></div>
 <div class="tip" id="tip" hidden></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
