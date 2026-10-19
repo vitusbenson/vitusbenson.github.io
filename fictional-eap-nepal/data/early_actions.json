@@ -1,0 +1,665 @@
+{
+ "meta": {
+  "created": "2026-10-19",
+  "nominal_rate_npr_per_chf": 185.0,
+  "rate_basis": "Implied by IFRC Emergency Appeal MDRNP022 (Aug 2026): NPR 500,000 ~ CHF 2,700 (185) and NPR 90,000 ~ CHF 480 (187.5); 185 used. Not a market quote.",
+  "npr_per_usd": 133.0,
+  "usd_basis": "WFP 2024 Koshi anticipatory activation: NPR 15,000 = USD 113.3 (132.4), rounded to 133; USD-to-CHF is derived via NPR, not market rate.",
+  "estimate_flag": "Items with estimate=true are derived or assumed (see cost_basis). unit_cost null means no Nepal source found; not guessed.",
+  "households_size_assumption": "~4-5 persons per household (assumption, not re-verified)"
+ },
+ "actions": [
+  {
+   "id": "EA01",
+   "name": "Upstream detection to direct alarm chain (multi-sensor trigger -> cell broadcast, sirens, hydropower control rooms, police)",
+   "category": "minutes",
+   "lead_time_min_hours": 0.1,
+   "implementer": "DHM (detection, alarm), NDRRMA (cell broadcast, order), Nepal Telecom/Ncell, operators (receive); China hydromet/Kyirong authorities (cross-border feed)",
+   "unit": "national/corridor system (one-off) ",
+   "cost_basis": "Cell-broadcast set-up USD 1.75-3 M (GSMA/ITU estimate quoted by Mongabay) converted at NPR 133/USD; sensors/seismic/camera upstream NOT costed (no source found).",
+   "people_per_unit": "whole corridor population (679,295 SMS recipients in 4 districts on 26 Aug 2026)",
+   "impacts_addressed": [
+    "loss_of_life",
+    "hydropower_workers",
+    "infrastructure",
+    "trade_border"
+   ],
+   "evidence": "2026 event: first public alert 38 min after collapse (23 min to DHM via District Administration phone call, 15 min to dispatch); upstream gauges were lost 13 min after collapse; flood reached Syabrubesi ~10 min after border crossing; Nepal-China data sharing mechanism agreed 2025 but not operational. No evaluation of detection-to-alarm chains for ice-rock avalanches in Nepal.",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://kathmandupost.com/national/2026/09/02/nepal-sent-its-disaster-alert-38-minutes-after-the-glacier-collapse-it-wasn-t-enough",
+    "https://english.nepalnews.com/s/long-reads/bhote-koshi-catastrophe-exposes-limits-of-nepals-flood-warning-system/",
+    "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/",
+    "https://india.mongabay.com/2026/09/community-based-warning-saves-lives-during-nepal-floods/"
+   ],
+   "risks": "False alarms from non-hazard seismic signals (DMG classified the 4.4 signal as non-earthquake and issued no alert); sensors destroyed by the event itself; cross-border politics; alarm without a pre-agreed receiver protocol is useless (see EA02, EA09).",
+   "unit_cost_npr": [
+    233000000,
+    399000000
+   ],
+   "unit_cost_chf": [
+    1259459.0,
+    2156757.0
+   ],
+   "estimate": true
+  },
+  {
+   "id": "EA02",
+   "name": "Hydropower underground works (tunnel/adit/powerhouse/cavern) alarm-triggered evacuation protocol and muster points",
+   "category": "minutes",
+   "lead_time_min_hours": 0.15,
+   "implementer": "Project operators and contractors (Upper Trishuli-1/3A/3B, Rasuwagadhi, Chilime, Langtang Khola), NEA, IPPAN; labour inspectors",
+   "unit": "per project (alarm receiver, siren/PA, signed-off drill, count-in/count-out system)",
+   "cost_basis": "No Nepal cost data found; cost is dominated by drills and paid worker time, not hardware. Not estimated.",
+   "people_per_unit": "40-600 underground/camp workers per project (UT-1: 573 unaccounted; UT-3B: 122; Rasuwagadhi: 93; Trishuli 3A: 40-45 present vs normal 5-6)",
+   "impacts_addressed": [
+    "loss_of_life",
+    "hydropower_workers"
+   ],
+   "evidence": "2026: ~800-934 hydropower-linked people unaccounted for (IPPAN/energy minister, 23 Sep >800); two Trishuli-3A staff survived 9 days underground; an ADB expert panel had recommended upstream/downstream alert coordination and evacuation protocols, apparently not in place; no report of any operator alarm. No peer-reviewed evidence on tunnel evacuation in debris floods.",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://kathmandupost.com/national/2026/08/29/hundreds-feared-trapped-in-hydropower-tunnels-after-bhotekoshi-flood",
+    "https://kathmandupost.com/national/2026/09/04/how-two-nepal-hydropower-workers-survived-nine-days-trapped-underground",
+    "https://kathmandupost.com/national/2026/09/02/nepal-sent-its-disaster-alert-38-minutes-after-the-glacier-collapse-it-wasn-t-enough"
+   ],
+   "risks": "Mobile phones do not work underground (a worker warned his family of this); tunnel entrances buried (adit exits are the flood path); shift-count uncertainty; evacuation upslope may be through the same portal that floods; production-loss pressure causes alarm fatigue.",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA03",
+   "name": "Headworks / intake gate, sluice and powerhouse isolation sequence on external alarm",
+   "category": "minutes",
+   "lead_time_min_hours": 0.1,
+   "implementer": "Plant operators, NEA grid control",
+   "unit": "per hydropower plant (automatic logic + manual override)",
+   "cost_basis": "Not costed; engineering study needed. Likely retrofit of existing SCADA.",
+   "people_per_unit": "plant-level (asset protection; benefit to people indirect via downstream surge attenuation, which is unproven for debris flows)",
+   "impacts_addressed": [
+    "infrastructure",
+    "hydropower_workers"
+   ],
+   "evidence": "No evidence found that gate operation attenuates a debris flood of this magnitude; 12-15 plants (431 MW) were damaged. Treat as hypothesis. Jure 2014 landslide dam damaged Sunkoshi and Bhotekoshi plants (headworks destroyed).",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://kathmandupost.com/national/2026/09/02/nepal-sent-its-disaster-alert-38-minutes-after-the-glacier-collapse-it-wasn-t-enough",
+    "https://www.preventionweb.net/news/nepal-eye-sun-koshi-landslide-monitoring-and-infrastructure-planning-key-minimizing-scale"
+   ],
+   "risks": "Closing intake gates can raise upstream water level; automatic trips may destabilise national grid; cannot protect underground works unless the alarm also evacuates people (EA02).",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA04",
+   "name": "Cell-broadcast alert with action-specific, multilingual text (Nepali, Tamang, English, Chinese) for corridor cells",
+   "category": "minutes",
+   "lead_time_min_hours": 0.05,
+   "implementer": "NDRRMA (lead agency named), Nepal Telecom, Ncell, DHM",
+   "unit": "national system (one-off) + per-alert marginal ~0",
+   "cost_basis": "USD 1.75-3 M set-up (GSMA/ITU as quoted in Mongabay; not independently verified) at NPR 133/USD.",
+   "people_per_unit": "all handsets in targeted cells (~10 s delivery claimed)",
+   "impacts_addressed": [
+    "loss_of_life",
+    "trekkers_tourism",
+    "hydropower_workers"
+   ],
+   "evidence": "26 Aug 2026 SMS used the routine monsoon template, Nepali only, no location/time/shelter info; one SMS received 19 min late; generic repeated alerts have eroded trust (scoping review of 38 studies cited by Mongabay). Cell broadcast not procured at time of event. Peer-reviewed evidence on cell broadcast for flash floods exists outside Nepal but was not reviewed here.",
+   "evidence_strength": "medium",
+   "source_urls": [
+    "https://india.mongabay.com/2026/09/community-based-warning-saves-lives-during-nepal-floods/",
+    "https://kathmandupost.com/national/2026/09/02/nepal-sent-its-disaster-alert-38-minutes-after-the-glacier-collapse-it-wasn-t-enough"
+   ],
+   "risks": "Alert fatigue; handsets off or no signal in gorges; towers destroyed (communications were down in Rasuwa/Nuwakot/Dhading); legal gap: DHM may warn but not order evacuation.",
+   "unit_cost_npr": [
+    233000000,
+    399000000
+   ],
+   "unit_cost_chf": [
+    1259459.0,
+    2156757.0
+   ],
+   "estimate": true
+  },
+  {
+   "id": "EA05",
+   "name": "Mass SMS/IVR with distinct \"extreme event - move now\" template, voice IVR for low literacy",
+   "category": "minutes",
+   "lead_time_min_hours": 0.1,
+   "implementer": "DHM, NDRRMA, Nepal Telecom, Ncell",
+   "unit": "per message",
+   "cost_basis": "ASSUMPTION: bulk SMS tariff NPR 0.1-0.5; no Nepal tariff verified. 679,295 messages sent 26 Aug 2026 -> NPR 68k-340k per full blast (estimate).",
+   "people_per_unit": "1 per message (679,295 recipients on 26 Aug 2026)",
+   "impacts_addressed": [
+    "loss_of_life"
+   ],
+   "evidence": "See EA04; Nepal Red Cross sEAP 2025 developed SMS/IVR, radio jingle and social media messages and disseminated via FM, SMS, siren systems (not activated in 2025).",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://india.mongabay.com/2026/09/community-based-warning-saves-lives-during-nepal-floods/",
+    "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/",
+    "https://go-api.ifrc.org/api/DownloadFile/ (IFRC GO: sEAP2024NP01 2025 Annual Report, Nepal flood)"
+   ],
+   "risks": "Template reuse trains people to ignore alerts; delivery delay under congestion (SMS is not 10 s); language.",
+   "unit_cost_npr": [
+    0.1,
+    0.5
+   ],
+   "unit_cost_chf": [
+    0.0005,
+    0.0027
+   ],
+   "estimate": true
+  },
+  {
+   "id": "EA06",
+   "name": "Community siren / loudspeaker / runner network at riverside settlements (CBFEWS node)",
+   "category": "minutes",
+   "lead_time_min_hours": 0.1,
+   "implementer": "Palikas/ward offices, community disaster management committees, NRCS sub-chapters, Practical Action-style CBFEWS",
+   "unit": "per community early-warning system (gauge + siren + comms)",
+   "cost_basis": "Himalayan Times opinion piece (undated, secondary): purchase NPR 400,000 + install NPR 500,000 + O&M NPR 130,000/yr; first-year total NPR 1.03 M. Not verified against a primary source.",
+   "people_per_unit": "hundreds to thousands per community (Karnali CBFEWS reaches ~52,000 Nepalis per a thesis abstract)",
+   "impacts_addressed": [
+    "loss_of_life",
+    "injuries",
+    "livestock_assets"
+   ],
+   "evidence": "Rai et al. 2020 (IJDRR): CBA of Karnali flood EWS - reported BCR 24-73 and avoided loss NPR 117,027/household (figures read from a search-engine summary; abstract page not accessed); +1 h lead time raises savings 1.83x; Smith et al. 2017: DHM forecasting raised Karnali lead time from 2-3 h to 7-8 h. Applies to slow monsoon floods, not minutes-scale debris floods; Imja Tsho GLOF siren network reported rusting (April 2026 BBC-sourced reports).",
+   "evidence_strength": "medium",
+   "source_urls": [
+    "https://doi.org/10.1016/j.ijdrr.2020.101534",
+    "https://doi.org/10.5194/nhess-17-423-2017",
+    "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/"
+   ],
+   "risks": "Maintenance decay (Imja); gauges designed for gradual rise miss high-velocity floods (4 stations destroyed 26 Aug); sirens need a person who decides; false alarms.",
+   "unit_cost_npr": 1030000,
+   "unit_cost_chf": 5568.0,
+   "estimate": true
+  },
+  {
+   "id": "EA07",
+   "name": "School alert-to-assembly protocol and evacuation drills (move to pre-mapped high ground; head-count; students in transit)",
+   "category": "minutes",
+   "lead_time_min_hours": 0.1,
+   "implementer": "Schools (head teachers), palika education units, Ministry of Education, NRCS junior/youth circles",
+   "unit": "per school (SOP, route marking, annual drill)",
+   "cost_basis": "Not costed in sources; low unit cost (staff time). sEAP example: 11 community SIMEX with 636 participants funded within CHF 11,510 shelter readiness line (not separable).",
+   "people_per_unit": "~900 students on campus at Tribhuvan Trishuli Secondary School, Bidur (school roll 1,643-1,650; sources differ)",
+   "impacts_addressed": [
+    "loss_of_life",
+    "children"
+   ],
+   "evidence": "26 Aug 2026: head teacher ordered ~900 students to higher ground ~9:10 after phone calls; flood hit ~10 min later and buried the compound; students en route to school were unaccounted for. Single anecdote, not an evaluation.",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://india.mongabay.com/2026/09/community-based-warning-saves-lives-during-nepal-floods/",
+    "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/",
+    "https://english.nepalnews.com/s/long-reads/bhote-koshi-catastrophe-exposes-limits-of-nepals-flood-warning-system/"
+   ],
+   "risks": "Children in transit and at home; warning arrived informally (friends/relatives) before official SMS; false alarm cost = lost class time; reliance on a single decision-maker.",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA08",
+   "name": "Pre-mapped evacuation routes and elevated safe points with signage, vertical evacuation where terrain permits",
+   "category": "minutes",
+   "lead_time_min_hours": 0.1,
+   "implementer": "Palikas, DDMC/LDMC, NRCS",
+   "unit": "per settlement",
+   "cost_basis": "sEAP: 17 evacuation centres mapped across Kailali/Banke/Bardiya (capacity ~1,000 people); mapping done in a single July 2024 exercise; unit cost not given.",
+   "people_per_unit": "~60 per centre in sEAP example (1,000/17); riverside settlements in gorges need far larger capacity",
+   "impacts_addressed": [
+    "loss_of_life",
+    "displacement"
+   ],
+   "evidence": "Used in sEAP drills; relatives of one 2026 survivor reached high ground but were still caught by waves, i.e. route length vs. 10-min travel time matters.",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://go-api.ifrc.org/api/DownloadFile/ (IFRC GO: sEAP2024NP01 2025 Annual Report, Nepal flood)",
+    "https://kathmandupost.com/national/2026/09/02/nepal-sent-its-disaster-alert-38-minutes-after-the-glacier-collapse-it-wasn-t-enough"
+   ],
+   "risks": "Slope instability on routes; mapping done for water floods, not debris-flow runout; elderly/PwD cannot move fast.",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA09",
+   "name": "Highway and border-crossing hold: close Pasang Lhamu Highway / Rasuwagadhi crossing and Prithvi/Mugling-Narayanghat corridors on trigger",
+   "category": "minutes",
+   "lead_time_min_hours": 0.2,
+   "implementer": "Nepal Police, APF, Department of Roads, customs (Rasuwagadhi), district administration; Chinese border authorities",
+   "unit": "per checkpoint (barrier + pre-authorised officer)",
+   "cost_basis": "Not costed; main cost is economic (stopped trade/traffic) and liability for wrongful closure.",
+   "people_per_unit": "dozens to hundreds of vehicles/pedestrians per hour at the border; traders, pilgrims, drivers",
+   "impacts_addressed": [
+    "loss_of_life",
+    "trade_border",
+    "trekkers_tourism"
+   ],
+   "evidence": "26 Aug 2026: closure advisories for Prithvi Highway, Galchhi-Nuwakot-Rasuwa-Syabrubesi road, Mugling-Narayangadh went out ~10:28 and ~11:50 (downstream), i.e. after the flood reached the border; Rasuwagadhi crossing, Kyirong road destroyed. Foreigners among missing include pilgrims, traders and drivers at the crossing.",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/",
+    "https://english.nepalnews.com/s/long-reads/bhote-koshi-catastrophe-exposes-limits-of-nepals-flood-warning-system/"
+   ],
+   "risks": "Time to the border is ~minutes after trigger: only useful for downstream segments; closures at false alarms cost trade and trust.",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA10",
+   "name": "Trekker/lodge alert (registered mobile numbers from TIMS/permits, lodge radio tree) for Langtang and Rasuwa corridors",
+   "category": "minutes",
+   "lead_time_min_hours": 0.1,
+   "implementer": "Nepal Tourism Board, TAAN/NMA, Langtang National Park, lodge associations, palikas",
+   "unit": "per trekking corridor (permit-linked alert list)",
+   "cost_basis": "Not costed; integration with cell broadcast (EA04) makes marginal cost near zero. Estimate absent.",
+   "people_per_unit": "hundreds of trekkers per day in peak season (Aug is monsoon low season)",
+   "impacts_addressed": [
+    "trekkers_tourism",
+    "loss_of_life"
+   ],
+   "evidence": "26 Aug 2026: 403 tourists untraceable (341 foreign, 62 Nepali, per Nepalnews); debris bypassed main Langtang trekking valley but trekkers were still listed missing; SMS was Nepali only.",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://english.nepalnews.com/s/long-reads/bhote-koshi-catastrophe-exposes-limits-of-nepals-flood-warning-system/",
+    "https://india.mongabay.com/2026/09/community-based-warning-saves-lives-during-nepal-floods/"
+   ],
+   "risks": "Foreign SIMs not on Nepali networks; unregistered trekkers; language.",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA11",
+   "name": "Door-to-door volunteer warning and early evacuation of riverside households to pre-identified centres",
+   "category": "hours",
+   "lead_time_min_hours": 3,
+   "implementer": "NRCS volunteers and sub-chapters, palika ward offices, early warning task forces",
+   "unit": "per person warned",
+   "cost_basis": "NRCS sEAP trigger 26-28 Sep 2024: ~CHF 600 spent, 3,600 people received warnings (102 volunteers) -> ~CHF 0.17/person (~NPR 31 at 185). Marginal activation cost only; readiness/pre-positioning adds CHF ~36.7 per targeted person (CHF 199,964 / 5,454 people over 2 years).",
+   "people_per_unit": "~35 people per volunteer (3,600/102)",
+   "impacts_addressed": [
+    "loss_of_life",
+    "injuries",
+    "livestock_assets",
+    "displacement"
+   ],
+   "evidence": "First Nepal Red Cross EAP: activated once (Sept 2024, de-escalated after 48 h, little rain in target area; heavy rain fell in Kathmandu valley outside the target area); never triggered in 2025. Process evidence only, no impact evaluation. 3-day forecast with staged alerts (72 h) rehearsed in 11 SIMEX in 2025.",
+   "evidence_strength": "medium",
+   "source_urls": [
+    "https://go-api.ifrc.org/api/DownloadFile/ (IFRC GO: sEAP2024NP01 Operations Update 30 Oct 2024)",
+    "https://go-api.ifrc.org/api/DownloadFile/ (IFRC GO: sEAP2024NP01 2025 Annual Report, Nepal flood)"
+   ],
+   "risks": "False alarm / wrong location (Sept 2024); volunteer attrition (110 -> 99); trigger statements inconsistent with DHM bulletins; works for river floods with hours of lead time, not for 10-minute debris floods.",
+   "unit_cost_npr": 31,
+   "unit_cost_chf": 0.17,
+   "estimate": true
+  },
+  {
+   "id": "EA12",
+   "name": "Livestock and household-asset evacuation (pre-agreed transport providers, shelters)",
+   "category": "hours",
+   "lead_time_min_hours": 6,
+   "implementer": "NRCS district chapters, palikas, transport providers, livestock service offices",
+   "unit": "per household (transport hire) - not costed",
+   "cost_basis": "sEAP: standing agreements with local transport providers renewed 2025; no unit price in reports.",
+   "people_per_unit": "per household; Pople et al.: cash recipients were 17 pp more likely to evacuate livestock (Bangladesh)",
+   "impacts_addressed": [
+    "livestock_assets",
+    "livelihoods"
+   ],
+   "evidence": "Pople et al. 2026 (WBER) and Gros et al. 2019/2023 on anticipatory cash (Bangladesh): recipients evacuated assets/livestock more; ECMWF workshop slide lists ~4-5 days lead for livestock moves in Brahmaputra context.",
+   "evidence_strength": "medium",
+   "source_urls": [
+    "https://doi.org/10.1093/wber/lhag016",
+    "https://doi.org/10.1016/j.ijdrr.2019.101275",
+    "https://doi.org/10.2166/nh.2023.111",
+    "https://events.ecmwf.int/event/222/contributions/2367/attachments/1318/2389/Hydrology-WS_Stephens.pdf",
+    "https://go-api.ifrc.org/api/DownloadFile/ (IFRC GO: sEAP2024NP01 2025 Annual Report, Nepal flood)"
+   ],
+   "risks": "Needs >=6-24 h; not usable for minutes-scale events.",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA13",
+   "name": "Protect documents and essential assets: waterproof bags, shelter toolkits",
+   "category": "hours",
+   "lead_time_min_hours": 3,
+   "implementer": "NRCS, FAO (hermetic grain bags), palikas",
+   "unit": "per household (waterproof bag)",
+   "cost_basis": "sEAP pre-positioned 2,000 waterproof bags + 80 shelter toolkit sets (2024); unit prices not published in the reports read. OCHA 2025: FAO hermetic bags for 7,000 households (FAO sector budget USD 405,400 incl. co-funding).",
+   "people_per_unit": "1 bag per household (~4-5 people; household size is an assumption)",
+   "impacts_addressed": [
+    "livelihoods",
+    "livestock_assets"
+   ],
+   "evidence": "No effectiveness evaluation found.",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://go-api.ifrc.org/api/DownloadFile/ (IFRC GO: sEAP2024NP01 2025 Annual Report, Nepal flood)",
+    "https://www.unocha.org/ (OCHA Nepal CERF AA framework 2025, local copy: aa_nepal25.pdf)"
+   ],
+   "risks": "People carry bags only if they have time; low marginal life-safety value.",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA14",
+   "name": "Pre-position and stage search-and-rescue (Army, APF, Police, NRCS) incl. tunnel-rescue kit (air pumping, excavators, drones, helicopters)",
+   "category": "hours",
+   "lead_time_min_hours": 2,
+   "implementer": "Nepal Army, APF, Nepal Police, NDRRMA, NRCS, hydropower companies",
+   "unit": "per staging base",
+   "cost_basis": "Not costed. 26 Aug 2026: Army prioritised 19 hydropower tunnels; access (bridges/roads washed away, entrances buried) was the main obstacle; survivors reached after 9 days.",
+   "people_per_unit": "hundreds trapped (639 trapped at UT-1 and 3A at one count; >100 maybe in tunnels at 29 Aug)",
+   "impacts_addressed": [
+    "loss_of_life",
+    "hydropower_workers",
+    "injuries"
+   ],
+   "evidence": "2026 event: 13,396 rescued by 7 Sep; 254 rescued from UT-1 by Army by 29 Aug. Counterfactual benefit of pre-staging not measured.",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://kathmandupost.com/national/2026/08/29/hundreds-feared-trapped-in-hydropower-tunnels-after-bhotekoshi-flood",
+    "https://kathmandupost.com/national/2026/09/04/how-two-nepal-hydropower-workers-survived-nine-days-trapped-underground",
+    "https://explorersweb.com/langtang-flood-update-1453-dead-6664-missing/"
+   ],
+   "risks": "Staging at false alarms; corridors cut by event, so staging must be on the correct side of bridges.",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA15",
+   "name": "Pre-position medical supplies, ambulances, blood and trauma teams at downstream hubs",
+   "category": "hours",
+   "lead_time_min_hours": 6,
+   "implementer": "Ministry of Health, hospitals (Bidur, Trishuli, Dhunche), NRCS (ambulance, blood bank, Red Cross Emergency Clinic)",
+   "unit": "per hub",
+   "cost_basis": "Not costed. IFRC appeal 2026 mentions NRCS Red Cross Emergency Clinic deployment and coverage of blood fees.",
+   "people_per_unit": "n/a",
+   "impacts_addressed": [
+    "injuries",
+    "wash_disease"
+   ],
+   "evidence": "No Nepal evaluation; standard humanitarian practice.",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://go-api.ifrc.org/api/DownloadFile/96511/MDRNP022EA"
+   ],
+   "risks": "Event mortality in debris floods is mostly drowning/burial: few survivors needing trauma care (majority missing, not injured).",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA16",
+   "name": "Anticipatory multipurpose cash (SRSP standard NPR 5,000 or 8,000 by household size) via Local Disaster Management Fund bank transfer + SMS",
+   "category": "1-3 days",
+   "lead_time_min_hours": 24,
+   "implementer": "Palikas (LDMC/LDMF) with UNICEF, WFP, FAO; NRCS/IFRC",
+   "unit": "per household",
+   "cost_basis": "OCHA/CERF Nepal AA framework 2025: transfer NPR 5,000 or 8,000 per household by household size (Shock-Responsive Social Protection and Relief Distribution Standard); other Nepal values: WFP 2022 USD 117; WFP 2024 Koshi NPR 15,000 (USD 113.3); IFRC 2026 post-event livelihoods grant NPR 90,000 (CHF 480; conditional, not anticipatory).",
+   "people_per_unit": "~4-5 per household (assumption; Nepal census mean not re-verified)",
+   "impacts_addressed": [
+    "livelihoods",
+    "livestock_assets",
+    "wash_disease",
+    "displacement"
+   ],
+   "evidence": "WFP/DIME RCT Nepal 2022 (3 days before flood): FCS +6%, 19% fewer rely on less preferred food, 25% fewer borrow food, anxiety/depression -3%; benefits faded once control group was paid; 50% of recipients got cash within 6 days of peak. Christian et al. 2025 RCT Bangladesh+Nepal: timely cash raises food security and psychosocial well-being (NBER abstract only; effect sizes not read). Pople et al. 2026: Bangladesh cash 5 days ahead -> improved welfare for 3 months, less asset loss, evacuations +12 pp. Gros 2019/2023: Bangladesh quasi-experimental.",
+   "evidence_strength": "high",
+   "source_urls": [
+    "https://docs.wfp.org/api/documents/WFP-0000165848/download",
+    "https://doi.org/10.3386/w34414",
+    "https://doi.org/10.1093/wber/lhag016",
+    "https://doi.org/10.1016/j.ijdrr.2019.101275",
+    "https://doi.org/10.2166/nh.2023.111",
+    "https://www.unocha.org/ (OCHA Nepal CERF AA framework 2025, local copy: aa_nepal25.pdf)"
+   ],
+   "risks": "Needs river-flood lead time >=1-3 days; targeting (community nomination lacks precision); bank-account coverage; not applicable to minute-scale cascades; trade-off speed vs precision (WFP).",
+   "unit_cost_npr": [
+    5000,
+    8000
+   ],
+   "unit_cost_chf": [
+    27.0,
+    43.0
+   ],
+   "estimate": false
+  },
+  {
+   "id": "EA17",
+   "name": "Hygiene/dignity kits, water purification tablets/bleaching powder, buckets, emergency toilets pre-positioned and delivered to evacuation centres",
+   "category": "1-3 days",
+   "lead_time_min_hours": 24,
+   "implementer": "NRCS, UNICEF, UNFPA, palikas",
+   "unit": "per household kit",
+   "cost_basis": "sEAP: 1,100 dignified hygiene kits procured via IFRC (contents listed; price not published); WASH readiness CHF 1,834 + pre-position CHF 22,293 (budget lines).",
+   "people_per_unit": "1 kit/household; 60 volunteers trained in water purification",
+   "impacts_addressed": [
+    "wash_disease",
+    "displacement"
+   ],
+   "evidence": "Process documentation only; kits not used in 2024/25 triggers (no evacuation). UNICEF CERF AA WASH budget USD 171,100.",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://go-api.ifrc.org/api/DownloadFile/ (IFRC GO: sEAP2024NP01 2025 Annual Report, Nepal flood)",
+    "https://www.unocha.org/ (OCHA Nepal CERF AA framework 2025, local copy: aa_nepal25.pdf)"
+   ],
+   "risks": "Stock rotation/expiry; little value if no one reaches centres.",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA18",
+   "name": "Activate evacuation centres with tarpaulins, blankets, mattresses, shelter toolkits",
+   "category": "1-3 days",
+   "lead_time_min_hours": 24,
+   "implementer": "NRCS, palikas, IFRC",
+   "unit": "per household set",
+   "cost_basis": "sEAP pre-positioned 800 tarpaulins, 800 blankets, 800 mattresses (2025); shelter pre-position budget CHF 27,643; unit prices not given.",
+   "people_per_unit": "800 sets for 22 communities",
+   "impacts_addressed": [
+    "displacement",
+    "houses"
+   ],
+   "evidence": "Not activated; for post-event displacement: IFRC 2026: 6,000+ homes completely damaged, people in open spaces and neighbours' homes.",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://go-api.ifrc.org/api/DownloadFile/ (IFRC GO: sEAP2024NP01 2025 Annual Report, Nepal flood)",
+    "https://go-api.ifrc.org/api/DownloadFile/96511/MDRNP022EA"
+   ],
+   "risks": "Mountain access; cold at altitude (warm clothing).",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA19",
+   "name": "Hydropower and construction-site stand-down on forecast extreme rain (move equipment/camps out of floodplain, pause river-bed works, stop tunnel shifts)",
+   "category": "1-3 days",
+   "lead_time_min_hours": 12,
+   "implementer": "Operators, contractors, NEA, labour/safety inspectors, IPPAN",
+   "unit": "per project",
+   "cost_basis": "Not costed: cost = lost production/construction time; to be estimated with operators.",
+   "people_per_unit": "40-600 workers/project",
+   "impacts_addressed": [
+    "hydropower_workers",
+    "infrastructure",
+    "loss_of_life"
+   ],
+   "evidence": "Spotlight Nepal: DHM 8:00 bulletin on 26 Aug flagged high flash flood risk in several districts but no standing protocol required action; applies to rainfall floods (Melamchi 2021, Sept 2024) not to the ice-rock avalanche which no forecast could target.",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/",
+    "https://english.nepalnews.com/s/long-reads/bhote-koshi-catastrophe-exposes-limits-of-nepals-flood-warning-system/"
+   ],
+   "risks": "Routine bulletins are over-triggered: needs impact-based threshold to avoid constant stoppage.",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA20",
+   "name": "Landslide-dam lake response: daily monitoring, downstream evacuation, controlled breach/spillway, operator notification",
+   "category": "weeks",
+   "lead_time_min_hours": 72,
+   "implementer": "DHM, Dept of Mines & Geology, NDRRMA, Army, palikas, operators",
+   "unit": "per dammed lake",
+   "cost_basis": "Not costed.",
+   "people_per_unit": "all downstream settlements and plants within reach",
+   "impacts_addressed": [
+    "loss_of_life",
+    "infrastructure",
+    "hydropower_workers"
+   ],
+   "evidence": "Jure 2014: Sunkoshi dammed (55 m dam), flow stopped ~12 h at a gauge 38 km downstream (3 h after slide); several hydropower plants hit. 2026: DHM said the upstream dammed site \"had not fully cleared\" 5 h after crossing; secondary-flood risk flagged by IFRC. Melamchi 2021: local authorities warned after detecting the dam, 17-21 deaths incl. foreign workers (death tolls vary by source).",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://www.preventionweb.net/news/nepal-eye-sun-koshi-landslide-monitoring-and-infrastructure-planning-key-minimizing-scale",
+    "https://english.nepalnews.com/s/long-reads/bhote-koshi-catastrophe-exposes-limits-of-nepals-flood-warning-system/",
+    "https://go-api.ifrc.org/api/DownloadFile/96511/MDRNP022EA"
+   ],
+   "risks": "Poor access to monitor; unpredictable breach time; evacuation fatigue over weeks.",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA21",
+   "name": "Glacier/lake precursor watch and seasonal exclusion zones (cameras, InSAR/optical lake mapping, no-camp rules in runout zones)",
+   "category": "weeks",
+   "lead_time_min_hours": 168,
+   "implementer": "DHM, ICIMOD, DMG, universities, operators, palikas",
+   "unit": "per hazardous catchment (Lhende/Langtang etc.)",
+   "cost_basis": "Not costed. Imja Tsho precedent: USD 3.5 M project incl. lake lowering (3.5 m) and EWS (search summary; not primary).",
+   "people_per_unit": "all downstream exposure",
+   "impacts_addressed": [
+    "loss_of_life",
+    "infrastructure",
+    "hydropower_workers"
+   ],
+   "evidence": "Area was a \"blind spot\" for Nepal/China/international geologists; ICIMOD: only 7 of 38 monitored glaciers met a global benchmark; satellites cannot show fracture development; a report issued about a year before the July 2025 Rasuwagadhi flood had called for cross-border EWS, risk assessment and relocation of high-risk settlements (unimplemented, per press).",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://kathmandupost.com/national/2026/09/02/nepal-sent-its-disaster-alert-38-minutes-after-the-glacier-collapse-it-wasn-t-enough",
+    "https://english.onlinekhabar.com/rasuwa-flood-report-nepal.html"
+   ],
+   "risks": "Slope failures often have no detectable precursor; many false positives.",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA22",
+   "name": "Seasonal readiness package: hazard/runout mapping, evacuation-centre mapping, SIMEX drills, early-warning task forces, standby transport, volunteer protocol, EW message pre-agreement",
+   "category": "seasonal",
+   "lead_time_min_hours": 720,
+   "implementer": "NRCS, palikas, DHM, NDRRMA, DDMC",
+   "unit": "per municipality cluster / per community",
+   "cost_basis": "sEAP2024NP01 total CHF 199,964 (readiness 71,592; pre-positioning 57,252; early action 71,038) for 22 communities -> CHF ~9,090 per community (NPR ~1.68 M) over 2 years; targeted 5,454 people -> CHF ~36.7 per person. Derived by me.",
+   "people_per_unit": "~250 people per community (5,454 targeted/22)",
+   "impacts_addressed": [
+    "loss_of_life",
+    "displacement",
+    "livelihoods",
+    "children"
+   ],
+   "evidence": "Process evidence: 11 SIMEX (636 participants), 17 evacuation centres, 99-110 trained volunteers; early-warning task forces newly formed in 2025 (none existed before). No outcome evaluation (never fully activated).",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://go-api.ifrc.org/api/DownloadFile/ (IFRC GO: sEAP2024NP01 2025 Annual Report, Nepal flood)",
+    "https://go-api.ifrc.org/api/DownloadFile/ (IFRC GO: sEAP2024NP01 Operations Update 30 Oct 2024)"
+   ],
+   "risks": "Volunteer attrition; protocols not refreshed; trigger statement inconsistent with DHM bulletins; calibrated for monsoon river floods not cryosphere cascades.",
+   "unit_cost_npr": 1681500,
+   "unit_cost_chf": 9089.0,
+   "estimate": true
+  },
+  {
+   "id": "EA23",
+   "name": "Bilateral China-Nepal real-time data sharing and joint warning SOP for Rasuwagadhi/Kyirong (gauges, cameras, seismic)",
+   "category": "seasonal",
+   "lead_time_min_hours": 720,
+   "implementer": "Ministries of Foreign Affairs/Energy/Home, DHM, China Ministry of Water Resources & Tibet hydromet",
+   "unit": "agreement + 4-6 shared stations",
+   "cost_basis": "Not costed.",
+   "people_per_unit": "whole downstream corridor (potential lead time gain: flood reached the border ~8:40; DHM informed ~8:56-9:00)",
+   "impacts_addressed": [
+    "loss_of_life",
+    "trade_border",
+    "hydropower_workers"
+   ],
+   "evidence": "Nepal and China agreed to set up a bilateral water-hazard data-sharing mechanism after the 2025 flood; not operational on 26 Aug 2026; \"China's side was equally unaware\". Current practice routes information via Ministry of Foreign Affairs.",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://english.nepalnews.com/s/long-reads/bhote-koshi-catastrophe-exposes-limits-of-nepals-flood-warning-system/",
+    "https://kathmandupost.com/national/2026/09/02/nepal-sent-its-disaster-alert-38-minutes-after-the-glacier-collapse-it-wasn-t-enough"
+   ],
+   "risks": "Political; data sensitivity; Chinese-side sensors also vulnerable.",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA24",
+   "name": "Legal/SOP: DHM extreme-event warning triggers pre-authorised evacuation orders by LDMC/DDMC and operators (no-regret list)",
+   "category": "seasonal",
+   "lead_time_min_hours": 720,
+   "implementer": "NDRRMA, Ministry of Home Affairs, DHM, palikas",
+   "unit": "one-off legislative/SOP change",
+   "cost_basis": "Not costed.",
+   "people_per_unit": "n/a",
+   "impacts_addressed": [
+    "loss_of_life"
+   ],
+   "evidence": "Mongabay: DHM can warn but not order evacuation; no law triggers evacuation automatically; 2022 study of the 2021 rainfall disaster (120 deaths) recommended binding SOPs, not implemented. Spotlight: DHM budget fell NPR 765 M -> 338 M (-56%) between FY 2078/79 and 2081/82.",
+   "evidence_strength": "low",
+   "source_urls": [
+    "https://india.mongabay.com/2026/09/community-based-warning-saves-lives-during-nepal-floods/",
+    "https://www.spotlightnepal.com/2026/08/28/bhotekoshi-flood-warning-came-telephone/"
+   ],
+   "risks": "Over-triggering without calibrated thresholds; liability.",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  },
+  {
+   "id": "EA25",
+   "name": "Community-based forecast tool and lead-time extension (probabilistic forecast for DHM, 2-3 h -> 7-8 h) for rainfall flash floods",
+   "category": "hours",
+   "lead_time_min_hours": 7,
+   "implementer": "DHM, Practical Action, universities",
+   "unit": "per river basin (forecast system)",
+   "cost_basis": "Not costed in the abstract.",
+   "people_per_unit": "Karnali basin communities",
+   "impacts_addressed": [
+    "loss_of_life",
+    "livestock_assets"
+   ],
+   "evidence": "Smith et al. 2017 NHESS: Karnali lead time raised from 2-3 h to 7-8 h; last-mile communication of probabilistic forecasts remains the challenge. Rai et al. 2020: each additional hour multiplies savings (reported 1.83x).",
+   "evidence_strength": "medium",
+   "source_urls": [
+    "https://doi.org/10.5194/nhess-17-423-2017",
+    "https://doi.org/10.1016/j.ijdrr.2020.101534"
+   ],
+   "risks": "Does not apply to ice-rock avalanche sources; gauges destroyed by large floods.",
+   "unit_cost_npr": null,
+   "unit_cost_chf": null,
+   "estimate": false
+  }
+ ]
+}
