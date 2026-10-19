@@ -1,0 +1,10 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+email: vbenson@bgc-jena.mpg.de # your email address
+orcid_id: 0000-0003-4760-5501 # your ORCID ID
+scholar_userid: QO5_VGIAAAAJ # your Google Scholar ID
+github_username: vitusbenson # your GitHub user name
+linkedin_username: vitus-benson # your LinkedIn user name
+x_username: vitusbenson # your X handle
+bluesky_url: vitusbenson.bsky.social # your Bluesky handle
