@@ -19,6 +19,18 @@ github_overview:
     - Latex
 
 github_repos:
+  - name: EarthyScience/geosae
+    description: Sparse autoencoders for Earth embeddings.
+    tags:
+      - earth-observation
+      - interpretability
+      - sparse-autoencoders
+      - pytorch
+  - name: EarthyScience/nicefigs
+    description: Publication-grade, modular matplotlib plotting for geoscientific figures.
+    tags:
+      - visualization
+      - matplotlib
   - name: vitusbenson/neural_transport
     description: Hybrid neural-physical transport modeling for atmospheric and Earth system applications.
     tags:
